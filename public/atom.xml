@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[My Octopress Blog]]></title>
+  <link href="http://stevenclontz.herokuapp.com/atom.xml" rel="self"/>
+  <link href="http://stevenclontz.herokuapp.com/"/>
+  <updated>2012-10-24T14:16:40-05:00</updated>
+  <id>http://stevenclontz.herokuapp.com/</id>
+  <author>
+    <name><![CDATA[Steven Clontz]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Hello world]]></title>
+    <link href="http://stevenclontz.herokuapp.com/blog/2012/10/24/hello-world/"/>
+    <updated>2012-10-24T14:13:00-05:00</updated>
+    <id>http://stevenclontz.herokuapp.com/blog/2012/10/24/hello-world</id>
+    <content type="html"><![CDATA[<p>I am learning about Octopress here. Hiya everyone.</p>
+]]></content>
+  </entry>
+  
+</feed>
