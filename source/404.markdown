@@ -1,0 +1,19 @@
+---
+layout: page
+title: Huh? (404)
+footer: true
+---
+
+Sorry I couldn't find that for you. You may want to try a search above, or [visit my homepage](/).
+
+{% comment %}
+Also, here are some recent posts:
+
+<div id="blog-archives" class="missing">
+  {% for post in site.posts limit: 10 %}
+  <article>
+    {% include archive_post.html %}
+  </article>
+  {% endfor %}
+</div>
+{% endcomment %}

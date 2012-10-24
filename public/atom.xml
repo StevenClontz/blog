@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[My Octopress Blog]]></title>
+  <title><![CDATA[Steven Clontz]]></title>
   <link href="http://stevenclontz.herokuapp.com/atom.xml" rel="self"/>
   <link href="http://stevenclontz.herokuapp.com/"/>
-  <updated>2012-10-24T14:16:40-05:00</updated>
+  <updated>2012-10-24T18:17:46-05:00</updated>
   <id>http://stevenclontz.herokuapp.com/</id>
   <author>
     <name><![CDATA[Steven Clontz]]></name>
