@@ -10,7 +10,7 @@ Thanks for checking out my blog! My name is Steven Clontz, and I'm a mathematici
 
 ###Life
 
-I grew up in the suburbs outside Huntsville, Alabama, and attended Buckhorn High School. I moved to Auburn, Alabama to attend Auburn University and have stayed here happily ever since.
+I grew up in the suburbs outside Huntsville, Alabama, and attended [Buckhorn High School](http://www.madison.k12.al.us/buckhorn/website/). I moved to Auburn, Alabama to attend [Auburn University](http://auburn.edu) and have stayed here happily ever since.
 
 While she also grew up in Huntsville, I first met my wife Jessica in Auburn in 2009. We married in June 2011, and look forward to many happy years together. Jessica is an elementary school teacher in the Auburn City school system.
 
