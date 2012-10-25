@@ -20,6 +20,8 @@ My academic pursuits have been largely mathematical, and I graduated from Auburn
 
 In addition to my topological research, I enjoy recreational mathematics and puzzles of various types, and frequent [/r/math](http://reddit.com/r/math/) and [/r/learnmath](http://reddit.com/r/learnmath/) on Reddit.
 
+I was lucky to have the opportunity to develop the first mathematical puzzle solving competition for middle schoolers (that I know of!) along with [Braxton Carrigan](https://www.southernct.edu/search/directories/profile/?id=49445) and Auburn's [COSAM Outreach office](http://www.auburn.edu/cosam/departments/outreach/). Our event is called the [A.M.P.'d Challenge](http://www.auburn.edu/cosam/departments/outreach/programs/AMPd/index.htm), short for Auburn Mathematical Puzzle Competition. During each event, a [wacky villain](https://www.youtube.com/watch?v=zWh-5RBg4Z8) pulls off a crime, and by solving math puzzles, players can collect puzzle pieces which when put together reveal the method of the crime. 
+
 ###Web Development and Coding
 
 I've had the opportunity to serve as the webmaster for several groups over the years, including the [Auburn University Bands](http://band.auburn.edu) and [AU Graduate Student Council](http://auburn.edu/gsc/).
