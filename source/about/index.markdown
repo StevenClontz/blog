@@ -6,7 +6,7 @@ sharing: true
 footer: true
 ---
 
-Thanks for checking out my blog! My name is Steven Clontz, and I'm a mathematician / coder / teacher / occasional puzzle designer / less occasional musician from Auburn University, Alabama.
+Thanks for checking out my blog! My name is Steven Clontz, and I'm a mathematician / coder / teacher / occasional puzzle designer / less occasional musician from Auburn, Alabama.
 
 ###Life
 
@@ -41,6 +41,12 @@ I had the honor of serving as Webmaster for the [AU Graduate Student Council](ht
 Beginning in middle school and lasting through my undergraduate career, I was an active participant in Marching and Concert Band, playing the trombone. I know enough piano to hurt myself, and am known to sing too loudly in church on Sundays.
 
 I was proud to be a member of the [Auburn University Bands](http://band.auburn.edu), serving as a R.A.T. (Rookie Auburn Tiger) Leader as a student, and later on staff as their webmaster and Graduate Technology Assistant.
+
+###Puzzles
+
+I first got involved with the puzzling community in Auburn in the summer of 2009 when my friend Charles McPillan and I secretly created the [Auburn Puzzler](http://auburnpuzzleparty.wikia.com/wiki/Auburn_Puzzler), an enigmatic entity responsible for weekly puzzlehunts throughout the summer.
+
+After winning [Auburn Puzzle Party 3](http://auburnpuzzleparty.wikia.com/wiki/APP3) I organized the first "Puzzle Patrol" event in 2010 along with its sequel in 2012: Auburn Puzzle Parties [4](http://auburnpuzzleparty.wikia.com/wiki/APP4) and [5](http://auburnpuzzleparty.wikia.com/wiki/APP5). I also regularly participate in area [Puzzle Potlucks](http://auburnpuzzleparty.wikia.com/wiki/PP2). Most recently I joined a group collaborating to solve the fourth face of the [Kryptos structure](http://en.wikipedia.org/wiki/Kryptos) at the CIA headquarters.
 
 ####Thanks for visiting!
 
