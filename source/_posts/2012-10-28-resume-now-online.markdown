@@ -12,7 +12,7 @@ The tl;dr version: check it out at <http://resume.stevenclontz.com>! But if you 
 
 <!-- more -->
 
-I knew I wanted my resume to be web-first. The last time I wrote a resume (back in early 2011) I had TeX'd it up locally. And hey, at least that's better than a Word document, right? However, and maybe I've gotten lazier in the past two years... trudging through this didn't seem appealing:
+I knew I wanted my resume to be web-first. The last time I wrote a resume (back in early 2011) I had TeX'd it up locally. And hey, at least that's better than a Word document, right? However, and maybe I've gotten lazier in the past two years... but trudging through this didn't seem appealing:
 
 ```
 \begin{ressection}{Education}
