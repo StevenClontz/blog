@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Marked-down resume"
-date: 2012-10-28 20:09
+date: 2012-10-28 23:30
 comments: true
 categories: 
 ---
