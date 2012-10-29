@@ -1,7 +1,7 @@
 ---
 layout: post
-title: "Resume, powered by Markdown"
-date: 2012-10-28 16:05
+title: "Marked-down resume"
+date: 2012-10-28 20:09
 comments: true
 categories: 
 ---
