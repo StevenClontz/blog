@@ -10,7 +10,7 @@ Hey everyone! Thanks for checking out my new blog*. After deciding I didn't need
 
 Thanks to [James Dabbs](http://jdabbs.com) for showing [Octopress](http://octopress.org/) to me the other day - a blogging system with [Git](http://git-scm.com/) revision control and hosting by [Heroku](http://heroku.com) sounds alright to me.
 
-I'll be working on my [About](/about/) page and getting my [Resume](/about/resume/) up to date over the coming days.  Email me at <steven.clontz@gmail.com> if you need to get in touch with me! See ya.
+I'll be working on my [About](/about/) page and getting my [Resume](http://resume.stevenclontz.com) up to date over the coming days.  Email me at <steven.clontz@gmail.com> if you need to get in touch with me! See ya.
 
 -SXC
 
