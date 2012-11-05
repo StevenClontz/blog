@@ -1,0 +1,353 @@
+
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>9 Hours, 9 Persons, 9 Doors - Steven Clontz</title>
+  <meta name="author" content="Steven Clontz">
+
+  
+  <meta name="description" content="Having spent a lot of my weekend playing it (after representing Teloga at the 26th Annual Auburn Alumni Band Reunion), I wanted to make a quick, &hellip;">
+  
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel="canonical" href="http://stevenclontz.herokuapp.com/blog/2012/11/05/9-hours-9-persons-9-doors/">
+  <link href="/favicon.png" rel="icon">
+  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <script src="/javascripts/modernizr-2.0.js"></script>
+  <script src="/javascripts/ender.js"></script>
+  <script src="/javascripts/octopress.js" type="text/javascript"></script>
+  <link href="/atom.xml" rel="alternate" title="Steven Clontz" type="application/atom+xml">
+  <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
+<link href="http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+
+  
+
+</head>
+
+<body   >
+  <header role="banner"><hgroup>
+  <h1><a href="/">Steven Clontz</a>
+  
+    <small>A bit about math, code, teaching, music, games, and puzzles.</small>
+  
+  </h1>
+</hgroup>
+
+</header>
+  <nav role="navigation"><ul class="subscription" data-subscription="rss">
+  <li><a href="/atom.xml" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
+  
+</ul>
+  
+<form action="http://google.com/search" method="get">
+  <fieldset role="search">
+    <input type="hidden" name="q" value="site:stevenclontz.herokuapp.com" />
+    <input class="search" type="text" name="q" results="0" placeholder="Search"/>
+  </fieldset>
+</form>
+  
+<ul class="main-navigation">
+  <li><a href="/">Blog</a></li>
+  <li><a href="/about/">About</a></li>
+  <li><a href="http://resume.stevenclontz.com">Resume</a></li>
+  <li><a href="http://teloga.com">Teloga</a></li>
+</ul>
+
+</nav>
+  <div id="main">
+    <div id="content">
+      <div>
+<article class="hentry" role="article">
+  
+  <header>
+    
+      <h1 class="entry-title">9 Hours, 9 Persons, 9 Doors</h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2012-11-05T13:33:00-06:00" pubdate data-updated="true">Nov 5<span>th</span>, 2012</time>
+        
+      </p>
+    
+  </header>
+
+
+<div class="entry-content"><p>Having spent a lot of my weekend playing it (after representing Teloga at the <a href="http://teloga.com/networks/aubands/alumni-band/fall-2012/">26th Annual Auburn Alumni Band Reunion</a>), I wanted to make a quick, mostly spoiler-free post about <a href="http://en.wikipedia.org/wiki/999:_Nine_Hours,_Nine_Persons,_Nine_Doors"><em>999: 9 Hours, 9 Persons, 9 Doors</em></a> (2010). It&#8217;s a visual novel / room escape / puzzle / adventure game for the Nintendo DS.</p>
+
+<!-- more -->
+
+
+<p><img src="http://i.imgur.com/8xVM5.jpg"></p>
+
+<p>While I was mostly a Nintendo kid, I have fond memories of playing Sierra&#8217;s <a href="http://en.wikipedia.org/wiki/Torin's_Passage">Torin&#8217;s Passage</a> on the PC, which jump-started my interest in story-driven and combatless games. These games are also probably a big influence in my taste in <a href="http://auburnpuzzleparty.wikia.com/wiki/APP5">story-driven puzzle parties</a> as well.</p>
+
+<p>The concept of <em>999</em> is simple: big scary guy (&#8220;Zero&#8221;) in a gas mask kidnaps you and eight other people, forces you to play a <a href="http://en.wikipedia.org/wiki/Saw_(film)">game</a>, and slaps a wristwatch on you that will kill if you break the rules rather than solve his puzzles. But the best part of the game is tough to explain without spoilers. I&#8217;ll just say: it has the best setup for alternate endings of any game I&#8217;ve played.</p>
+
+<p>By the way, I was very impressed that the game doesn&#8217;t shy away (too) much from using math. There&#8217;s a bit of modular arithmetic involved in the game: each player has a number on their bracelet, and several doors are also marked with numbers. In order for a group to pass through a numbered door, the &#8220;digital root&#8221; of the bracelets (more commonly known as the sum of the numbers modulo nine) must match that number. This makes a major part of the story a mathematical whodunit once the group splits up early on and it&#8217;s discovered that some subset of them opened a door secretly (to a particular end which I&#8217;ll keep secret for this post).</p>
+
+<p>I do wish the characters would have caught onto some of the slicker tricks to computing digital roots. For example, the players 1 through 9 have a digital root of 9. But if players 1 and 2 are sitting out for some reason, the group&#8217;s digital root is now 6. That means for all players to progress simultaneously, they must split up and pass through doors whose digital root is also 6. The characters make most of their conclusions through exhaustive search, but when I was faced with doors 3, 7, and 8, I quickly realized that 7 &amp; 8 (=15=6) were the only real choices. (Well, unless you wanted to leave some players behind, but who would do that?&#8230;) And the only trick then was finding a group to sum to 7 (or 16 or 25), since the other group necessarily had to sum to 8 (or 17 or 26 or etc etc).</p>
+
+<p>Incidentally, while I keep talking about modular arithmetic, the game didn&#8217;t present it that way. Instead, they used the divisibility trick for nine to describe how to calculate a digital root: add the digits of the sum, repeat until only one digit remains. All in all, it&#8217;s a fun metapuzzle for the game. (And not bad fodder for the <a href="http://auburnpuzzleparty.wikia.com/wiki/A.M.P.%27d_Challenge">AMP&#8217;d Challenge</a> either&#8230; maybe I should flesh out an idea based on this.)</p>
+
+<p>But about those endings. There&#8217;s a lot of discussion out there about the optimal way to play through the game. There are six (well, five and a half) endings that the game gives you credit for, and it&#8217;s tough to find them all without a little direction (which I attempted when I first played through the game two years ago). So if I may do so, and I promise not to reveal any spoilers, here are my two suggested ways to play through <em>999</em> if you have the chance to pick it up.</p>
+
+<h3>What you should know</h3>
+
+<p>In this game you will make three choices between which door you&#8217;d like to enter. If you get a &#8220;bad end&#8221;, which one you get is pretty much just determined on your third choice. The game intends for you to play through it multiple times and stumble upon one of the three ends which, well, aren&#8217;t so bad.</p>
+
+<p>However, by paying attention to what interests the other characters, and figuring out which doors you need to go through to progress certain story arcs, you can arrive at one of the three more interesting ends. Realizing this might be enough for you to deduce how to proceed.</p>
+
+<h3>The quickest way</h3>
+
+<p>You should approach <em>999</em> more like you&#8217;re going to read a book than play a game, which means you&#8217;ll be spending a lot of time reading. And on the replays, you&#8217;ll be spending a lot of time holding Right on the D-pad to fast-forward through text you&#8217;ve already seen.</p>
+
+<p>So that&#8217;s why I don&#8217;t blame you if you want to get through things as quickly as possible. Here are directions for seeing every puzzle and ending using minimal playthroughs:</p>
+
+<p class="spoiler">1st. Choose the following doors: 4, 8, 1</p>
+
+
+
+
+<p class="spoiler">2nd. Choose the following doors: 4, 7, 6</p>
+
+
+
+
+<p class="spoiler">3rd. Choose the following doors: 5, 3, 2</p>
+
+
+
+
+<p class="spoiler">4th. Choose the following doors: 5, 8, 6</p>
+
+
+<p>At this point, you may want to try and solve the puzzle of which path to take for your final ending. Pay close attention to a hint given at the end of the last ending.</p>
+
+<p class="spoiler">Last. Choose the following doors: 4, 7, 1. This unlocks the final two endings (one of which is where the game cuts off this ending early if you haven&#8217;t done the 5, 8, 6 ending). Also, you need to be sure to learn everything you can from the other characters, and help them out where you can, or certain story checks will fail and you&#8217;ll get the same ending as choosing 4, 8, 1.</p>
+
+
+<h3>A little bit longer</h3>
+
+<p>This is a streamlined version how I ended up playing my first time with the game. There&#8217;s more backtracking, but you get to actually experience that &#8220;half&#8221; ending I keep talking about.</p>
+
+<p class="spoiler">1st. Choose the following doors: 4, 8, 6</p>
+
+
+
+
+<p class="spoiler">2nd. Choose the following doors: 5, 3, 2</p>
+
+
+
+
+<p class="spoiler">3rd. Choose the following doors: 4, 7, 1. However, refuse to listen to optional plot points and don&#8217;t help the other characters when possible.</p>
+
+
+
+
+<p class="spoiler">4th. Choose the following doors again: 4, 7, 1. This time, listen to everything and help a certain person out.</p>
+
+
+<p>At this point, you may want to try and solve the puzzle of which path to take for your next ending. Pay close attention to a hint given at the end of the last ending.</p>
+
+<p class="spoiler">5th. Choose the following doors: 5, 8, 6</p>
+
+
+
+
+<p class="spoiler">Last. Choose the following doors a final time: 4, 7, 1. Again, listen to everything and help a certain person out. Enjoy the epiphany.</p>
+
+
+<h3>And every other combination</h3>
+
+<p>I ran across this image on Reddit, which maps out all the possible paths and endings. Pretty cool to look over once you&#8217;ve seen them all yourself: <a href="http://i.imgur.com/amjI5.gif">http://i.imgur.com/amjI5.gif</a></p>
+
+<p>That&#8217;s all I&#8217;ve got. If you&#8217;ve gotten this far then I assume you&#8217;ve played the game or plan to. But if not, and you think you&#8217;d enjoy this psychological thriller, then I encourage you to give it a try! (Also, the sequel came out&#8230; maybe I&#8217;ll have time to play it one day, heh.)</p>
+
+<p>-SXC</p>
+</div>
+
+
+  <footer>
+    <p class="meta">
+      
+  
+
+<span class="byline author vcard">Posted by <span class="fn">Steven Clontz</span></span>
+
+      
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2012-11-05T13:33:00-06:00" pubdate data-updated="true">Nov 5<span>th</span>, 2012</time>
+      
+
+
+    </p>
+    
+      <div class="sharing">
+  
+  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://stevenclontz.herokuapp.com/blog/2012/11/05/9-hours-9-persons-9-doors/" data-via="StevenXClontz" data-counturl="http://stevenclontz.herokuapp.com/blog/2012/11/05/9-hours-9-persons-9-doors/" >Tweet</a>
+  
+  
+  
+</div>
+
+    
+    <p class="meta">
+      
+        <a class="basic-alignment left" href="/blog/2012/10/28/resume-now-online/" title="Previous Post: Marked-down resume">&laquo; Marked-down resume</a>
+      
+      
+    </p>
+  </footer>
+</article>
+
+</div>
+
+<aside class="sidebar">
+  
+    <img class="center" src="http://i.imgur.com/gEvgKs.jpg"">
+
+<section>
+  <h1>Recent Posts</h1>
+  <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/blog/2012/11/05/9-hours-9-persons-9-doors/">9 Hours, 9 Persons, 9 Doors</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2012/10/28/resume-now-online/">Marked-down resume</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2012/10/28/auburn-puzzle-party-5/">Auburn Puzzle Party 5</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2012/10/25/new-blog-powered-by-octopress/">New blog powered by Octopress</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2012/10/24/hello-world/">Hello world</a>
+      </li>
+    
+  </ul>
+</section>
+
+<section>
+  <h1>GitHub Repos</h1>
+  <ul id="gh_repos">
+    <li class="loading">Status updating...</li>
+  </ul>
+  
+  <a href="https://github.com/StevenClontz">@StevenClontz</a> on GitHub
+  
+  <script type="text/javascript">
+    $.domReady(function(){
+        if (!window.jXHR){
+            var jxhr = document.createElement('script');
+            jxhr.type = 'text/javascript';
+            jxhr.src = '/javascripts/libs/jXHR.js';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(jxhr, s);
+        }
+
+        github.showRepos({
+            user: 'StevenClontz',
+            count: 0,
+            skip_forks: true,
+            target: '#gh_repos'
+        });
+    });
+  </script>
+  <script src="/javascripts/github.js" type="text/javascript"> </script>
+</section>
+
+
+<section>
+  <h1>Latest Tweets</h1>
+  <ul id="tweets">
+    <li class="loading">Status updating...</li>
+  </ul>
+  <script type="text/javascript">
+    $.domReady(function(){
+      getTwitterFeed("StevenXClontz", 4, false);
+    });
+  </script>
+  <script src="/javascripts/twitter.js" type="text/javascript"> </script>
+  
+    <a href="http://twitter.com/StevenXClontz" class="twitter-follow-button" data-show-count="false">Follow @StevenXClontz</a>
+  
+</section>
+
+
+
+
+
+  
+</aside>
+
+
+    </div>
+  </div>
+  <footer role="contentinfo"><p>
+  Copyright &copy; 2012 - Steven Clontz -
+  <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
+</p>
+
+</footer>
+  
+
+
+
+
+
+
+
+  <script type="text/javascript">
+    (function(){
+      var twitterWidgets = document.createElement('script');
+      twitterWidgets.type = 'text/javascript';
+      twitterWidgets.async = true;
+      twitterWidgets.src = 'http://platform.twitter.com/widgets.js';
+      document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
+    })();
+  </script>
+
+
+
+
+
+</body>
+</html>
