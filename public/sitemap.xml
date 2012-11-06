@@ -1,41 +1,39 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <urlset xmlns='http://www.sitemaps.org/schemas/sitemap/0.9'>
     <url>
-        <loc>http://stevenclontz.herokuapp.com/blog/2012/10/24/hello-world/</loc>
-        <lastmod>2012-11-05T14:48:09-06:00</lastmod>
+        <loc>http://www.stevenclontz.com/blog/2012/10/24/hello-world/</loc>
+        <lastmod>2012-11-06T10:03:48-06:00</lastmod>
     </url>
     <url>
-        <loc>
-            http://stevenclontz.herokuapp.com/blog/2012/10/25/new-blog-powered-by-octopress/
-        </loc>
-        <lastmod>2012-11-05T14:48:09-06:00</lastmod>
+        <loc>http://www.stevenclontz.com/blog/2012/10/25/new-blog-powered-by-octopress/</loc>
+        <lastmod>2012-11-06T10:03:48-06:00</lastmod>
     </url>
     <url>
-        <loc>http://stevenclontz.herokuapp.com/blog/2012/10/28/auburn-puzzle-party-5/</loc>
-        <lastmod>2012-11-05T14:48:09-06:00</lastmod>
+        <loc>http://www.stevenclontz.com/blog/2012/10/28/auburn-puzzle-party-5/</loc>
+        <lastmod>2012-11-06T10:03:48-06:00</lastmod>
     </url>
     <url>
-        <loc>http://stevenclontz.herokuapp.com/blog/2012/10/28/resume-now-online/</loc>
-        <lastmod>2012-11-05T14:48:09-06:00</lastmod>
+        <loc>http://www.stevenclontz.com/blog/2012/10/28/resume-now-online/</loc>
+        <lastmod>2012-11-06T10:03:48-06:00</lastmod>
     </url>
     <url>
-        <loc>http://stevenclontz.herokuapp.com/blog/2012/11/05/9-hours-9-persons-9-doors/</loc>
-        <lastmod>2012-11-05T15:05:34-06:00</lastmod>
+        <loc>http://www.stevenclontz.com/blog/2012/11/05/9-hours-9-persons-9-doors/</loc>
+        <lastmod>2012-11-06T10:03:48-06:00</lastmod>
     </url>
     <url>
-        <loc>http://stevenclontz.herokuapp.com/404.html</loc>
-        <lastmod>2012-11-05T14:48:09-06:00</lastmod>
+        <loc>http://www.stevenclontz.com/404.html</loc>
+        <lastmod>2012-11-06T10:03:48-06:00</lastmod>
     </url>
     <url>
-        <loc>http://stevenclontz.herokuapp.com/about/</loc>
-        <lastmod>2012-11-05T14:48:09-06:00</lastmod>
+        <loc>http://www.stevenclontz.com/about/</loc>
+        <lastmod>2012-11-06T10:03:48-06:00</lastmod>
     </url>
     <url>
-        <loc>http://stevenclontz.herokuapp.com/blog/archives/</loc>
-        <lastmod>2012-11-05T15:05:34-06:00</lastmod>
+        <loc>http://www.stevenclontz.com/blog/archives/</loc>
+        <lastmod>2012-11-06T10:03:48-06:00</lastmod>
     </url>
     <url>
-        <loc>http://stevenclontz.herokuapp.com/</loc>
-        <lastmod>2012-11-05T15:05:34-06:00</lastmod>
+        <loc>http://www.stevenclontz.com/</loc>
+        <lastmod>2012-11-06T10:03:48-06:00</lastmod>
     </url>
 </urlset>

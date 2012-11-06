@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Steven Clontz]]></title>
-  <link href="http://stevenclontz.herokuapp.com/atom.xml" rel="self"/>
-  <link href="http://stevenclontz.herokuapp.com/"/>
-  <updated>2012-11-05T15:05:35-06:00</updated>
-  <id>http://stevenclontz.herokuapp.com/</id>
+  <link href="http://www.stevenclontz.com/atom.xml" rel="self"/>
+  <link href="http://www.stevenclontz.com/"/>
+  <updated>2012-11-06T10:03:48-06:00</updated>
+  <id>http://www.stevenclontz.com/</id>
   <author>
     <name><![CDATA[Steven Clontz]]></name>
     
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[9 Hours, 9 Persons, 9 Doors]]></title>
-    <link href="http://stevenclontz.herokuapp.com/blog/2012/11/05/9-hours-9-persons-9-doors/"/>
+    <link href="http://www.stevenclontz.com/blog/2012/11/05/9-hours-9-persons-9-doors/"/>
     <updated>2012-11-05T13:33:00-06:00</updated>
-    <id>http://stevenclontz.herokuapp.com/blog/2012/11/05/9-hours-9-persons-9-doors</id>
+    <id>http://www.stevenclontz.com/blog/2012/11/05/9-hours-9-persons-9-doors</id>
     <content type="html"><![CDATA[<p>Having spent a lot of my weekend playing it (after representing Teloga at the <a href="http://teloga.com/networks/aubands/alumni-band/fall-2012/">26th Annual Auburn Alumni Band Reunion</a>), I wanted to make a quick, mostly spoiler-free post about <a href="http://en.wikipedia.org/wiki/999:_Nine_Hours,_Nine_Persons,_Nine_Doors"><em>999: 9 Hours, 9 Persons, 9 Doors</em></a> (2010). It&#8217;s a visual novel / room escape / puzzle / adventure game for the Nintendo DS.</p>
 
 <!-- more -->
@@ -116,9 +116,9 @@
   
   <entry>
     <title type="html"><![CDATA[Marked-down resume]]></title>
-    <link href="http://stevenclontz.herokuapp.com/blog/2012/10/28/resume-now-online/"/>
+    <link href="http://www.stevenclontz.com/blog/2012/10/28/resume-now-online/"/>
     <updated>2012-10-28T23:30:00-05:00</updated>
-    <id>http://stevenclontz.herokuapp.com/blog/2012/10/28/resume-now-online</id>
+    <id>http://www.stevenclontz.com/blog/2012/10/28/resume-now-online</id>
     <content type="html"><![CDATA[<p>A project that had been almost as long overdue as reviving <a href="http://www.stevenclontz.com">http://www.stevenclontz.com</a> was updating my neglected resume.</p>
 
 <p>The tl;dr version: check it out at <a href="http://resume.stevenclontz.com">http://resume.stevenclontz.com</a>! But if you think that looks nice and would like to check out the web app that powers it, please read on. :-)</p>
@@ -226,9 +226,9 @@
   
   <entry>
     <title type="html"><![CDATA[Auburn Puzzle Party 5]]></title>
-    <link href="http://stevenclontz.herokuapp.com/blog/2012/10/28/auburn-puzzle-party-5/"/>
+    <link href="http://www.stevenclontz.com/blog/2012/10/28/auburn-puzzle-party-5/"/>
     <updated>2012-10-28T23:11:00-05:00</updated>
-    <id>http://stevenclontz.herokuapp.com/blog/2012/10/28/auburn-puzzle-party-5</id>
+    <id>http://www.stevenclontz.com/blog/2012/10/28/auburn-puzzle-party-5</id>
     <content type="html"><![CDATA[<p>In case you hadn&#8217;t heard me talk about it yet, <a href="http://auburnpuzzleparty.wikia.com/wiki/APP5_Wrap-Up">here&#8217;s my wrap-up of Auburn Puzzle Party 5</a> on the Auburn Puzzle Party wiki.</p>
 
 <p>And if you haven&#8217;t checked out the <a href="http://www.youtube.com/playlist?list=PLooILs0YfKkEWPeFpZdDis2GuQ2aP-weO">APP5 videos, including the Puzzle Rock Anthem</a> yet, you&#8217;re missing out. See if you can solve the &#8220;hidden&#8221; puzzle in the videos too.</p>
@@ -239,14 +239,14 @@
   
   <entry>
     <title type="html"><![CDATA[New blog powered by Octopress]]></title>
-    <link href="http://stevenclontz.herokuapp.com/blog/2012/10/25/new-blog-powered-by-octopress/"/>
+    <link href="http://www.stevenclontz.com/blog/2012/10/25/new-blog-powered-by-octopress/"/>
     <updated>2012-10-25T08:40:00-05:00</updated>
-    <id>http://stevenclontz.herokuapp.com/blog/2012/10/25/new-blog-powered-by-octopress</id>
+    <id>http://www.stevenclontz.com/blog/2012/10/25/new-blog-powered-by-octopress</id>
     <content type="html"><![CDATA[<p>Hey everyone! Thanks for checking out my new blog*. After deciding I didn&#8217;t need to waste so much cash on domain names I don&#8217;t use and web space I barely needed, I took down stevenclontz.com along with most of my other old PHP/Wordpress sites. I&#8217;ll get stevenclontz.com to point here sometime soon.</p>
 
 <p>Thanks to <a href="http://jdabbs.com">James Dabbs</a> for showing <a href="http://octopress.org/">Octopress</a> to me the other day - a blogging system with <a href="http://git-scm.com/">Git</a> revision control and hosting by <a href="http://heroku.com">Heroku</a> sounds alright to me.</p>
 
-<p>I&#8217;ll be working on my <a href="http://stevenclontz.herokuapp.com/about/">About</a> page and getting my <a href="http://resume.stevenclontz.com">Resume</a> up to date over the coming days.  Email me at <a href="&#109;&#x61;&#x69;&#108;&#x74;&#x6f;&#x3a;&#x73;&#116;&#101;&#118;&#x65;&#110;&#46;&#99;&#108;&#x6f;&#110;&#x74;&#122;&#64;&#103;&#109;&#x61;&#105;&#108;&#46;&#x63;&#111;&#109;">&#115;&#116;&#x65;&#118;&#101;&#110;&#x2e;&#99;&#108;&#x6f;&#110;&#116;&#122;&#64;&#103;&#109;&#97;&#105;&#108;&#x2e;&#99;&#111;&#x6d;</a> if you need to get in touch with me! See ya.</p>
+<p>I&#8217;ll be working on my <a href="http://www.stevenclontz.com/about/">About</a> page and getting my <a href="http://resume.stevenclontz.com">Resume</a> up to date over the coming days.  Email me at <a href="&#x6d;&#97;&#x69;&#x6c;&#116;&#111;&#x3a;&#115;&#x74;&#x65;&#118;&#101;&#x6e;&#46;&#x63;&#x6c;&#x6f;&#110;&#x74;&#x7a;&#x40;&#x67;&#109;&#97;&#x69;&#x6c;&#x2e;&#99;&#x6f;&#x6d;">&#115;&#116;&#x65;&#x76;&#x65;&#x6e;&#x2e;&#x63;&#108;&#111;&#110;&#116;&#x7a;&#x40;&#x67;&#109;&#x61;&#105;&#x6c;&#46;&#99;&#111;&#x6d;</a> if you need to get in touch with me! See ya.</p>
 
 <p>-SXC</p>
 
@@ -256,9 +256,9 @@
   
   <entry>
     <title type="html"><![CDATA[Hello world]]></title>
-    <link href="http://stevenclontz.herokuapp.com/blog/2012/10/24/hello-world/"/>
+    <link href="http://www.stevenclontz.com/blog/2012/10/24/hello-world/"/>
     <updated>2012-10-24T14:13:00-05:00</updated>
-    <id>http://stevenclontz.herokuapp.com/blog/2012/10/24/hello-world</id>
+    <id>http://www.stevenclontz.com/blog/2012/10/24/hello-world</id>
     <content type="html"><![CDATA[<p>I am learning about Octopress here. Hiya everyone.</p>
 ]]></content>
   </entry>
