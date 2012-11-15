@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Lowercase email usernames in Django"
+title: "Using email addresses for Django usernames"
 date: 2012-11-15 12:58
 comments: true
 categories: 

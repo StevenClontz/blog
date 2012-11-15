@@ -22,9 +22,9 @@
     </url>
     <url>
         <loc>
-            http://www.stevenclontz.com/blog/2012/11/15/lowercase-email-usernames-in-django/
+            http://www.stevenclontz.com/blog/2012/11/15/using-email-addresses-for-django-usernames/
         </loc>
-        <lastmod>2012-11-15T14:18:15-06:00</lastmod>
+        <lastmod>2012-11-15T14:20:11-06:00</lastmod>
     </url>
     <url>
         <loc>http://www.stevenclontz.com/404.html</loc>
@@ -36,10 +36,10 @@
     </url>
     <url>
         <loc>http://www.stevenclontz.com/blog/archives/</loc>
-        <lastmod>2012-11-15T14:18:15-06:00</lastmod>
+        <lastmod>2012-11-15T14:20:11-06:00</lastmod>
     </url>
     <url>
         <loc>http://www.stevenclontz.com/</loc>
-        <lastmod>2012-11-15T14:18:15-06:00</lastmod>
+        <lastmod>2012-11-15T14:20:11-06:00</lastmod>
     </url>
 </urlset>
