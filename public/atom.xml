@@ -4,7 +4,7 @@
   <title><![CDATA[Steven Clontz]]></title>
   <link href="http://www.stevenclontz.com/atom.xml" rel="self"/>
   <link href="http://www.stevenclontz.com/"/>
-  <updated>2012-12-15T09:28:13-06:00</updated>
+  <updated>2012-12-17T11:22:07-06:00</updated>
   <id>http://www.stevenclontz.com/</id>
   <author>
     <name><![CDATA[Steven Clontz]]></name>
@@ -12,6 +12,43 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Guessing passwords]]></title>
+    <link href="http://www.stevenclontz.com/blog/2012/12/17/guessing-passwords/"/>
+    <updated>2012-12-17T11:18:00-06:00</updated>
+    <id>http://www.stevenclontz.com/blog/2012/12/17/guessing-passwords</id>
+    <content type="html"><![CDATA[<p>There&#8217;s not any deep cryptography going on here, but since I spent 15 minutes answering this person on <a href="http://reddit.com/r/askmath">/r/askmath</a>, and nobody reads /r/askmath, I&#8217;d take the time to cross-post it here.</p>
+
+<p>The question:</p>
+
+<blockquote>I guessed the password on my Mom&#8217;s computer. &#8220;Snot&#8221;. This isn&#8217;t relevant to anything I can think of in the last 10 years. What are the chances of my guess being correct?</blockquote>
+
+
+
+
+<!-- more -->
+
+
+<hr />
+
+<p>Depends on the constraints on this password. If you knew it was exactly four lowercase letters (no numbers, no symbols), there are 26<sup>4</sup> = 456,976 possibilities. That makes it a 0.00022% chance.</p>
+
+<p>More realistically, if you knew that the password was a four-letter Scrabble word, there are somewhere around 4,000-5,000 possibilities, so your odds just jumped to 0.02%.</p>
+
+<p>But. If your mother was clever and mixed uppercase and lowercase letters, that increases the number of possibilities by 16 times. (Why? Multiply by two for the first letter being uppercase or lowercase, multiply by two for the second letter, and again, and again. 2*2*2*2=16.) That means we have about 80,000 possibilities, and a 0.00125% chance.</p>
+
+<p>Of course, as soon as you throw out the four-letter constraint, the possibilities explode. But let&#8217;s keep the Scrabble word constraint. According to the <a href="http://en.wikipedia.org/wiki/Official_Tournament_and_Club_Word_List">Official Tournament and Club Word List article on Wikipedia</a> there are 178,691 Scrabble words, so we&#8217;re back down to 0.00056% for one go, and that&#8217;s assuming all-lowercase.</p>
+
+<p>Finally, just for kicks, let&#8217;s assume all you knew is that the password is somewhere between 1 and 20 characters, and could contain lowercase, uppercase, digits 0-9, or any of the special characters !@#$%\<sup>&amp;*().</sup> That&#8217;s 72 possibilities for each character, which Wolfram Alpha informs me gives <a href="http://www.wolframalpha.com/input/?i=%5Csum_%7Bi%3D1%7D%5E%7B20%7D+72%5Ei">14,214,254,150,091,658,100,874,779,924,350,129,800</a> possibilities, with a 0.000000000000000000000000000000000000007% chance of guessing correctly.</p>
+
+<p>tl;dr: you got lucky. But keep in mind that I&#8217;m not surprised that out of the millions of users on Reddit, someone got this lucky. After all, people win the lottery all the time - just not me.</p>
+
+<hr />
+
+<p>-SXC</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[LaTeX is turing complete!]]></title>
@@ -394,7 +431,7 @@
 
 <p>Thanks to <a href="http://jdabbs.com">James Dabbs</a> for showing <a href="http://octopress.org/">Octopress</a> to me the other day - a blogging system with <a href="http://git-scm.com/">Git</a> revision control and hosting by <a href="http://heroku.com">Heroku</a> sounds alright to me.</p>
 
-<p>I&#8217;ll be working on my <a href="http://www.stevenclontz.com/about/">About</a> page and getting my <a href="http://resume.stevenclontz.com">Resume</a> up to date over the coming days.  Email me at <a href="&#x6d;&#x61;&#105;&#x6c;&#x74;&#x6f;&#58;&#115;&#116;&#101;&#x76;&#x65;&#110;&#x2e;&#x63;&#x6c;&#x6f;&#110;&#x74;&#122;&#x40;&#x67;&#109;&#x61;&#105;&#108;&#x2e;&#99;&#x6f;&#109;">&#115;&#116;&#x65;&#118;&#x65;&#110;&#x2e;&#x63;&#108;&#x6f;&#x6e;&#116;&#122;&#64;&#x67;&#109;&#x61;&#105;&#108;&#x2e;&#99;&#x6f;&#109;</a> if you need to get in touch with me! See ya.</p>
+<p>I&#8217;ll be working on my <a href="http://www.stevenclontz.com/about/">About</a> page and getting my <a href="http://resume.stevenclontz.com">Resume</a> up to date over the coming days.  Email me at <a href="&#x6d;&#x61;&#105;&#108;&#x74;&#x6f;&#x3a;&#115;&#x74;&#101;&#118;&#101;&#x6e;&#46;&#x63;&#108;&#x6f;&#110;&#116;&#x7a;&#x40;&#103;&#109;&#x61;&#105;&#x6c;&#46;&#x63;&#x6f;&#x6d;">&#115;&#x74;&#101;&#118;&#x65;&#110;&#46;&#99;&#108;&#x6f;&#110;&#116;&#122;&#x40;&#x67;&#x6d;&#x61;&#105;&#x6c;&#x2e;&#x63;&#111;&#x6d;</a> if you need to get in touch with me! See ya.</p>
 
 <p>-SXC</p>
 
