@@ -6,7 +6,7 @@ comments: true
 categories: 
 ---
 
-There's not any deep cryptography going on here, but since I spent 15 minutes answering this person on [/r/askmath](http://reddit.com/r/askmath), and nobody reads /r/askmath, I'd take the time to cross-post it here.
+There's not any deep cryptography going on here, but since I spent 15 minutes answering this person on [/r/askmath](http://www.reddit.com/r/askmath/comments/14zzhw/i_guessed_the_password_on_my_moms_computer_snot/), and nobody reads /r/askmath, I'd take the time to cross-post it here.
 
 The question:
 
