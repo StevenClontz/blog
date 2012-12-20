@@ -9,7 +9,7 @@
   <meta name="author" content="Steven Clontz">
 
   
-  <meta name="description" content="Huh? (404) Sorry I couldn&#8217;t find that for you. You may want to try a search above, or visit my homepage. Tweet Recent Posts Guessing passwords &hellip;">
+  <meta name="description" content="Huh? (404) Sorry I couldn&#8217;t find that for you. You may want to try a search above, or visit my homepage. Tweet Recent Posts How many distinct &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -103,6 +103,10 @@
   <ul id="recent_posts">
     
       <li class="post">
+        <a href="/blog/2012/12/19/how-many-distinct-outcomes-in-bowling/">How many distinct outcomes in bowling?</a>
+      </li>
+    
+      <li class="post">
         <a href="/blog/2012/12/17/guessing-passwords/">Guessing passwords</a>
       </li>
     
@@ -116,10 +120,6 @@
     
       <li class="post">
         <a href="/blog/2012/11/05/9-hours-9-persons-9-doors/">9 Hours, 9 Persons, 9 Doors</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2012/10/28/resume-now-online/">Marked-down resume</a>
       </li>
     
   </ul>
@@ -186,6 +186,21 @@
   <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
 </p>
 
+<!-- mathjax config similar to math.stackexchange -->
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  jax: ["input/TeX", "output/HTML-CSS"],
+  tex2jax: {
+    inlineMath: [ ['$', '$'] ],
+    displayMath: [ ['$$', '$$']],
+    processEscapes: true,
+    skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+  },
+  messageStyle: "none",
+  "HTML-CSS": { preferredFont: "TeX", availableFonts: ["STIX","TeX"] }
+});
+</script>
+<script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML" type="text/javascript"></script>
 </footer>
   
 

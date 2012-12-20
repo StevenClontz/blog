@@ -175,7 +175,7 @@
 <p>I added a few extra variables to the configuration YAML to store the URL of the page itself and the URL of a QR Code image leading to that URL, which I use in a couple of nice extra features:</p>
 
 <ol>
-<li>If the page is printed, it adds a line to the top: &#8220;Optimized for web | http://resume_url&#8221;</li>
+<li>If the page is printed, it adds a line to the top: &#8220;Optimized for web | <a href="http://resume_url">http://resume_url</a>&#8221;</li>
 <li>A QR code floats in the upper right of the page, also linking to the digital version of the resume.</li>
 </ol>
 
@@ -254,6 +254,10 @@
   <ul id="recent_posts">
     
       <li class="post">
+        <a href="/blog/2012/12/19/how-many-distinct-outcomes-in-bowling/">How many distinct outcomes in bowling?</a>
+      </li>
+    
+      <li class="post">
         <a href="/blog/2012/12/17/guessing-passwords/">Guessing passwords</a>
       </li>
     
@@ -267,10 +271,6 @@
     
       <li class="post">
         <a href="/blog/2012/11/05/9-hours-9-persons-9-doors/">9 Hours, 9 Persons, 9 Doors</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2012/10/28/resume-now-online/">Marked-down resume</a>
       </li>
     
   </ul>
@@ -337,6 +337,21 @@
   <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
 </p>
 
+<!-- mathjax config similar to math.stackexchange -->
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  jax: ["input/TeX", "output/HTML-CSS"],
+  tex2jax: {
+    inlineMath: [ ['$', '$'] ],
+    displayMath: [ ['$$', '$$']],
+    processEscapes: true,
+    skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+  },
+  messageStyle: "none",
+  "HTML-CSS": { preferredFont: "TeX", availableFonts: ["STIX","TeX"] }
+});
+</script>
+<script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML" type="text/javascript"></script>
 </footer>
   
 

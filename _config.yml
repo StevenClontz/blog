@@ -97,3 +97,9 @@ google_analytics_tracking_id:
 
 # Facebook Like
 facebook_like: false
+
+
+
+# For math display re: http://luikore.github.com/2011/09/good-things-learned-from-octopress/
+rdiscount:
+  extensions: [autolink, preserve_math]

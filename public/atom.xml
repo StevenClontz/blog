@@ -4,7 +4,7 @@
   <title><![CDATA[Steven Clontz]]></title>
   <link href="http://www.stevenclontz.com/atom.xml" rel="self"/>
   <link href="http://www.stevenclontz.com/"/>
-  <updated>2012-12-17T11:27:06-06:00</updated>
+  <updated>2012-12-20T00:18:01-06:00</updated>
   <id>http://www.stevenclontz.com/</id>
   <author>
     <name><![CDATA[Steven Clontz]]></name>
@@ -12,6 +12,47 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[How many distinct outcomes in bowling?]]></title>
+    <link href="http://www.stevenclontz.com/blog/2012/12/19/how-many-distinct-outcomes-in-bowling/"/>
+    <updated>2012-12-19T22:59:00-06:00</updated>
+    <id>http://www.stevenclontz.com/blog/2012/12/19/how-many-distinct-outcomes-in-bowling</id>
+    <content type="html"><![CDATA[<p>Today I played my final game of bowling in the &#8220;Math Nerd League 2012&#8221;. And maybe my first - I don&#8217;t know if that moniker was in use before today, but it was used to designate the group of my colleagues in the <a href="http://math.auburn.edu/">Auburn University mathematics graduate program</a> who went this afternoon.</p>
+
+<p>I&#8217;m pretty bad at bowling (although since playing a fair bit this year I&#8217;ve improved my average to roughly 80 compared to a dismal 50). So to keep my mind on happier thoughts, I asked the question:</p>
+
+<blockquote>How many different outcomes are there for one game of bowling?</blockquote>
+
+
+
+
+<!-- more -->
+
+
+<p>Okay, so, let&#8217;s remember how a game of bowling works. There&#8217;s ten frames, and in the first nine frames you get up to two rolls to knock down ten pins. If the first roll knocks down all ten pins, it&#8217;s a &#8220;strike&#8221; and there isn&#8217;t a second roll. We&#8217;re going to ignore which specific pins are knocked down, including whether the frame is &#8220;split&#8221; or not, and only consider how many pins are knocked down on each roll, i.e., what&#8217;s important for scoring.</p>
+
+<p><small>(A split is normally marked on the score when, after the first roll, the remaining pins don&#8217;t include the front pin, and are split into two or more nonadjacent groups. It doesn&#8217;t affect the point total for the game though.)</small></p>
+
+<p><img src="http://i.imgur.com/E6xqD.jpg" title="'Results from bowling with some friends back in 2006; 58 was a good score for me at the time.'" ></p>
+
+<p>So, on these first nine frames, the ball is rolled down the lane, and zero to ten pins are knocked down. Let&#8217;s say the first roll hits $n$ pins. That means there are $10-n$ pins remaining, and we could hit any number of those (including 0), yielding $11-n$ possibilities. Adding them all up, we get
+$$\sum_{n=0} ^ {10} (11-n) = \sum_{n=1} ^ {11} n = 66$$
+possibilities per frame.</p>
+
+<p>The final frame is more difficult. The rules change so that if the pins are all knocked down, the bowler gets to roll again, up to three total rolls. It makes sense when you consider how bowling is scored, but we won&#8217;t go into that here.</p>
+
+<p>Ignoring strikes and spares there are $\sum_{n=1} ^ {10} n = 55$ ways to knock down zero to nine pins in two rolls. There are ten ways to get a spare (knocking down all pins in two rolls), and then there are 11 different possibilities for the final roll (hitting zero to ten pins), so this adds $110$ possibilities.</p>
+
+<p>Finally, if there&#8217;s a strike on the first bowl, you have $\sum_{n=2} ^ {11} n=65$ possibilities for the next two rolls besides a strike. And finally, if there&#8217;s a strike, there&#8217;s $11$ possibilities for the final roll. So the final frame has $241$ total possibilities.</p>
+
+<p>So, looking at the entire game, we can figure out the total number of possibilities by multiplying the number of possibilities per frame. So that gives us&#8230; $$66 ^ 9 \cdot 241 \approx 5.73 \cdot 10 ^ {18}$$ possibilities.</p>
+
+<p>Long story short, there&#8217;s a lot of bowling I have left to do before I&#8217;ve seen it all.</p>
+
+<p>-SXC</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Guessing passwords]]></title>
@@ -40,7 +81,7 @@
 
 <p>Of course, as soon as you throw out the four-letter constraint, the possibilities explode. But let&#8217;s keep the Scrabble word constraint. According to the <a href="http://en.wikipedia.org/wiki/Official_Tournament_and_Club_Word_List">Official Tournament and Club Word List article on Wikipedia</a> there are 178,691 Scrabble words, so we&#8217;re back down to 0.00056% for one go, and that&#8217;s assuming all-lowercase.</p>
 
-<p>Finally, just for kicks, let&#8217;s assume all you knew is that the password is somewhere between 1 and 20 characters, and could contain lowercase, uppercase, digits 0-9, or any of the special characters !@#$%\<sup>&amp;*().</sup> That&#8217;s 72 possibilities for each character, which Wolfram Alpha informs me gives <a href="http://www.wolframalpha.com/input/?i=%5Csum_%7Bi%3D1%7D%5E%7B20%7D+72%5Ei">14,214,254,150,091,658,100,874,779,924,350,129,800</a> possibilities, with a 0.000000000000000000000000000000000000007% chance of guessing correctly.</p>
+<p>Finally, just for kicks, let&#8217;s assume all you knew is that the password is somewhere between 1 and 20 characters, and could contain lowercase, uppercase, digits 0-9, or any of the special characters !@#$%^&amp;*(). That&#8217;s 72 possibilities for each character, which Wolfram Alpha informs me gives <a href="http://www.wolframalpha.com/input/?i=%5Csum_%7Bi%3D1%7D%5E%7B20%7D+72%5Ei">14,214,254,150,091,658,100,874,779,924,350,129,800</a> possibilities, with a 0.000000000000000000000000000000000000007% chance of guessing correctly.</p>
 
 <p>tl;dr: you got lucky. But keep in mind that I&#8217;m not surprised that out of the millions of users on Reddit, someone got this lucky. After all, people win the lottery all the time - just not me.</p>
 
@@ -72,7 +113,7 @@
     <id>http://www.stevenclontz.com/blog/2012/11/15/using-email-addresses-for-django-usernames</id>
     <content type="html"><![CDATA[<p><a href="https://www.djangoproject.com/">Django</a> is a great Python framework for database-driven sites. It&#8217;s what we use for <a href="http://www.teloga.com">Teloga</a> in fact. But there&#8217;s one thing that bugs me: usernames are case-sensitive.</p>
 
-<p>With Teloga busy serving both the <a href="http://www.teloga.com/networks/aubands/">Auburn University Bands</a> and the <a href="http://www.teloga.com/networks/aba/">Alabama Bandmasters Association</a>, it didn&#8217;t take too long for us to realize that this is very unintuitive for users. We received weekly emails complaining that this person couldn&#8217;t log into their account, and invariably it&#8217;d be caused by the usage of Steven@Teloga.com instead of steven@teloga.com. That had to go.</p>
+<p>With Teloga busy serving both the <a href="http://www.teloga.com/networks/aubands/">Auburn University Bands</a> and the <a href="http://www.teloga.com/networks/aba/">Alabama Bandmasters Association</a>, it didn&#8217;t take too long for us to realize that this is very unintuitive for users. We received weekly emails complaining that this person couldn&#8217;t log into their account, and invariably it&#8217;d be caused by the usage of <a href="&#x6d;&#x61;&#105;&#108;&#x74;&#x6f;&#58;&#83;&#116;&#x65;&#118;&#101;&#110;&#64;&#x54;&#x65;&#x6c;&#x6f;&#103;&#x61;&#x2e;&#99;&#x6f;&#x6d;">&#83;&#x74;&#101;&#x76;&#x65;&#x6e;&#x40;&#84;&#101;&#x6c;&#111;&#x67;&#97;&#x2e;&#x63;&#111;&#109;</a> instead of <a href="&#x6d;&#97;&#x69;&#x6c;&#x74;&#111;&#x3a;&#x73;&#116;&#101;&#118;&#x65;&#x6e;&#x40;&#x74;&#101;&#x6c;&#111;&#x67;&#97;&#46;&#x63;&#111;&#x6d;&#46;">&#x73;&#116;&#x65;&#118;&#101;&#x6e;&#64;&#x74;&#101;&#x6c;&#111;&#x67;&#97;&#x2e;&#x63;&#111;&#x6d;&#46;</a> That had to go.</p>
 
 <!-- more -->
 
@@ -172,7 +213,7 @@
 
 <p>Now, using this form you will have users with all-lowercase email addresses set as the username. So now it&#8217;s time to get them logged in.</p>
 
-<p>We&#8217;re actually just going to do a short adjustment to the stock AuthenticationForm. We need to make sure that the length of the username field is increased to 75, and we better make sure we clean up the username/email so that it&#8217;s all lowercase. (Otherwise you&#8217;re going to get a rightfully perturbed user complaining that they registered with Steven@Teloga.com but they cannot log in, because you stored their email as steven@teloga.com.)</p>
+<p>We&#8217;re actually just going to do a short adjustment to the stock AuthenticationForm. We need to make sure that the length of the username field is increased to 75, and we better make sure we clean up the username/email so that it&#8217;s all lowercase. (Otherwise you&#8217;re going to get a rightfully perturbed user complaining that they registered with <a href="&#x6d;&#x61;&#x69;&#x6c;&#116;&#111;&#58;&#x53;&#116;&#101;&#x76;&#x65;&#110;&#x40;&#x54;&#x65;&#x6c;&#111;&#103;&#x61;&#x2e;&#x63;&#x6f;&#x6d;">&#83;&#x74;&#x65;&#x76;&#101;&#110;&#64;&#x54;&#x65;&#x6c;&#x6f;&#103;&#x61;&#x2e;&#x63;&#x6f;&#x6d;</a> but they cannot log in, because you stored their email as <a href="&#109;&#x61;&#x69;&#x6c;&#116;&#111;&#x3a;&#115;&#x74;&#101;&#x76;&#101;&#x6e;&#x40;&#116;&#x65;&#108;&#x6f;&#x67;&#97;&#x2e;&#99;&#111;&#x6d;&#x2e;">&#115;&#116;&#x65;&#x76;&#101;&#110;&#x40;&#x74;&#101;&#x6c;&#x6f;&#103;&#97;&#46;&#x63;&#111;&#x6d;&#x2e;</a>)</p>
 
 <figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
@@ -386,7 +427,7 @@
 <p>I added a few extra variables to the configuration YAML to store the URL of the page itself and the URL of a QR Code image leading to that URL, which I use in a couple of nice extra features:</p>
 
 <ol>
-<li>If the page is printed, it adds a line to the top: &#8220;Optimized for web | http://resume_url&#8221;</li>
+<li>If the page is printed, it adds a line to the top: &#8220;Optimized for web | <a href="http://resume_url">http://resume_url</a>&#8221;</li>
 <li>A QR code floats in the upper right of the page, also linking to the digital version of the resume.</li>
 </ol>
 
@@ -431,7 +472,7 @@
 
 <p>Thanks to <a href="http://jdabbs.com">James Dabbs</a> for showing <a href="http://octopress.org/">Octopress</a> to me the other day - a blogging system with <a href="http://git-scm.com/">Git</a> revision control and hosting by <a href="http://heroku.com">Heroku</a> sounds alright to me.</p>
 
-<p>I&#8217;ll be working on my <a href="http://www.stevenclontz.com/about/">About</a> page and getting my <a href="http://resume.stevenclontz.com">Resume</a> up to date over the coming days.  Email me at <a href="&#109;&#97;&#105;&#x6c;&#116;&#x6f;&#x3a;&#115;&#x74;&#101;&#118;&#x65;&#x6e;&#46;&#x63;&#x6c;&#x6f;&#x6e;&#116;&#x7a;&#x40;&#x67;&#109;&#97;&#x69;&#108;&#x2e;&#99;&#111;&#109;">&#115;&#116;&#101;&#118;&#x65;&#110;&#x2e;&#99;&#108;&#111;&#110;&#x74;&#x7a;&#x40;&#x67;&#x6d;&#x61;&#105;&#108;&#x2e;&#99;&#x6f;&#109;</a> if you need to get in touch with me! See ya.</p>
+<p>I&#8217;ll be working on my <a href="http://www.stevenclontz.com/about/">About</a> page and getting my <a href="http://resume.stevenclontz.com">Resume</a> up to date over the coming days.  Email me at <a href="&#109;&#x61;&#x69;&#108;&#x74;&#x6f;&#58;&#115;&#x74;&#x65;&#118;&#x65;&#110;&#46;&#x63;&#x6c;&#111;&#110;&#116;&#122;&#64;&#103;&#x6d;&#97;&#105;&#108;&#46;&#x63;&#111;&#x6d;">&#x73;&#x74;&#101;&#118;&#x65;&#x6e;&#x2e;&#x63;&#x6c;&#111;&#110;&#x74;&#x7a;&#64;&#103;&#109;&#x61;&#105;&#108;&#x2e;&#99;&#x6f;&#109;</a> if you need to get in touch with me! See ya.</p>
 
 <p>-SXC</p>
 
