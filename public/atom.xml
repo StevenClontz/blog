@@ -4,7 +4,7 @@
   <title><![CDATA[Steven Clontz]]></title>
   <link href="http://www.stevenclontz.com/atom.xml" rel="self"/>
   <link href="http://www.stevenclontz.com/"/>
-  <updated>2012-12-20T00:25:13-06:00</updated>
+  <updated>2013-01-15T17:30:31-06:00</updated>
   <id>http://www.stevenclontz.com/</id>
   <author>
     <name><![CDATA[Steven Clontz]]></name>
@@ -113,7 +113,7 @@ possibilities per frame.</p>
     <id>http://www.stevenclontz.com/blog/2012/11/15/using-email-addresses-for-django-usernames</id>
     <content type="html"><![CDATA[<p><a href="https://www.djangoproject.com/">Django</a> is a great Python framework for database-driven sites. It&#8217;s what we use for <a href="http://www.teloga.com">Teloga</a> in fact. But there&#8217;s one thing that bugs me: usernames are case-sensitive.</p>
 
-<p>With Teloga busy serving both the <a href="http://www.teloga.com/networks/aubands/">Auburn University Bands</a> and the <a href="http://www.teloga.com/networks/aba/">Alabama Bandmasters Association</a>, it didn&#8217;t take too long for us to realize that this is very unintuitive for users. We received weekly emails complaining that this person couldn&#8217;t log into their account, and invariably it&#8217;d be caused by the usage of <a href="&#109;&#x61;&#105;&#108;&#x74;&#111;&#x3a;&#x53;&#x74;&#101;&#118;&#x65;&#110;&#x40;&#x54;&#101;&#x6c;&#x6f;&#x67;&#97;&#46;&#x63;&#111;&#109;">&#x53;&#116;&#x65;&#118;&#x65;&#110;&#64;&#x54;&#x65;&#x6c;&#111;&#103;&#x61;&#x2e;&#99;&#111;&#109;</a> instead of <a href="&#109;&#x61;&#105;&#x6c;&#116;&#x6f;&#58;&#x73;&#116;&#101;&#118;&#x65;&#110;&#64;&#116;&#101;&#x6c;&#111;&#x67;&#x61;&#x2e;&#x63;&#111;&#109;&#x2e;">&#x73;&#x74;&#101;&#x76;&#x65;&#110;&#x40;&#116;&#x65;&#108;&#x6f;&#103;&#97;&#46;&#99;&#111;&#109;&#x2e;</a> That had to go.</p>
+<p>With Teloga busy serving both the <a href="http://www.teloga.com/networks/aubands/">Auburn University Bands</a> and the <a href="http://www.teloga.com/networks/aba/">Alabama Bandmasters Association</a>, it didn&#8217;t take too long for us to realize that this is very unintuitive for users. We received weekly emails complaining that this person couldn&#8217;t log into their account, and invariably it&#8217;d be caused by the usage of <a href="&#x6d;&#97;&#x69;&#108;&#x74;&#111;&#58;&#x53;&#116;&#x65;&#x76;&#101;&#x6e;&#x40;&#84;&#x65;&#108;&#111;&#103;&#x61;&#x2e;&#x63;&#111;&#109;">&#83;&#x74;&#x65;&#118;&#101;&#x6e;&#64;&#x54;&#x65;&#108;&#111;&#103;&#97;&#46;&#99;&#111;&#x6d;</a> instead of <a href="&#x6d;&#97;&#x69;&#108;&#x74;&#111;&#58;&#x73;&#116;&#x65;&#118;&#x65;&#110;&#64;&#x74;&#x65;&#108;&#x6f;&#x67;&#x61;&#46;&#x63;&#111;&#109;&#x2e;">&#115;&#116;&#x65;&#118;&#101;&#110;&#x40;&#116;&#x65;&#x6c;&#x6f;&#x67;&#x61;&#x2e;&#x63;&#x6f;&#x6d;&#x2e;</a> That had to go.</p>
 
 <!-- more -->
 
@@ -213,7 +213,7 @@ possibilities per frame.</p>
 
 <p>Now, using this form you will have users with all-lowercase email addresses set as the username. So now it&#8217;s time to get them logged in.</p>
 
-<p>We&#8217;re actually just going to do a short adjustment to the stock AuthenticationForm. We need to make sure that the length of the username field is increased to 75, and we better make sure we clean up the username/email so that it&#8217;s all lowercase. (Otherwise you&#8217;re going to get a rightfully perturbed user complaining that they registered with <a href="&#109;&#97;&#105;&#108;&#116;&#111;&#x3a;&#x53;&#x74;&#101;&#118;&#x65;&#x6e;&#x40;&#84;&#101;&#108;&#x6f;&#103;&#x61;&#46;&#x63;&#x6f;&#x6d;">&#x53;&#x74;&#x65;&#x76;&#x65;&#110;&#x40;&#x54;&#101;&#x6c;&#x6f;&#103;&#x61;&#46;&#99;&#x6f;&#x6d;</a> but they cannot log in, because you stored their email as <a href="&#109;&#97;&#105;&#x6c;&#x74;&#111;&#x3a;&#115;&#x74;&#101;&#118;&#101;&#x6e;&#x40;&#116;&#101;&#x6c;&#x6f;&#x67;&#x61;&#46;&#99;&#x6f;&#x6d;&#x2e;">&#115;&#x74;&#x65;&#118;&#101;&#110;&#64;&#116;&#x65;&#x6c;&#x6f;&#x67;&#97;&#46;&#99;&#111;&#109;&#x2e;</a>)</p>
+<p>We&#8217;re actually just going to do a short adjustment to the stock AuthenticationForm. We need to make sure that the length of the username field is increased to 75, and we better make sure we clean up the username/email so that it&#8217;s all lowercase. (Otherwise you&#8217;re going to get a rightfully perturbed user complaining that they registered with <a href="&#x6d;&#97;&#105;&#108;&#116;&#111;&#x3a;&#x53;&#116;&#101;&#x76;&#101;&#x6e;&#x40;&#84;&#101;&#108;&#111;&#x67;&#x61;&#46;&#99;&#x6f;&#109;">&#83;&#116;&#x65;&#x76;&#x65;&#110;&#64;&#84;&#101;&#x6c;&#111;&#103;&#x61;&#46;&#x63;&#x6f;&#109;</a> but they cannot log in, because you stored their email as <a href="&#109;&#x61;&#105;&#108;&#x74;&#111;&#58;&#x73;&#x74;&#x65;&#x76;&#101;&#110;&#x40;&#116;&#x65;&#108;&#x6f;&#103;&#x61;&#46;&#x63;&#x6f;&#x6d;&#x2e;">&#115;&#116;&#x65;&#x76;&#x65;&#110;&#64;&#116;&#101;&#108;&#x6f;&#103;&#97;&#46;&#99;&#x6f;&#x6d;&#46;</a>)</p>
 
 <figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
@@ -472,7 +472,7 @@ possibilities per frame.</p>
 
 <p>Thanks to <a href="http://jdabbs.com">James Dabbs</a> for showing <a href="http://octopress.org/">Octopress</a> to me the other day - a blogging system with <a href="http://git-scm.com/">Git</a> revision control and hosting by <a href="http://heroku.com">Heroku</a> sounds alright to me.</p>
 
-<p>I&#8217;ll be working on my <a href="http://www.stevenclontz.com/about/">About</a> page and getting my <a href="http://resume.stevenclontz.com">Resume</a> up to date over the coming days.  Email me at <a href="&#109;&#97;&#x69;&#x6c;&#116;&#x6f;&#58;&#x73;&#116;&#101;&#x76;&#x65;&#110;&#x2e;&#99;&#x6c;&#111;&#110;&#x74;&#x7a;&#x40;&#x67;&#109;&#97;&#105;&#108;&#46;&#x63;&#x6f;&#109;">&#x73;&#x74;&#101;&#118;&#101;&#x6e;&#x2e;&#99;&#108;&#111;&#110;&#x74;&#x7a;&#64;&#103;&#x6d;&#x61;&#105;&#x6c;&#x2e;&#x63;&#111;&#109;</a> if you need to get in touch with me! See ya.</p>
+<p>I&#8217;ll be working on my <a href="http://www.stevenclontz.com/about/">About</a> page and getting my <a href="http://resume.stevenclontz.com">Resume</a> up to date over the coming days.  Email me at <a href="&#109;&#x61;&#105;&#108;&#116;&#x6f;&#x3a;&#x73;&#116;&#x65;&#118;&#101;&#110;&#x2e;&#99;&#x6c;&#x6f;&#110;&#x74;&#x7a;&#64;&#103;&#x6d;&#97;&#x69;&#x6c;&#x2e;&#99;&#x6f;&#109;">&#115;&#x74;&#x65;&#118;&#101;&#110;&#46;&#x63;&#x6c;&#111;&#x6e;&#x74;&#122;&#x40;&#x67;&#x6d;&#97;&#105;&#x6c;&#46;&#x63;&#x6f;&#109;</a> if you need to get in touch with me! See ya.</p>
 
 <p>-SXC</p>
 
