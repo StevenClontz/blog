@@ -6,7 +6,7 @@ sharing: true
 footer: true
 ---
 
-Thanks for checking out my blog! My name is Steven Clontz, and I'm a mathematician / coder / teacher / occasional puzzle designer / less occasional musician from Auburn, Alabama.
+Thanks for checking out my blog! My name is Steven Clontz, and I'm a mathematician  / teacher / hacker / puzzle designer from Auburn, Alabama.
 
 ###Life
 
