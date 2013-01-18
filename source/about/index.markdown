@@ -6,7 +6,7 @@ sharing: true
 footer: true
 ---
 
-Thanks for checking out my blog! My name is Steven Clontz, and I'm a [mathematician](http://math.auburn.edu)  / [teacher](http://math.auburn.edu) / [hacker](http://en.wikipedia.org/wiki/Hacker_(programmer_subculture)) / [puzzle designer](http://auburnpuzzleparty.wikia.com) from Auburn, Alabama.
+Thanks for checking out my blog! My name is Steven Clontz, and I'm a [mathematician](http://math.auburn.edu)  / [teacher](http://math.auburn.edu) / [hacker](http://en.wikipedia.org/wiki/Hacker_\(programmer_subculture\)) / [puzzle designer](http://auburnpuzzleparty.wikia.com) from Auburn, Alabama.
 
 ###Life
 
