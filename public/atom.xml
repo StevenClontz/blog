@@ -4,7 +4,7 @@
   <title><![CDATA[Steven Clontz]]></title>
   <link href="http://www.stevenclontz.com/atom.xml" rel="self"/>
   <link href="http://www.stevenclontz.com/"/>
-  <updated>2013-01-18T11:04:36-06:00</updated>
+  <updated>2013-01-28T16:55:41-06:00</updated>
   <id>http://www.stevenclontz.com/</id>
   <author>
     <name><![CDATA[Steven Clontz]]></name>
@@ -12,6 +12,46 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Fixing my Macbook Pro - replacing hard drive SATA cable]]></title>
+    <link href="http://www.stevenclontz.com/blog/2013/01/28/fixing-my-macbook-pro/"/>
+    <updated>2013-01-28T16:12:00-06:00</updated>
+    <id>http://www.stevenclontz.com/blog/2013/01/28/fixing-my-macbook-pro</id>
+    <content type="html"><![CDATA[<p>So, about two weeks ago <a href="https://www.facebook.com/steven.clontz/posts/10101144733985781">I found myself without a working hard drive</a> on my Macbook Pro (13&#8221;, mid-2008). That&#8217;s what I thought anyway <a href="https://www.facebook.com/steven.clontz/posts/10101146355955341">until the hard drive turned out to work fine in an external enclosure</a>.</p>
+
+<p>As it turned out, the fix was simple - replace the SATA cable connecting the hard drive to the logic board. But figuring out that was the problem/solution was a little frustrating, so I wanted to outline what happened here so that someone else may trip across this one day and find it helpful.</p>
+
+<!-- more -->
+
+
+<p>The symptoms were simple: I opened my computer out of sleep one Saturday only to discover that while the computer was up and running, it was stuck trying to load something that it never could. This resulted in a pretty spinning rainbow-colored circle that I could move around my screen, but not much else. As it turned out, the OS was trying to access the hard drive, but the cable connecting it to my logic board had given up the ghost.</p>
+
+<p>Upon restarting the computer, the Apple logo appeared on the gray screen, along with the spinning gray wheel like it was trying to load the OS, but five minutes resulted in nothing.</p>
+
+<p>Booting from the Snow Leopard install DVD let me access the Disk Utility. I attempted to unmount the hard drive, but was informed that I could not due to either an &#8220;input/output&#8221; error, or &#8220;could not allocate memory&#8221;. This prevented me from wiping the drive, which I felt at the time was a good attempt to solve the problem (having backed up with Time Machine earlier in the week).</p>
+
+<p>I decided to purchase a new hard drive from Best Buy, but after trying both a Seagate and a Western Digital, I realized I was likely barking up the wrong tree. I borrowed a 3.5 inch SATA external enclosure, carefully installed my 2.5 inch SATA drive, and hooked it up to my laptop via USB. Lo and behold, Disk Utility could easily format the disk and reinstall OSX from the Time Machine backup!</p>
+
+<p>I managed to use my computer on &#8220;life support&#8221; by booting from the external enclosure for two weeks. The 3.5 inch enclosure didn&#8217;t properly secure the hard disk and required external power, so I ordered a 2.5 inch enclosure for just a few bucks here: <a href="http://www.amazon.com/gp/product/B002JQNXZC/ref=oh_details_o00_s00_i00">http://www.amazon.com/gp/product/B002JQNXZC/ref=oh_details_o00_s00_i00</a></p>
+
+<p>Meanwhile, seeing as the hard drive seemed to be functioning fine, I banked on the issue being with the SATA cable connecting it to the logic board. (A friend pointed out it may actually have been an issue with the board itself, but I didn&#8217;t want to entertain that ugly possibility.) Coincidentally, there is a shop in Huntsville, AL that let me order just what I needed online: <a href="http://www.powerbookmedic.com/Hard-Drive-Cable-w--IR-Sensor-for-MacBook-Pro-13-Unibody-p-17336.html">http://www.powerbookmedic.com/Hard-Drive-Cable-w&#8211;IR-Sensor-for-MacBook-Pro-13-Unibody-p-17336.html</a></p>
+
+<p>However, when it came in, it was just a few millimeters too short - I had ordered the wrong version of the part! Everything would plug in fine, but there just wasn&#8217;t enough room for play. I should have taken photos at the time, but here&#8217;s how things are supposed to look, taken from instructions on how to remove the battery:</p>
+
+<p><img src="http://i.imgur.com/l5injMs.jpg"></p>
+
+<p>Now, see that cable just above the left circle? that&#8217;s the cable connecting the hard drive to the logic board. You can see that it lays flat on the optical disc drive. You can probably imagine the trouble if it were just a tad short.</p>
+
+<p>My solution? I was able to make a snip on the cable over a hole where it was intended to be screwed into the casing to be secured. That slight modification allowed me to connect everything. You can see a similar cable below - the holes on either side of the cable were in the way, but if you don&#8217;t mind mutilating your cable, they can be cut off with an ordinary pair of scissors without harming the actual wires inside.</p>
+
+<p><img src="http://i.imgur.com/WM4THZf.jpg"></p>
+
+<p>With the new cable installed, my computer now runs good as new. Although I have to admit I was surprised how nicely the computer ran off of the external USB enclosure as well - just be careful not to remove the USB cable while the computer is running in that case! I managed to accidentally do that a couple of times, which just locked up the computer until I reset thankfully.</p>
+
+<p>-SXC</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[How many distinct outcomes in bowling?]]></title>
@@ -113,7 +153,7 @@ possibilities per frame.</p>
     <id>http://www.stevenclontz.com/blog/2012/11/15/using-email-addresses-for-django-usernames</id>
     <content type="html"><![CDATA[<p><a href="https://www.djangoproject.com/">Django</a> is a great Python framework for database-driven sites. It&#8217;s what we use for <a href="http://www.teloga.com">Teloga</a> in fact. But there&#8217;s one thing that bugs me: usernames are case-sensitive.</p>
 
-<p>With Teloga busy serving both the <a href="http://www.teloga.com/networks/aubands/">Auburn University Bands</a> and the <a href="http://www.teloga.com/networks/aba/">Alabama Bandmasters Association</a>, it didn&#8217;t take too long for us to realize that this is very unintuitive for users. We received weekly emails complaining that this person couldn&#8217;t log into their account, and invariably it&#8217;d be caused by the usage of <a href="&#109;&#x61;&#105;&#108;&#116;&#111;&#x3a;&#83;&#116;&#x65;&#x76;&#101;&#x6e;&#64;&#x54;&#101;&#108;&#111;&#x67;&#97;&#x2e;&#99;&#x6f;&#109;">&#x53;&#116;&#x65;&#118;&#x65;&#x6e;&#64;&#x54;&#101;&#108;&#x6f;&#103;&#x61;&#46;&#x63;&#x6f;&#109;</a> instead of <a href="&#109;&#x61;&#x69;&#108;&#116;&#x6f;&#58;&#115;&#x74;&#x65;&#x76;&#x65;&#110;&#64;&#116;&#101;&#x6c;&#x6f;&#x67;&#97;&#x2e;&#99;&#111;&#x6d;&#x2e;">&#x73;&#116;&#101;&#118;&#x65;&#110;&#64;&#116;&#x65;&#108;&#111;&#103;&#x61;&#46;&#x63;&#111;&#109;&#46;</a> That had to go.</p>
+<p>With Teloga busy serving both the <a href="http://www.teloga.com/networks/aubands/">Auburn University Bands</a> and the <a href="http://www.teloga.com/networks/aba/">Alabama Bandmasters Association</a>, it didn&#8217;t take too long for us to realize that this is very unintuitive for users. We received weekly emails complaining that this person couldn&#8217;t log into their account, and invariably it&#8217;d be caused by the usage of <a href="&#109;&#97;&#105;&#108;&#x74;&#111;&#x3a;&#83;&#116;&#101;&#x76;&#x65;&#110;&#x40;&#x54;&#101;&#x6c;&#x6f;&#x67;&#x61;&#x2e;&#99;&#111;&#109;">&#x53;&#x74;&#x65;&#x76;&#x65;&#x6e;&#x40;&#x54;&#x65;&#x6c;&#x6f;&#x67;&#x61;&#46;&#x63;&#x6f;&#109;</a> instead of <a href="&#x6d;&#97;&#105;&#108;&#116;&#111;&#x3a;&#x73;&#x74;&#101;&#118;&#101;&#110;&#64;&#x74;&#x65;&#x6c;&#111;&#103;&#97;&#x2e;&#x63;&#x6f;&#109;&#46;">&#115;&#x74;&#101;&#118;&#x65;&#110;&#x40;&#x74;&#x65;&#x6c;&#x6f;&#x67;&#97;&#46;&#x63;&#111;&#109;&#x2e;</a> That had to go.</p>
 
 <!-- more -->
 
@@ -213,7 +253,7 @@ possibilities per frame.</p>
 
 <p>Now, using this form you will have users with all-lowercase email addresses set as the username. So now it&#8217;s time to get them logged in.</p>
 
-<p>We&#8217;re actually just going to do a short adjustment to the stock AuthenticationForm. We need to make sure that the length of the username field is increased to 75, and we better make sure we clean up the username/email so that it&#8217;s all lowercase. (Otherwise you&#8217;re going to get a rightfully perturbed user complaining that they registered with <a href="&#109;&#97;&#x69;&#x6c;&#x74;&#111;&#58;&#x53;&#x74;&#x65;&#x76;&#101;&#110;&#64;&#x54;&#101;&#108;&#111;&#103;&#97;&#x2e;&#x63;&#x6f;&#x6d;">&#83;&#116;&#101;&#x76;&#101;&#110;&#64;&#84;&#101;&#x6c;&#x6f;&#x67;&#x61;&#46;&#99;&#111;&#x6d;</a> but they cannot log in, because you stored their email as <a href="&#x6d;&#97;&#x69;&#108;&#x74;&#111;&#58;&#115;&#116;&#x65;&#x76;&#101;&#110;&#64;&#116;&#101;&#108;&#x6f;&#103;&#97;&#x2e;&#99;&#111;&#109;&#46;">&#x73;&#x74;&#101;&#x76;&#x65;&#x6e;&#x40;&#116;&#101;&#x6c;&#x6f;&#103;&#x61;&#x2e;&#x63;&#111;&#109;&#x2e;</a>)</p>
+<p>We&#8217;re actually just going to do a short adjustment to the stock AuthenticationForm. We need to make sure that the length of the username field is increased to 75, and we better make sure we clean up the username/email so that it&#8217;s all lowercase. (Otherwise you&#8217;re going to get a rightfully perturbed user complaining that they registered with <a href="&#109;&#97;&#105;&#x6c;&#x74;&#111;&#58;&#x53;&#x74;&#x65;&#x76;&#x65;&#110;&#x40;&#84;&#101;&#x6c;&#x6f;&#x67;&#97;&#x2e;&#99;&#x6f;&#109;">&#x53;&#x74;&#x65;&#118;&#x65;&#x6e;&#x40;&#x54;&#101;&#x6c;&#x6f;&#x67;&#x61;&#x2e;&#x63;&#111;&#109;</a> but they cannot log in, because you stored their email as <a href="&#109;&#x61;&#105;&#x6c;&#116;&#x6f;&#x3a;&#x73;&#116;&#x65;&#118;&#101;&#x6e;&#x40;&#x74;&#101;&#108;&#111;&#103;&#x61;&#x2e;&#x63;&#x6f;&#x6d;&#46;">&#x73;&#116;&#x65;&#118;&#x65;&#110;&#64;&#116;&#101;&#x6c;&#111;&#x67;&#97;&#46;&#x63;&#111;&#109;&#x2e;</a>)</p>
 
 <figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
@@ -472,7 +512,7 @@ possibilities per frame.</p>
 
 <p>Thanks to <a href="http://jdabbs.com">James Dabbs</a> for showing <a href="http://octopress.org/">Octopress</a> to me the other day - a blogging system with <a href="http://git-scm.com/">Git</a> revision control and hosting by <a href="http://heroku.com">Heroku</a> sounds alright to me.</p>
 
-<p>I&#8217;ll be working on my <a href="http://www.stevenclontz.com/about/">About</a> page and getting my <a href="http://resume.stevenclontz.com">Resume</a> up to date over the coming days.  Email me at <a href="&#109;&#97;&#105;&#x6c;&#x74;&#x6f;&#58;&#115;&#116;&#x65;&#x76;&#101;&#x6e;&#46;&#x63;&#x6c;&#x6f;&#x6e;&#x74;&#122;&#x40;&#103;&#x6d;&#x61;&#x69;&#108;&#46;&#99;&#x6f;&#109;">&#x73;&#116;&#101;&#118;&#x65;&#x6e;&#x2e;&#x63;&#x6c;&#x6f;&#x6e;&#116;&#x7a;&#64;&#x67;&#x6d;&#x61;&#105;&#108;&#x2e;&#x63;&#111;&#x6d;</a> if you need to get in touch with me! See ya.</p>
+<p>I&#8217;ll be working on my <a href="http://www.stevenclontz.com/about/">About</a> page and getting my <a href="http://resume.stevenclontz.com">Resume</a> up to date over the coming days.  Email me at <a href="&#109;&#97;&#x69;&#x6c;&#116;&#x6f;&#x3a;&#115;&#x74;&#x65;&#118;&#101;&#110;&#x2e;&#x63;&#x6c;&#111;&#110;&#x74;&#122;&#x40;&#103;&#109;&#97;&#105;&#108;&#x2e;&#99;&#x6f;&#x6d;">&#x73;&#x74;&#x65;&#x76;&#101;&#x6e;&#46;&#x63;&#108;&#x6f;&#x6e;&#116;&#122;&#x40;&#x67;&#x6d;&#97;&#x69;&#x6c;&#46;&#x63;&#111;&#109;</a> if you need to get in touch with me! See ya.</p>
 
 <p>-SXC</p>
 
