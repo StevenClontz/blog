@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Randomly selecting an element from a list with uniform distribution without using the length of the list"
+title: "Randomly selecting a line of input with uniform distribution without knowing how many lines to expect"
 date: 2013-01-29 10:44
 comments: true
 categories: 
