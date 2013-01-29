@@ -45,6 +45,12 @@
         <lastmod>2013-01-28T16:55:23-06:00</lastmod>
     </url>
     <url>
+        <loc>
+            http://www.stevenclontz.com/blog/2013/01/29/randomly-selecting-an-element-from-a-list-with-uniform-distribution-without-using-the-length-of-the-list/
+        </loc>
+        <lastmod>2013-01-29T15:25:28-06:00</lastmod>
+    </url>
+    <url>
         <loc>http://www.stevenclontz.com/404.html</loc>
         <lastmod>2012-12-20T00:25:12-06:00</lastmod>
     </url>
@@ -54,10 +60,10 @@
     </url>
     <url>
         <loc>http://www.stevenclontz.com/blog/archives/</loc>
-        <lastmod>2013-01-28T16:55:23-06:00</lastmod>
+        <lastmod>2013-01-29T15:25:28-06:00</lastmod>
     </url>
     <url>
         <loc>http://www.stevenclontz.com/</loc>
-        <lastmod>2013-01-28T16:55:23-06:00</lastmod>
+        <lastmod>2013-01-29T15:25:28-06:00</lastmod>
     </url>
 </urlset>
