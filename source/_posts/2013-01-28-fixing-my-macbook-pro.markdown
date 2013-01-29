@@ -37,3 +37,5 @@ My solution? I was able to make a snip on the cable over a hole where it was int
 With the new cable installed, my computer now runs good as new. Although I have to admit I was surprised how nicely the computer ran off of the external USB enclosure as well - just be careful not to remove the USB cable while the computer is running in that case! I managed to accidentally do that a couple of times, which just locked up the computer until I reset thankfully.
 
 -SXC
+
+ADDENDUM 2013/01/29: A friend just had the same issue! Punchline: she went to the university bookstore, who waived any labor fees and just ordered the cord for $25. Ahhh well, now I know to ask them first next time. :)
