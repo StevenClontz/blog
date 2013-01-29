@@ -2,22 +2,28 @@
 // Add styles here to make changes without digging in too much
 
 header h1 small {
-    font-size: .5em;
-    color: darken(#fff, 30);
+  font-size: .5em;
+  color: darken(#fff, 30);
 }
 
 #content img {
-    display:block;
-    margin:0px auto;
-    max-width: 70%;
+  display:block;
+  margin:0px auto;
+  max-width: 70%;
 }
 
 .spoiler {
-    background:#000;
-    color:#000;
+  background:#000;
+  color:#000;
 }
 
 .spoiler:hover {
-    background:#000;
-    color:#fff;
+  background:#000;
+  color:#fff;
+}
+
+.gist-file .file-data table{
+  background:#fff;
+  border:0 !important;
+  margin:0;
 }
