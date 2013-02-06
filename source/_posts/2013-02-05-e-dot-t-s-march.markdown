@@ -21,4 +21,3 @@ The article seems to take excerpts from the following quotes:
 > The most important thing I realized is that the story may in fact just be a myth! There's certainly a lot of evidence that it happened, but there's also certainly not a fenced in pile of dirt with an "Atari" sign hanging on the side anywhere.
 
 > Apparently that location is now a parking lot. I don't think the owners would have appreciated us trying to dig... but yeah, we'd probably find some dirt there and try anyway. It would have been a great scene at least.
-
