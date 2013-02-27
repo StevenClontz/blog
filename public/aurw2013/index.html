@@ -5,7 +5,7 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>How many distinct outcomes in bowling? - Steven Clontz</title>
+  <title>AU Research Week 2013 - Steven Clontz</title>
 
   <!-- per http://learnaholic.me/2012/10/15/octopress-seo-and-disabling-the-blog-route/ -->
 <meta name="author" content="Steven Clontz">
@@ -19,7 +19,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://www.stevenclontz.com/blog/2012/12/19/how-many-distinct-outcomes-in-bowling/">
+  <link rel="canonical" href="http://www.stevenclontz.com/aurw2013/">
   <link href="/favicon.png" rel="icon">
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
   <script src="/javascripts/modernizr-2.0.js"></script>
@@ -67,15 +67,36 @@
   <div id="main">
     <div id="content">
       <div>
-<article class="hentry" role="article">
+<article role="article">
   
   <header>
-    
-      <h1 class="entry-title">How Many Distinct Outcomes in Bowling?</h1>
-    
-    
+    <h1 class="entry-title">AU Research Week 2013</h1>
+    <p class="meta">
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2013-02-26T19:42:00-06:00" pubdate data-updated="true">Feb 26<span>th</span>, 2013</time></p>
+  </header>
+  
+  <p>In February 2013 I presented my research on &#8220;Limited Information Strategies for Topological Games&#8221; in the Graduate Student Council Scholars&#8217; Forum, a preliminary event for Auburn University Research Week.</p>
+
+<p><img src="http://i.imgur.com/nKfMSUI.png"></p>
+
+<p>The presentation project is hosted on <a href="https://github.com/StevenClontz/2013-au-research-week-presentation">GitHub</a>. You can also <a href="https://github.com/StevenClontz/2013-au-research-week-presentation/blob/master/presentation.pdf?raw=true">download the raw PDF directly</a>.</p>
+
+  
+    <footer>
       <p class="meta">
         
+        
 
 
 
@@ -87,92 +108,21 @@
   
 
 
-<time datetime="2012-12-19T22:59:00-06:00" pubdate data-updated="true">Dec 19<span>th</span>, 2012</time>
+<time datetime="2013-02-26T19:42:00-06:00" pubdate data-updated="true">Feb 26<span>th</span>, 2013</time>
         
       </p>
-    
-  </header>
-
-
-<div class="entry-content"><p>Today I played my final game of bowling in the &#8220;Math Nerd League 2012&#8221;. And maybe my first - I don&#8217;t know if that moniker was in use before today, but it was used to designate the group of my colleagues in the <a href="http://math.auburn.edu/">Auburn University mathematics graduate program</a> who went this afternoon.</p>
-
-<p>I&#8217;m pretty bad at bowling (although since playing a fair bit this year I&#8217;ve improved my average to roughly 80 compared to a dismal 50). So to keep my mind on happier thoughts, I asked the question:</p>
-
-<blockquote>How many different outcomes are there for one game of bowling?</blockquote>
-
-
-
-
-<!-- more -->
-
-
-<p>Okay, so, let&#8217;s remember how a game of bowling works. There&#8217;s ten frames, and in the first nine frames you get up to two rolls to knock down ten pins. If the first roll knocks down all ten pins, it&#8217;s a &#8220;strike&#8221; and there isn&#8217;t a second roll. We&#8217;re going to ignore which specific pins are knocked down, including whether the frame is &#8220;split&#8221; or not, and only consider how many pins are knocked down on each roll, i.e., what&#8217;s important for scoring.</p>
-
-<p><small>(A split is normally marked on the score when, after the first roll, the remaining pins don&#8217;t include the front pin, and are split into two or more nonadjacent groups. It doesn&#8217;t affect the point total for the game though.)</small></p>
-
-<p><img src="http://i.imgur.com/E6xqD.jpg" title="'Results from bowling with some friends back in 2006; 58 was a good score for me at the time.'" ></p>
-
-<p>So, on these first nine frames, the ball is rolled down the lane, and zero to ten pins are knocked down. Let&#8217;s say the first roll hits $n$ pins. That means there are $10-n$ pins remaining, and we could hit any number of those (including 0), yielding $11-n$ possibilities. Adding them all up, we get
-$$\sum_{n=0} ^ {10} (11-n) = \sum_{n=1} ^ {11} n = 66$$
-possibilities per frame.</p>
-
-<p>The final frame is more difficult. The rules change so that if the pins are all knocked down, the bowler gets to roll again, up to three total rolls. It makes sense when you consider how bowling is scored, but we won&#8217;t go into that here.</p>
-
-<p>Ignoring strikes and spares there are $\sum_{n=1} ^ {10} n = 55$ ways to knock down zero to nine pins in two rolls. There are ten ways to get a spare (knocking down all pins in two rolls), and then there are 11 different possibilities for the final roll (hitting zero to ten pins), so this adds $110$ possibilities.</p>
-
-<p>Finally, if there&#8217;s a strike on the first bowl, you have $\sum_{n=2} ^ {11} n=65$ possibilities for the next two rolls besides a strike. And finally, if there&#8217;s a strike, there&#8217;s $11$ possibilities for the final roll. So the final frame has $241$ total possibilities.</p>
-
-<p>So, looking at the entire game, we can figure out the total number of possibilities by multiplying the number of possibilities per frame. So that gives us&#8230; $$66 ^ 9 \cdot 241 \approx 5.73 \cdot 10 ^ {18}$$ possibilities.</p>
-
-<p>Long story short, there&#8217;s a lot of bowling I have left to do before I&#8217;ve seen it all.</p>
-
-<p>-SXC</p>
-</div>
-
-
-  <footer>
-    <p class="meta">
       
+        <div class="sharing">
   
-
-<span class="byline author vcard">Posted by <span class="fn">Steven Clontz</span></span>
-
-      
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2012-12-19T22:59:00-06:00" pubdate data-updated="true">Dec 19<span>th</span>, 2012</time>
-      
-
-
-    </p>
-    
-      <div class="sharing">
-  
-  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://www.stevenclontz.com/blog/2012/12/19/how-many-distinct-outcomes-in-bowling/" data-via="StevenXClontz" data-counturl="http://www.stevenclontz.com/blog/2012/12/19/how-many-distinct-outcomes-in-bowling/" >Tweet</a>
+  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://www.stevenclontz.com/aurw2013/index.html" data-via="StevenXClontz" data-counturl="http://www.stevenclontz.com/aurw2013/index.html" >Tweet</a>
   
   
   
 </div>
 
-    
-    <p class="meta">
       
-        <a class="basic-alignment left" href="/blog/2012/12/17/guessing-passwords/" title="Previous Post: Guessing passwords">&laquo; Guessing passwords</a>
-      
-      
-        <a class="basic-alignment right" href="/blog/2013/01/28/fixing-my-macbook-pro/" title="Next Post: Fixing my Macbook Pro - replacing hard drive SATA cable">Fixing my Macbook Pro - replacing hard drive SATA cable &raquo;</a>
-      
-    </p>
-  </footer>
+    </footer>
+  
 </article>
 
 </div>
