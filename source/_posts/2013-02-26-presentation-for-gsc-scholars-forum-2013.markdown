@@ -11,3 +11,7 @@ I will be presenting my research tomorrow morning (2013-02-27) for the Graduate 
 Hopefully I'll do an okay job! If you're interested in my research, I've made the presentation available on [GitHub](https://github.com/StevenClontz/2013-au-research-week-presentation/) (and [added a page to my site](/AURW2013/)).
 
 -SXC
+
+<!-- more -->
+
+{% img http://i.imgur.com/nKfMSUI.png %}
