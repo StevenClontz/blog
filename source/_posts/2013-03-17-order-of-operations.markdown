@@ -31,3 +31,5 @@ That's the best that can be done, mathematically. If you wanted a definitive ans
 <small id="footnote-1">[1] This is something called [The Continuum Hypothesis](http://en.wikipedia.org/wiki/Continuum_hypothesis). We use the word "hypothesis" here because once mathematicians formalized the rules of set theory (well, [one set of rules for set theory](http://en.wikipedia.org/wiki/Zermelo%E2%80%93Fraenkel_set_theory)), it couldn't be proven true or false. We later proved that it *couldn't* be proven true or false, basically because we didn't provide enough rules to handle the question. So just like $6÷2(1+2)=9$ or $6÷2(1+2)=1$ depending on what rules we use, we can assume the answer to the Continuum Hypothesis is either yes *or* no.
 
 Or we can completely ignore it and go on with our lives, just like we do with other silly questions like $6÷2(1+2)=?$.</small>
+
+Addendum: Someone rightfully pointed out on [Hacker News](https://news.ycombinator.com/item?id=5391415) that calling the Continuum Hypothesis a "silly" question doesn't do it justice. Rather, I mean that posing the Continuum Hypothesis as a "yes or no" question is silly.
