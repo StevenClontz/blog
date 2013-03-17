@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "6÷2(1+3)=?"
+title: "6÷2(1+2)=?"
 date: 2013-03-17 17:05
 comments: true
 categories: 
