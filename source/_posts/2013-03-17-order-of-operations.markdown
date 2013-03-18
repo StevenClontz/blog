@@ -20,7 +20,7 @@ Short answer: it's a terribly written problem, or more accurately, it's a proble
 
 The issue stems from the incorrect (but often subconscious) belief that there exists a Bible of Mathematics somewhere, which decrees every detail of how arithmetic should be expressed and simplified. As simple as the problem seems, there's no prevailing convention on whether $6÷2$ or $2(1+2)$ gets precedence here. Particularly when half of school teachers say multiplication has precedence over division, and half say multiplication and division have equal precedence and are evaluated left-to-right. (And hey does implied multiplication by parentheses fall into the P or M of PEMDAS?)
 
-In the real world of mathematics, this is as stupid a question as me asking "Is there a mathematical size bigger than the amount of integers but less than the amount of real numbers?" [\[1\]](#footnote-1) because you can't answer it without going through a lot of trouble to specify the "axioms" (basic assumed rules for doing mathematics) you want used on the problem.
+In the real world of mathematics, this is as unanswerable a question as me asking "Is there a mathematical size bigger than the amount of integers but less than the amount of real numbers?" [\[1\]](#footnote-1) because you can't address it without first specifying the rules you are allowed to use on the problem.
 
 Thus I'm forced to settle for what we call a "consistency result": 
 
