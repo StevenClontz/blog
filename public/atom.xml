@@ -4,7 +4,7 @@
   <title><![CDATA[Steven Clontz]]></title>
   <link href="http://www.stevenclontz.com/atom.xml" rel="self"/>
   <link href="http://www.stevenclontz.com/"/>
-  <updated>2013-05-07T12:46:32-05:00</updated>
+  <updated>2013-05-08T11:50:57-05:00</updated>
   <id>http://www.stevenclontz.com/</id>
   <author>
     <name><![CDATA[Steven Clontz]]></name>
@@ -20,12 +20,12 @@
     <id>http://www.stevenclontz.com/blog/2013/05/07/teacher-evaluations-2013</id>
     <content type="html"><![CDATA[<blockquote><p>Steven Clontz is the best professor I&#8217;ve had at Auburn thus far.</p></blockquote>
 
-<p>Gonna brag a little. Here&#8217;s some excerpts from my (let&#8217;s face it, favorte) student evaulation comments.</p>
+<p>Gonna brag a little. Here&#8217;s some excerpts from my student evaulation comments.</p>
 
 <!-- more -->
 
 
-<p>I taught Calculus III (MATH 2630) this past spring, so mostly engineers, math, and math ed students.</p>
+<p>(I taught Calculus III (MATH 2630) this past spring, which means I had mostly engineering, math/sci, and math ed students.)</p>
 
 <blockquote><p>Great teacher. One of those teachers that you just can&#8217;t help but like. Very good with explanations, examples, meeting outside of class. Truly there for the students.</p>
 
@@ -36,6 +36,30 @@
 <p>Mr. Clontz has easily been one of the best instructors I have had in Auburn in every aspect. He makes Calculus about as enjoyable as one could make it. His teaching techniques really helped me to learn the material that much easier. He provides plenty of examples and he leaves no room for doubt for how he makes his test. He creates a study guide that even lists how he gives partial credit so that way there is no room for error. Outside of class he was very easy to approach which was nice for me since I have never been one to visit teachers outside of class but he encourages you to and was very flexible. Mr. Clontz is definitely someone I would recommend to future students.</p>
 
 <p>Really good communication with class. Excellent resources provided online.</p></blockquote>
+
+<p><strong>Update 2013/05/08</strong> I wanted to post these from last summer since Facebook isn&#8217;t the greatest place to store such things.  These are actually verabtim - it was a very good group of kids, and they had some great insights even when they pointed out the negatives.</p>
+
+<blockquote><p>Mr. Clontz did an excellent job teaching this course. His techniques were consistent as far as what we were to expect from him. He was frank with us about grading and made the class schedule very clear to the class. His relaxed methods concerning attendance made it an environment open to learning without the distraction of formalities. He left it up to the student to learn the material. I will say this, while I loved having a study guide for the upcoming test, I must admit I don&#8217;t think I did one outside problem. That being said, I did pretty well on the tests and feel as though his teaching style enabled me to understand the material without having to do any outside problems. He wasn&#8217;t teaching work ethic, he was teaching Calculus. And while i believe that work ethic is important, his relaxed style and class enabled me to get a core credit without killing myself and i really appreciated that.
+Things to improve on:
+Try integrating 3-d visualization software into particular problems. I could get a pretty good idea of the 3-d objects he was drawing on the board (he did do a pretty good job drawing that stuff) but if he used something like Maple, i feel like it could really benefit those not as visually inclined. Dr. Peterson knows her stuff about that so i would ask her where to start.
+maybe more structure? i didn&#8217;t need the structure, but some of these kids who have been spoon fed their entire lives need a boot-in-the-ass to do well. i personally don&#8217;t think he HAS to put in more structure, but if there is a gross failing rate or anything, that might help. structure meaning bonus attendance (like x number of points if you show up to 70% or more classes) or some real hw or something. or just let the kids fail out and give me an easier future.
+That&#8217;s pretty much it. Steven Clontz did an overall pretty good job, was open, fair, and wanted the students to succeed. its their fault if they didn&#8217;t.
+Personal note to Mr. Clontz: Thank you so much for instructing this class and may God bless your future endeavors. (if you believe in God, its kinda a hit or miss with these math and science folk.)
+WDE</p>
+
+<p>It&#8217;s hard to fit 15 weeks of math into 10 weeks, but this was not a problem for this class. I would have liked to see more problems worked, though.</p>
+
+<p>Mr. clontz is a great teacher. he explains the material very well. his only issue to me is his grading strategy. he is very strict on minor mistakes and counts off dealy. in all other aspects he is a great teacher though</p>
+
+<p>Great teacher. Better than my professor in Cal II.
+A little slow on grading tests but understandable.
+Grades are very fair. Can fight for a grade and if he agrees he will award you a few points.
+Very quirky, but very funny teacher.
+Overall: Enjoyed thoroughly</p>
+
+<p>Steven was an awesome teacher! The class notes were really helpful with learning in class, because they provided a bit of an outline of what was going to be covered that day. No complaints.</p>
+
+<p>The study guides were a little too gentle. Sometimes they were carbon copies of the tests. I think making the course a little more challenging would be better, but overall I liked the teaching.</p></blockquote>
 ]]></content>
   </entry>
   
@@ -345,7 +369,7 @@ possibilities per frame.</p>
     <id>http://www.stevenclontz.com/blog/2012/11/15/using-email-addresses-for-django-usernames</id>
     <content type="html"><![CDATA[<p><a href="https://www.djangoproject.com/">Django</a> is a great Python framework for database-driven sites. It&#8217;s what we use for <a href="http://www.teloga.com">Teloga</a> in fact. But there&#8217;s one thing that bugs me: usernames are case-sensitive.</p>
 
-<p>With Teloga busy serving both the <a href="http://www.teloga.com/networks/aubands/">Auburn University Bands</a> and the <a href="http://www.teloga.com/networks/aba/">Alabama Bandmasters Association</a>, it didn&#8217;t take too long for us to realize that this is very unintuitive for users. We received weekly emails complaining that this person couldn&#8217;t log into their account, and invariably it&#8217;d be caused by the usage of <a href="&#x6d;&#97;&#x69;&#x6c;&#x74;&#111;&#x3a;&#83;&#x74;&#x65;&#118;&#x65;&#110;&#64;&#x54;&#x65;&#108;&#111;&#103;&#97;&#x2e;&#x63;&#111;&#x6d;">&#83;&#x74;&#x65;&#118;&#x65;&#x6e;&#x40;&#84;&#x65;&#108;&#x6f;&#x67;&#97;&#x2e;&#x63;&#111;&#109;</a> instead of <a href="&#x6d;&#x61;&#105;&#x6c;&#116;&#x6f;&#x3a;&#x73;&#116;&#101;&#118;&#x65;&#110;&#64;&#116;&#x65;&#x6c;&#111;&#103;&#97;&#46;&#99;&#111;&#109;&#46;">&#x73;&#x74;&#x65;&#118;&#x65;&#x6e;&#64;&#116;&#x65;&#x6c;&#111;&#103;&#x61;&#x2e;&#99;&#x6f;&#109;&#46;</a> That had to go.</p>
+<p>With Teloga busy serving both the <a href="http://www.teloga.com/networks/aubands/">Auburn University Bands</a> and the <a href="http://www.teloga.com/networks/aba/">Alabama Bandmasters Association</a>, it didn&#8217;t take too long for us to realize that this is very unintuitive for users. We received weekly emails complaining that this person couldn&#8217;t log into their account, and invariably it&#8217;d be caused by the usage of <a href="&#109;&#x61;&#105;&#x6c;&#x74;&#x6f;&#x3a;&#x53;&#x74;&#101;&#x76;&#x65;&#x6e;&#x40;&#84;&#x65;&#108;&#x6f;&#x67;&#x61;&#x2e;&#x63;&#111;&#109;">&#x53;&#116;&#101;&#118;&#x65;&#110;&#64;&#84;&#x65;&#x6c;&#x6f;&#103;&#97;&#46;&#99;&#x6f;&#109;</a> instead of <a href="&#x6d;&#97;&#x69;&#108;&#116;&#111;&#58;&#115;&#x74;&#x65;&#x76;&#101;&#110;&#x40;&#x74;&#101;&#108;&#111;&#x67;&#97;&#46;&#x63;&#x6f;&#x6d;&#46;">&#x73;&#x74;&#101;&#x76;&#101;&#110;&#64;&#x74;&#x65;&#x6c;&#x6f;&#x67;&#x61;&#x2e;&#99;&#x6f;&#109;&#46;</a> That had to go.</p>
 
 <!-- more -->
 
@@ -445,7 +469,7 @@ possibilities per frame.</p>
 
 <p>Now, using this form you will have users with all-lowercase email addresses set as the username. So now it&#8217;s time to get them logged in.</p>
 
-<p>We&#8217;re actually just going to do a short adjustment to the stock AuthenticationForm. We need to make sure that the length of the username field is increased to 75, and we better make sure we clean up the username/email so that it&#8217;s all lowercase. (Otherwise you&#8217;re going to get a rightfully perturbed user complaining that they registered with <a href="&#x6d;&#97;&#105;&#108;&#x74;&#111;&#58;&#83;&#116;&#101;&#118;&#x65;&#110;&#x40;&#84;&#x65;&#x6c;&#x6f;&#103;&#x61;&#x2e;&#x63;&#x6f;&#x6d;">&#83;&#116;&#x65;&#118;&#x65;&#x6e;&#64;&#84;&#x65;&#108;&#111;&#103;&#x61;&#46;&#99;&#x6f;&#109;</a> but they cannot log in, because you stored their email as <a href="&#109;&#97;&#x69;&#x6c;&#116;&#111;&#x3a;&#x73;&#x74;&#101;&#118;&#101;&#x6e;&#64;&#116;&#x65;&#x6c;&#x6f;&#103;&#97;&#x2e;&#99;&#x6f;&#109;&#46;">&#x73;&#x74;&#101;&#118;&#101;&#x6e;&#64;&#x74;&#101;&#108;&#x6f;&#103;&#x61;&#x2e;&#x63;&#x6f;&#x6d;&#46;</a>)</p>
+<p>We&#8217;re actually just going to do a short adjustment to the stock AuthenticationForm. We need to make sure that the length of the username field is increased to 75, and we better make sure we clean up the username/email so that it&#8217;s all lowercase. (Otherwise you&#8217;re going to get a rightfully perturbed user complaining that they registered with <a href="&#x6d;&#97;&#105;&#x6c;&#116;&#111;&#58;&#83;&#116;&#101;&#x76;&#101;&#110;&#64;&#x54;&#x65;&#108;&#111;&#x67;&#97;&#x2e;&#x63;&#x6f;&#109;">&#83;&#x74;&#101;&#x76;&#101;&#110;&#x40;&#x54;&#101;&#x6c;&#111;&#103;&#x61;&#46;&#99;&#111;&#109;</a> but they cannot log in, because you stored their email as <a href="&#x6d;&#97;&#x69;&#108;&#x74;&#111;&#58;&#x73;&#x74;&#101;&#118;&#101;&#110;&#x40;&#x74;&#x65;&#x6c;&#111;&#x67;&#x61;&#x2e;&#99;&#111;&#x6d;&#46;">&#115;&#116;&#101;&#x76;&#101;&#x6e;&#64;&#116;&#101;&#108;&#111;&#103;&#97;&#x2e;&#x63;&#x6f;&#109;&#46;</a>)</p>
 
 <figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
@@ -704,7 +728,7 @@ possibilities per frame.</p>
 
 <p>Thanks to <a href="http://jdabbs.com">James Dabbs</a> for showing <a href="http://octopress.org/">Octopress</a> to me the other day - a blogging system with <a href="http://git-scm.com/">Git</a> revision control and hosting by <a href="http://heroku.com">Heroku</a> sounds alright to me.</p>
 
-<p>I&#8217;ll be working on my <a href="http://www.stevenclontz.com/about/">About</a> page and getting my <a href="http://resume.stevenclontz.com">Resume</a> up to date over the coming days.  Email me at <a href="&#x6d;&#97;&#105;&#x6c;&#116;&#x6f;&#58;&#115;&#116;&#x65;&#118;&#101;&#110;&#x2e;&#x63;&#108;&#x6f;&#110;&#x74;&#x7a;&#x40;&#x67;&#x6d;&#x61;&#105;&#x6c;&#x2e;&#x63;&#111;&#x6d;">&#x73;&#x74;&#x65;&#x76;&#x65;&#110;&#46;&#x63;&#108;&#x6f;&#x6e;&#116;&#x7a;&#x40;&#x67;&#109;&#x61;&#x69;&#108;&#46;&#99;&#x6f;&#x6d;</a> if you need to get in touch with me! See ya.</p>
+<p>I&#8217;ll be working on my <a href="http://www.stevenclontz.com/about/">About</a> page and getting my <a href="http://resume.stevenclontz.com">Resume</a> up to date over the coming days.  Email me at <a href="&#x6d;&#x61;&#105;&#108;&#x74;&#111;&#x3a;&#115;&#x74;&#101;&#118;&#101;&#110;&#46;&#99;&#108;&#111;&#110;&#116;&#122;&#x40;&#x67;&#x6d;&#x61;&#105;&#108;&#46;&#99;&#111;&#109;">&#115;&#x74;&#x65;&#118;&#x65;&#110;&#46;&#99;&#108;&#x6f;&#110;&#x74;&#x7a;&#64;&#x67;&#x6d;&#97;&#x69;&#108;&#x2e;&#x63;&#x6f;&#109;</a> if you need to get in touch with me! See ya.</p>
 
 <p>-SXC</p>
 
