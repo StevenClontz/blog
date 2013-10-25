@@ -42,6 +42,8 @@ We are currently refactoring the site from scratch, and will release a [Ruby on 
 
 ## Puzzle Console
 
+{% img http://i.imgur.com/24PZs9Z.png %}
+
 Part of my efforts in organizing the fifth [Auburn Puzzle Party puzzlehunt competition](http://auburnpuzzleparty.wikia.com/wiki/APP5) involved cocreating an online puzzle delivery and scoring platform based on the Django Framework along with James Dabbs.
 
 The source to our [puzzle-console](https://github.com/jamesdabbs/puzzle-console) is freely available on GitHub. An archive of the site is available at <http://puzzle-console.herokuapp.com/>.
