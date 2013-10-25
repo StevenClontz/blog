@@ -6,7 +6,7 @@ sharing: true
 footer: true
 ---
 
-This page (currently a work-in-progress) serves as my portfolio of web design and development. My full resume can also be found at <http://resume.stevenclontz.com>.
+Welcome to my portfolio showcase some examples of my work in web development and design. My full resume can be found at <http://resume.stevenclontz.com>.
 
 ## StevenClontz.com
 
