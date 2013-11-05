@@ -5,7 +5,7 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>6÷2(1+2)=? - Steven Clontz</title>
+  <title>GradeCalc - Steven Clontz</title>
 
   <!-- per http://learnaholic.me/2012/10/15/octopress-seo-and-disabling-the-blog-route/ -->
 <meta name="author" content="Steven Clontz">
@@ -19,7 +19,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://www.stevenclontz.com/blog/2013/03/17/order-of-operations/">
+  <link rel="canonical" href="http://www.stevenclontz.com/blog/2013/11/04/gradecalc/">
   <link href="/favicon.png" rel="icon">
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
   <script src="/javascripts/modernizr-2.0.js"></script>
@@ -72,7 +72,7 @@
   
   <header>
     
-      <h1 class="entry-title">6÷2(1+2)=?</h1>
+      <h1 class="entry-title">GradeCalc</h1>
     
     
       <p class="meta">
@@ -88,41 +88,25 @@
   
 
 
-<time datetime="2013-03-17T17:05:00-05:00" pubdate data-updated="true">Mar 17<span>th</span>, 2013</time>
+<time datetime="2013-11-04T20:57:00-06:00" pubdate data-updated="true">Nov 4<span>th</span>, 2013</time>
         
       </p>
     
   </header>
 
 
-<div class="entry-content"><p>This is a problem that&#8217;s been thrown around the Facebook recently it seems. Man, it seems so simple:</p>
+<div class="entry-content"><p>It&#8217;s been way too long since I updated, but I wanted to share the revival of my most popular app: <a href="http://gradecalc.stevenclontz.com">GradeCalc</a>. Development notes follow.</p>
 
-<p>$$6÷2(1+2)=?$$</p>
-
-<p>Simple until you ask a group of people what the answer is, and find out half of us think it&#8217;s nine, and the other half think it&#8217;s one.</p>
-
-<p>So what IS the answer?</p>
+<p><img src="http://i.imgur.com/DEiiWaH.png"></p>
 
 <!-- more -->
 
 
-<p>Short answer: it&#8217;s a terribly written problem, or more accurately, it&#8217;s a problem written solely to make people argue over its order of operations. It touches on the ambiguity of parentheses, multiplication, and division in the &#8220;Please Excuse My Dear Aunt Sally / Parentheses Exponents Multiplication Division Addition Subtraction&#8221; mnemonic.</p>
+<p>I&#8217;d been thinking about updating my aged <a href="http://www.auburn.edu/~clontsc/deadday-archive.php">Dead Day Grade Calculator</a> for a while now - for such a simple app it seemed that a static Javascript-powered site was the way to go.</p>
 
-<p>The issue stems from the incorrect (but often subconscious) belief that there exists a Bible of Mathematics somewhere, which decrees every detail of how arithmetic should be expressed and simplified. As simple as the problem seems, there&#8217;s no prevailing convention on whether $6÷2$ or $2(1+2)$ gets precedence here. Particularly when half of school teachers say multiplication has precedence over division, and half say multiplication and division have equal precedence and are evaluated left-to-right. (And hey does implied multiplication by parentheses fall into the P or M of PEMDAS?)</p>
+<p>But there was no way I was abandoning conveniences like <a href="http://slim-lang.com/">Slim</a> or <a href="http://coffeescript.org/">CoffeeScript</a> to write out all the HTML and JS by hand. Enter <a href="http://nanoc.ws/">nanoc</a> - I can develop in Slim/LESS/Coffee, and then Guard automatically generates static HTML/CSS/JS. I set up a separate Git repo in the <code>/output</code> folder to push to <code>gh-pages</code>, took about five minutes to set up the subdomain, and in about ten hours I had set up a site far more polished than my sad PHP-powered 2008 attempt.</p>
 
-<p>In the real world of mathematics, this is as unanswerable a question as me asking &#8220;Is there a mathematical size bigger than the amount of integers but less than the amount of real numbers?&#8221; <a href="#footnote-1">[1]</a> because you can&#8217;t address it without first specifying the rules you are allowed to use on the problem.</p>
-
-<p>Thus I&#8217;m forced to settle for what we call a &#8220;consistency result&#8221;:</p>
-
-<blockquote><p>If ÷ division takes precedence over implied multiplication located further to the right, then $6÷2(1+2)=9$. If not, then $6÷2(1+2)=1$.</p></blockquote>
-
-<p>That&#8217;s the best that can be done, mathematically. If you wanted a definitive answer, you should have asked me to evaluate $(6÷2)(1+2)$ or $6÷(2(1+2))$. That&#8217;s what parentheses are for, anyway.</p>
-
-<p><small id="footnote-1">[1] This is something called <a href="http://en.wikipedia.org/wiki/Continuum_hypothesis">The Continuum Hypothesis</a>. We use the word &#8220;hypothesis&#8221; here because once mathematicians formalized the rules of set theory (well, <a href="http://en.wikipedia.org/wiki/Zermelo%E2%80%93Fraenkel_set_theory">one set of rules for set theory</a>), it couldn&#8217;t be proven true or false. We later proved that it <em>couldn&#8217;t</em> be proven true or false, basically because we didn&#8217;t provide enough rules to handle the question. So just like $6÷2(1+2)=9$ or $6÷2(1+2)=1$ depending on what rules we use, we can assume the answer to the Continuum Hypothesis is either yes <em>or</em> no.</p>
-
-<p>Or we can completely ignore it and go on with our lives, just like we do with other silly questions like $6÷2(1+2)=?$.</small></p>
-
-<p>Addendum: Someone rightfully pointed out on <a href="https://news.ycombinator.com/item?id=5391415">Hacker News</a> that calling the Continuum Hypothesis a &#8220;silly&#8221; question doesn&#8217;t do it justice. Rather, I mean that posing the Continuum Hypothesis as a &#8220;yes or no&#8221; question is silly.</p>
+<p>I&#8217;m happy to hear any feedback! Shoot me an email at <a href="&#x6d;&#97;&#x69;&#x6c;&#116;&#x6f;&#58;&#115;&#x74;&#x65;&#x76;&#x65;&#110;&#64;&#99;&#x6c;&#111;&#110;&#x74;&#122;&#x2e;&#111;&#114;&#x67;">&#115;&#116;&#x65;&#118;&#x65;&#x6e;&#64;&#x63;&#x6c;&#x6f;&#110;&#x74;&#122;&#46;&#111;&#114;&#103;</a>. (Yup that&#8217;s new.)</p>
 </div>
 
 
@@ -145,7 +129,7 @@
   
 
 
-<time datetime="2013-03-17T17:05:00-05:00" pubdate data-updated="true">Mar 17<span>th</span>, 2013</time>
+<time datetime="2013-11-04T20:57:00-06:00" pubdate data-updated="true">Nov 4<span>th</span>, 2013</time>
       
 
 
@@ -153,7 +137,7 @@
     
       <div class="sharing">
   
-  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://www.stevenclontz.com/blog/2013/03/17/order-of-operations/" data-via="StevenXClontz" data-counturl="http://www.stevenclontz.com/blog/2013/03/17/order-of-operations/" >Tweet</a>
+  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://www.stevenclontz.com/blog/2013/11/04/gradecalc/" data-via="StevenXClontz" data-counturl="http://www.stevenclontz.com/blog/2013/11/04/gradecalc/" >Tweet</a>
   
   
   
@@ -162,10 +146,8 @@
     
     <p class="meta">
       
-        <a class="basic-alignment left" href="/blog/2013/02/26/presentation-for-gsc-scholars-forum-2013/" title="Previous Post: Presentation for GSC Scholars' Forum 2013">&laquo; Presentation for GSC Scholars' Forum 2013</a>
+        <a class="basic-alignment left" href="/blog/2013/05/07/teacher-evaluations-2013/" title="Previous Post: Teacher Evaluations Spring 2013">&laquo; Teacher Evaluations Spring 2013</a>
       
-      
-        <a class="basic-alignment right" href="/blog/2013/05/07/teacher-evaluations-2013/" title="Next Post: Teacher Evaluations Spring 2013">Teacher Evaluations Spring 2013 &raquo;</a>
       
     </p>
   </footer>

@@ -52,4 +52,4 @@ The source to our [puzzle-console](https://github.com/jamesdabbs/puzzle-console)
 
 [{% img http://i.imgur.com/DEiiWaH.png %}](http://gradecalc.stevenclontz.com)
 
-My most popular web application is probably my most simple - [GradeCalc](http://gradecalc.stevenclontz.com) is a [nanoc](http://nanoc.ws)-powered static site which answers one important quesiton for students: "What do I need to make on the final?" Source available on [Github](http://github.com/StevenClontz/GradeCalc).
+My most popular web application is probably my most simple - [GradeCalc](http://gradecalc.stevenclontz.com) is a [nanoc](http://nanoc.ws)-generated static site which answers one important quesiton for students: "What do I need to make on the final?" Source available on [Github](http://github.com/StevenClontz/GradeCalc).
