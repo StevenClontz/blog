@@ -6,7 +6,7 @@ comments: true
 categories: 
 ---
 
-My last class teaching at Auburn came sooner than expected. Starting in the fall, I'll be working as the software engineer / web developer / IT specialist for Auburn's [Office of University Writing](https://fp.auburn.edu/writing/), specifically the [ePortfolio Project](https://fp.auburn.edu/writing/eportfolio-project/). I'm sure I'll post more about that down the road - I start on January 7th.
+My last class teaching at Auburn came sooner than expected. Starting in the spring, I'll be working as the software engineer / web developer / IT specialist for Auburn's [Office of University Writing](https://fp.auburn.edu/writing/), specifically the [ePortfolio Project](https://fp.auburn.edu/writing/eportfolio-project/). I'm sure I'll post more about that down the road - I start on January 7th.
 
 I had a great group of students in this final semester. And it seems they thought I was okay too.
 
