@@ -2,12 +2,12 @@
 #      Main Configs       #
 # ----------------------- #
 
-url: http://www.stevenclontz.com
-title: Steven Clontz
-subtitle: A bit about math, code, teaching, music, games, and puzzles. 
-author: Steven Clontz
-simple_search: http://google.com/search
-description: The blog for mathematican, hacker, and entrepreneur Steven Clontz | A bit about math, code, teaching, music, games, and puzzles.
+url: "http://www.stevenclontz.com"
+title: "Steven Clontz"
+subtitle: "A bit about math, code, teaching, music, games, and puzzles."
+author: "Steven Clontz"
+simple_search: "http://google.com/search"
+description: "A bit about math, code, teaching, music, games, puzzles, and the other random things I'm working on!"
 
 # Default date format is "ordinal" (resulting in "July 22nd 2007")
 # You can customize the format as defined in
