@@ -5,7 +5,7 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>LaTeX is turing complete! - Steven Clontz</title>
+  <title>Complex exponents - Steven Clontz</title>
 
   <!-- per http://learnaholic.me/2012/10/15/octopress-seo-and-disabling-the-blog-route/ -->
 <meta name="author" content="Steven Clontz">
@@ -19,7 +19,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://www.stevenclontz.com/blog/2012/12/15/latex-is-turing-complete/">
+  <link rel="canonical" href="http://www.stevenclontz.com/blog/2013/12/28/complex-exponents/">
   <link href="/favicon.png" rel="icon">
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
   <script src="/javascripts/modernizr-2.0.js"></script>
@@ -73,7 +73,7 @@
   
   <header>
     
-      <h1 class="entry-title">LaTeX Is Turing Complete!</h1>
+      <h1 class="entry-title">Complex Exponents</h1>
     
     
       <p class="meta">
@@ -89,20 +89,39 @@
   
 
 
-<time datetime="2012-12-15T09:24:00-06:00" pubdate data-updated="true">Dec 15<span>th</span>, 2012</time>
+<time datetime="2013-12-28T01:15:00-06:00" pubdate data-updated="true">Dec 28<span>th</span>, 2013</time>
         
       </p>
     
   </header>
 
 
-<div class="entry-content"><p>So, I knew <a href="http://en.wikipedia.org/wiki/LaTeX">LaTeX</a> was the best mathematical markup out there, but I didn&#8217;t realize it was Turing complete. Here&#8217;s an article that shows how to compute the Fibonacci sequence:</p>
+<div class="entry-content"><p>As usual, since I spent some time writing this up on <a href="http://www.reddit.com/r/learnmath/">/r/learnmath</a>, I&#8217;d like to share it with you guys. The OP asks:</p>
 
-<p><a href="http://blog.scribtex.com/latex-is-turing-complete-51805">http://blog.scribtex.com/latex-is-turing-complete-51805</a></p>
+<blockquote><p>what does it mean to raise a number to the power of i?</p></blockquote>
 
-<p>Makes me wonder where I can save myself some time by having LaTeX do certain computations for me in my paper rather than doing them myself? I suppose this would likely negatively affect compile time, however.</p>
+<p>I explain in <a href="http://www.reddit.com/r/learnmath/comments/1tuq9y/what_does_it_mean_to_raise_a_number_to_the_power/cebqmng">this comment</a>, but here it is too.</p>
 
-<p>-SXC</p>
+<!-- more -->
+
+
+<p>Alright, so, we&#8217;re talking about complex numbers, so I&#8217;m assuming you know how to plot them in the complex plane and do basic addition/multiplication.</p>
+
+<p>If we want to know what a number like $2^3$ means, it&#8217;s pretty easy: you take $2×2×2=8$. Same for $(-3i)^3$ <a href="http://www.wolframalpha.com/input/?i=%28-3i%29%5E3">(Wolfram Alpha)</a>: it&#8217;s $-3i\times -3i\times -3i=-27i$.</p>
+
+<p>Think about what&#8217;s happening visually: $2^3$ stretches the vector from the origin which used to point to $2+0i$, but now it points to $8+0i$. The effect on $(-3i)^3$ is more complicated: there&#8217;s stretching, <em>and</em> reflection across the origin.</p>
+
+<p>When you mix the two together, say, $(2-3i)^3$ <a href="http://www.wolframalpha.com/input/?i=%282-3i%29%5E3">(Wolfram Alpha)</a> which is equal to $-46-9i$, you get stretching, and a reflection across the imaginary axis.</p>
+
+<p>So, here&#8217;s where the usefulness of raising a number to an imaginary (or complex) number kicks in: it gets us arbitrary rotations. It just so happens that multiplying a complex number by $e^{\theta i}$ rotates that number $\theta$ radians counter-clockwise around the origin. For example, $3e^{\frac{\pi}{2}i}$ <a href="http://www.wolframalpha.com/input/?i=3e%5E%7B%5Cpi%2F2+i%7D">(Wolfram Alpha)</a> is $3i$ since that represents a rotation of $\frac{\pi}{2}$ or $90$ degrees.</p>
+
+<p>You can take any complex number of the form $(a+bi)^i$ and manipulate it to be in the form $(c+di)e^{\theta i}$ (although that&#8217;s out of the scope of this post). For example: $(1+i)^i$ <a href="http://www.wolframalpha.com/input/?i=%281%2Bi%29%5Ei">(Wolfram Alpha)</a> can be manipulated to become $e^{\frac{\pi}{4}}2^{\frac{1}{2}i}$, which can be rewritten as $e^{\frac{\pi}{4}}e^{\ln(\sqrt{2})i}$ . So we&#8217;re taking the point $e^{\frac{\pi}{4}}+0i$, and rotating it $\ln(\sqrt{2})$ (about $0.34$ or $\frac{\pi}{9}$) radians around the origin.</p>
+
+<p>Since $(a+bi)^{c+di} = (a+bi)^c(a+bi)^{di}$, we see that raising a complex number to a complex number represents a certain exponential stretch or compression from the origin, followed by a certain rotation.</p>
+
+<p><strong>tl;dr: You can write $(a+bi)^{c+di}$ to be of the form $(x+yi)e^{\theta i}$, which means take the complex point $x+yi$ and rotate it $\theta$ radians counter-clockwise around the origin of the complex plane.</strong></p>
+
+<p>(Apologies for the rawness of the explanation&#8230; I&#8217;d really like to clean this up down the road and put in some pictures. Hope someone thinks it&#8217;s useful, though!)</p>
 </div>
 
 
@@ -125,7 +144,7 @@
   
 
 
-<time datetime="2012-12-15T09:24:00-06:00" pubdate data-updated="true">Dec 15<span>th</span>, 2012</time>
+<time datetime="2013-12-28T01:15:00-06:00" pubdate data-updated="true">Dec 28<span>th</span>, 2013</time>
       
 
 
@@ -133,7 +152,7 @@
     
       <div class="sharing">
   
-  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://www.stevenclontz.com/blog/2012/12/15/latex-is-turing-complete/" data-via="StevenXClontz" data-counturl="http://www.stevenclontz.com/blog/2012/12/15/latex-is-turing-complete/" >Tweet</a>
+  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://www.stevenclontz.com/blog/2013/12/28/complex-exponents/" data-via="StevenXClontz" data-counturl="http://www.stevenclontz.com/blog/2013/12/28/complex-exponents/" >Tweet</a>
   
   
   
@@ -142,10 +161,8 @@
     
     <p class="meta">
       
-        <a class="basic-alignment left" href="/blog/2012/11/15/using-email-addresses-for-django-usernames/" title="Previous Post: Using email addresses for Django usernames">&laquo; Using email addresses for Django usernames</a>
+        <a class="basic-alignment left" href="/blog/2013/12/26/stats-which-will-surprise-no-one/" title="Previous Post: Stats which will surprise no one">&laquo; Stats which will surprise no one</a>
       
-      
-        <a class="basic-alignment right" href="/blog/2012/12/17/guessing-passwords/" title="Next Post: Guessing passwords">Guessing passwords &raquo;</a>
       
     </p>
   </footer>
