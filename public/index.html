@@ -76,6 +76,59 @@
       
   <header>
     
+      <h1 class="entry-title"><a href="/blog/2014/01/23/visual-studio-2012-setting-iis-express-to-host-site-at-subdirectory/">Visual Studio 2012 - Setting IIS Express to Host Site at Subdirectory</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2014-01-23T10:07:00-06:00" pubdate data-updated="true">Jan 23<span>rd</span>, 2014</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>It took me forever and a day to get this functional, so I wanted to share the
+problem and solution in case it helps someone else out there trying to
+Google their way to solve a similar puzzle.</p>
+
+<h3>Problem</h3>
+
+<p>I inherited a ASP.NET website which was hosted at
+<code>https://www.domain.com/subdirectory/</code>. The site was coded with absolute
+links throughout of the form <code>/subdirectory/path/to/resource</code>. However, when
+Visual Studio 2012 spins up IIS Express to host the site locally, the site
+is hosted at <code>http://localhost:port/</code>. You can see the issue: all the
+references to <code>/subdirectory/etc</code> are now broken in the application, which
+makes previewing the site a pain.</p>
+
+</div>
+  
+  
+    <footer>
+      <a rel="full-article" href="/blog/2014/01/23/visual-studio-2012-setting-iis-express-to-host-site-at-subdirectory/">Read on &rarr;</a>
+    </footer>
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
       <h1 class="entry-title"><a href="/blog/2013/12/30/nanoc-au/">Nanoc-au</a></h1>
     
     
@@ -462,49 +515,6 @@
 
     </article>
   
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2013/01/29/randomly-selecting-an-element-from-a-list-with-uniform-distribution-without-using-the-length-of-the-list/">Randomly Selecting a Line of Input With Uniform Distribution Without Knowing How Many Lines to Expect</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2013-01-29T10:44:00-06:00" pubdate data-updated="true">Jan 29<span>th</span>, 2013</time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>Man that title is a mouthful. The concept is simple, but putting it to words takes a bit of work (I think - let me know if you can put it more succinctly!).</p>
-
-<p>The idea is lifted wholesale from this <a href="http://www.reddit.com/tb/17fnb2">/r/math post</a>, which is a cool concept (albiet poorly written). I&#8217;ve tried to make it a little more digestable in <a href="http://www.reddit.com/r/math/comments/17fnb2/an_algorithm_to_randomly_select_an_item_from_a/c85bifv">this comment</a> (careful, spoilers!), which I&#8217;ve copied below (without spoilers).</p>
-
-</div>
-  
-  
-    <footer>
-      <a rel="full-article" href="/blog/2013/01/29/randomly-selecting-an-element-from-a-list-with-uniform-distribution-without-using-the-length-of-the-list/">Read on &rarr;</a>
-    </footer>
-  
-
-
-    </article>
-  
   <div class="pagination">
     
       <a class="prev" href="/blog/page/2/">&larr; Older</a>
@@ -522,6 +532,10 @@
   <ul id="recent_posts">
     
       <li class="post">
+        <a href="/blog/2014/01/23/visual-studio-2012-setting-iis-express-to-host-site-at-subdirectory/">Visual Studio 2012 - Setting IIS Express to host site at subdirectory</a>
+      </li>
+    
+      <li class="post">
         <a href="/blog/2013/12/30/nanoc-au/">nanoc-au</a>
       </li>
     
@@ -535,10 +549,6 @@
     
       <li class="post">
         <a href="/blog/2013/12/17/fall-2013-evaluations/">Fall 2013 Teaching Evaluations</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2013/11/04/gradecalc/">GradeCalc</a>
       </li>
     
   </ul>
