@@ -4,15 +4,12 @@
 *.db.old
 *.swp
 *.db-journal
-
 .coverage
 .DS_Store
 .installed.cfg
-
 .idea/*
 src/website/static/*
 src/website/media/*
-
 bin
 build
 cfcache
@@ -22,6 +19,5 @@ downloads
 eggs
 parts
 tmp
-
 src/website/settingslocal.py
 stunnel.log
