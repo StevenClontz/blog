@@ -4,7 +4,7 @@
   <title><![CDATA[Steven Clontz]]></title>
   <link href="http://www.stevenclontz.com/atom.xml" rel="self"/>
   <link href="http://www.stevenclontz.com/"/>
-  <updated>2014-02-04T16:30:45-06:00</updated>
+  <updated>2014-02-04T16:32:10-06:00</updated>
   <id>http://www.stevenclontz.com/</id>
   <author>
     <name><![CDATA[Steven Clontz]]></name>
@@ -182,27 +182,40 @@ the only dialog box that would allow me to do it). But ultimately, I think
 what it ended up doing was editing a file called <code>applicationhost.config</code>
 under the <code>IISExpress\config\</code> folder.  Here&#8217;s the part that&#8217;s important:</p>
 
-<p>~~~xml
-<sites></p>
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+</pre></td><td class='code'><pre><code class='xml'><span class='line'><span class="nt">&lt;sites&gt;</span>
+</span><span class='line'>    <span class="nt">&lt;site</span> <span class="na">name=</span><span class="s">&quot;thesite&quot;</span> <span class="na">id=</span><span class="s">&quot;2&quot;</span><span class="nt">&gt;</span>
+</span><span class='line'>        <span class="nt">&lt;application</span> <span class="na">path=</span><span class="s">&quot;/&quot;</span> <span class="na">applicationPool=</span><span class="s">&quot;Clr2IntegratedAppPool&quot;</span><span class="nt">&gt;</span>
+</span><span class='line'>            <span class="nt">&lt;virtualDirectory</span> <span class="na">path=</span><span class="s">&quot;/&quot;</span> <span class="na">physicalPath=</span><span class="s">&quot;C:\path\on\disk\to\site&quot;</span> <span class="nt">/&gt;</span>
+</span><span class='line'>        <span class="nt">&lt;/application&gt;</span>
+</span><span class='line'>        <span class="nt">&lt;bindings&gt;</span>
+</span><span class='line'>            <span class="nt">&lt;binding</span> <span class="na">protocol=</span><span class="s">&quot;http&quot;</span> <span class="na">bindingInformation=</span><span class="s">&quot;*:49673:localhost&quot;</span> <span class="nt">/&gt;</span>
+</span><span class='line'>        <span class="nt">&lt;/bindings&gt;</span>
+</span><span class='line'>    <span class="nt">&lt;/site&gt;</span>
+</span><span class='line'>    <span class="nt">&lt;siteDefaults&gt;</span>
+</span><span class='line'>        <span class="nt">&lt;logFile</span> <span class="na">logFormat=</span><span class="s">&quot;W3C&quot;</span> <span class="na">directory=</span><span class="s">&quot;%IIS_USER_HOME%\Logs&quot;</span> <span class="nt">/&gt;</span>
+</span><span class='line'>        <span class="nt">&lt;traceFailedRequestsLogging</span> <span class="na">directory=</span><span class="s">&quot;%IIS_USER_HOME%\TraceLogFiles&quot;</span> <span class="na">enabled=</span><span class="s">&quot;true&quot;</span> <span class="na">maxLogFileSizeKB=</span><span class="s">&quot;1024&quot;</span> <span class="nt">/&gt;</span>
+</span><span class='line'>    <span class="nt">&lt;/siteDefaults&gt;</span>
+</span><span class='line'>    <span class="nt">&lt;applicationDefaults</span> <span class="na">applicationPool=</span><span class="s">&quot;Clr4IntegratedAppPool&quot;</span> <span class="nt">/&gt;</span>
+</span><span class='line'>    <span class="nt">&lt;virtualDirectoryDefaults</span> <span class="na">allowSubDirConfig=</span><span class="s">&quot;true&quot;</span> <span class="nt">/&gt;</span>
+</span><span class='line'><span class="nt">&lt;/sites&gt;</span>
+</span></code></pre></td></tr></table></div></figure>
 
-<pre><code>&lt;site name="thesite" id="2"&gt;
-    &lt;application path="/" applicationPool="Clr2IntegratedAppPool"&gt;
-        &lt;virtualDirectory path="/" physicalPath="C:\path\on\disk\to\site" /&gt;
-    &lt;/application&gt;
-    &lt;bindings&gt;
-        &lt;binding protocol="http" bindingInformation="*:49673:localhost" /&gt;
-    &lt;/bindings&gt;
-&lt;/site&gt;
-&lt;siteDefaults&gt;
-    &lt;logFile logFormat="W3C" directory="%IIS_USER_HOME%\Logs" /&gt;
-    &lt;traceFailedRequestsLogging directory="%IIS_USER_HOME%\TraceLogFiles" enabled="true" maxLogFileSizeKB="1024" /&gt;
-&lt;/siteDefaults&gt;
-&lt;applicationDefaults applicationPool="Clr4IntegratedAppPool" /&gt;
-&lt;virtualDirectoryDefaults allowSubDirConfig="true" /&gt;
-</code></pre>
-
-<p></sites>
-~~~</p>
 
 <p>When previewing a site in the browser, Visual Studio opens up the file
 assuming it&#8217;s hosted from the root. So, the solution is to add a second
@@ -210,16 +223,18 @@ assuming it&#8217;s hosted from the root. So, the solution is to add a second
 desired subdirectory, such as <code>\subdirectory</code>. Editing the contents of
 <code>&lt;application&gt;</code> like so solves the problem:</p>
 
-<p>~~~xml
-<application path="/" applicationPool="Clr2IntegratedAppPool"></p>
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+</pre></td><td class='code'><pre><code class='xml'><span class='line'><span class="nt">&lt;application</span> <span class="na">path=</span><span class="s">&quot;/&quot;</span> <span class="na">applicationPool=</span><span class="s">&quot;Clr2IntegratedAppPool&quot;</span><span class="nt">&gt;</span>
+</span><span class='line'>    <span class="nt">&lt;virtualDirectory</span> <span class="na">path=</span><span class="s">&quot;/&quot;</span> <span class="na">physicalPath=</span><span class="s">&quot;C:\path\on\disk\to\site&quot;</span> <span class="nt">/&gt;</span>
+</span><span class='line'>    <span class="nt">&lt;virtualDirectory</span> <span class="na">path=</span><span class="s">&quot;/subdirectory&quot;</span> <span class="na">physicalPath=</span><span class="s">&quot;C:\path\on\disk\to\site&quot;</span> <span class="nt">/&gt;</span>
+</span><span class='line'>    <span class="c">&lt;!-- note that both physicalPaths are the same! --&gt;</span>
+</span><span class='line'><span class="nt">&lt;/application&gt;</span>
+</span></code></pre></td></tr></table></div></figure>
 
-<pre><code>&lt;virtualDirectory path="/" physicalPath="C:\path\on\disk\to\site" /&gt;
-&lt;virtualDirectory path="/subdirectory" physicalPath="C:\path\on\disk\to\site" /&gt;
-&lt;!-- note that both physicalPaths are the same! --&gt;
-</code></pre>
-
-<p></application>
-~~~</p>
 
 <p>It&#8217;s a hack, but it works. The more elegant solution would be to allow the
 original virtualDirectory at <code>\</code> be eliminated and only host at <code>\subdirectory</code>,
@@ -323,7 +338,7 @@ want to try and fix. I can preview things now, and that&#8217;s a start!</p>
 
 <p>But there was no way I was abandoning conveniences like <a href="http://slim-lang.com/">Slim</a> or <a href="http://coffeescript.org/">CoffeeScript</a> to write out all the HTML and JS by hand. Enter <a href="http://nanoc.ws/">nanoc</a> - I can develop in Slim/LESS/Coffee, and then Guard automatically generates static HTML/CSS/JS. I set up a separate Git repo in the <code>/output</code> folder to push to <code>gh-pages</code>, took about five minutes to set up the subdomain, and in about ten hours I had set up a site far more polished than my sad PHP-powered 2008 attempt.</p>
 
-<p>I&#8217;m happy to hear any feedback! Shoot me an email at <a href="&#109;&#97;&#x69;&#x6c;&#x74;&#111;&#x3a;&#x73;&#116;&#101;&#118;&#x65;&#x6e;&#x40;&#x63;&#108;&#111;&#x6e;&#116;&#122;&#46;&#111;&#114;&#103;">&#115;&#x74;&#x65;&#118;&#x65;&#110;&#x40;&#x63;&#x6c;&#111;&#x6e;&#116;&#122;&#46;&#x6f;&#x72;&#103;</a>. (Yup that&#8217;s new.)</p>
+<p>I&#8217;m happy to hear any feedback! Shoot me an email at <a href="&#109;&#x61;&#105;&#x6c;&#116;&#111;&#x3a;&#115;&#x74;&#101;&#x76;&#x65;&#x6e;&#64;&#99;&#x6c;&#111;&#x6e;&#x74;&#122;&#x2e;&#x6f;&#114;&#103;">&#x73;&#116;&#101;&#x76;&#x65;&#110;&#64;&#x63;&#x6c;&#111;&#110;&#x74;&#x7a;&#x2e;&#x6f;&#114;&#x67;</a>. (Yup that&#8217;s new.)</p>
 ]]></content>
   </entry>
   
@@ -668,7 +683,7 @@ possibilities per frame.</p>
     <id>http://www.stevenclontz.com/blog/2012/11/15/using-email-addresses-for-django-usernames</id>
     <content type="html"><![CDATA[<p><a href="https://www.djangoproject.com/">Django</a> is a great Python framework for database-driven sites. It&#8217;s what we use for <a href="http://www.teloga.com">Teloga</a> in fact. But there&#8217;s one thing that bugs me: usernames are case-sensitive.</p>
 
-<p>With Teloga busy serving both the <a href="http://www.teloga.com/networks/aubands/">Auburn University Bands</a> and the <a href="http://www.teloga.com/networks/aba/">Alabama Bandmasters Association</a>, it didn&#8217;t take too long for us to realize that this is very unintuitive for users. We received weekly emails complaining that this person couldn&#8217;t log into their account, and invariably it&#8217;d be caused by the usage of <a href="&#x6d;&#x61;&#105;&#108;&#x74;&#111;&#x3a;&#x53;&#x74;&#x65;&#x76;&#x65;&#x6e;&#64;&#x54;&#101;&#108;&#x6f;&#103;&#x61;&#46;&#x63;&#x6f;&#x6d;">&#83;&#116;&#x65;&#118;&#x65;&#x6e;&#64;&#84;&#101;&#x6c;&#111;&#103;&#x61;&#x2e;&#x63;&#111;&#x6d;</a> instead of <a href="&#109;&#x61;&#105;&#x6c;&#x74;&#111;&#x3a;&#115;&#116;&#101;&#x76;&#101;&#x6e;&#64;&#116;&#x65;&#108;&#111;&#103;&#x61;&#46;&#99;&#111;&#x6d;&#x2e;">&#115;&#116;&#101;&#x76;&#101;&#x6e;&#x40;&#116;&#x65;&#108;&#x6f;&#103;&#97;&#x2e;&#99;&#111;&#109;&#46;</a> That had to go.</p>
+<p>With Teloga busy serving both the <a href="http://www.teloga.com/networks/aubands/">Auburn University Bands</a> and the <a href="http://www.teloga.com/networks/aba/">Alabama Bandmasters Association</a>, it didn&#8217;t take too long for us to realize that this is very unintuitive for users. We received weekly emails complaining that this person couldn&#8217;t log into their account, and invariably it&#8217;d be caused by the usage of <a href="&#x6d;&#97;&#105;&#x6c;&#x74;&#x6f;&#x3a;&#83;&#116;&#x65;&#x76;&#101;&#110;&#x40;&#x54;&#101;&#108;&#x6f;&#103;&#x61;&#x2e;&#x63;&#111;&#109;">&#83;&#x74;&#101;&#x76;&#x65;&#110;&#64;&#84;&#101;&#108;&#x6f;&#103;&#x61;&#x2e;&#99;&#x6f;&#109;</a> instead of <a href="&#x6d;&#97;&#105;&#108;&#x74;&#x6f;&#58;&#x73;&#x74;&#101;&#118;&#101;&#110;&#64;&#x74;&#x65;&#x6c;&#111;&#103;&#x61;&#46;&#99;&#111;&#109;&#46;">&#115;&#x74;&#x65;&#118;&#x65;&#x6e;&#64;&#x74;&#x65;&#108;&#111;&#103;&#x61;&#x2e;&#99;&#x6f;&#x6d;&#46;</a> That had to go.</p>
 
 <!-- more -->
 
@@ -768,7 +783,7 @@ possibilities per frame.</p>
 
 <p>Now, using this form you will have users with all-lowercase email addresses set as the username. So now it&#8217;s time to get them logged in.</p>
 
-<p>We&#8217;re actually just going to do a short adjustment to the stock AuthenticationForm. We need to make sure that the length of the username field is increased to 75, and we better make sure we clean up the username/email so that it&#8217;s all lowercase. (Otherwise you&#8217;re going to get a rightfully perturbed user complaining that they registered with <a href="&#109;&#x61;&#105;&#x6c;&#x74;&#111;&#58;&#83;&#x74;&#101;&#118;&#101;&#x6e;&#64;&#x54;&#101;&#x6c;&#x6f;&#x67;&#x61;&#x2e;&#x63;&#x6f;&#109;">&#x53;&#x74;&#101;&#x76;&#101;&#110;&#64;&#84;&#x65;&#108;&#x6f;&#103;&#x61;&#x2e;&#x63;&#111;&#109;</a> but they cannot log in, because you stored their email as <a href="&#x6d;&#97;&#x69;&#108;&#x74;&#x6f;&#x3a;&#x73;&#x74;&#101;&#118;&#101;&#110;&#x40;&#x74;&#x65;&#x6c;&#111;&#x67;&#x61;&#46;&#x63;&#x6f;&#x6d;&#x2e;">&#x73;&#116;&#101;&#118;&#101;&#110;&#64;&#116;&#101;&#108;&#111;&#x67;&#x61;&#x2e;&#99;&#111;&#x6d;&#46;</a>)</p>
+<p>We&#8217;re actually just going to do a short adjustment to the stock AuthenticationForm. We need to make sure that the length of the username field is increased to 75, and we better make sure we clean up the username/email so that it&#8217;s all lowercase. (Otherwise you&#8217;re going to get a rightfully perturbed user complaining that they registered with <a href="&#x6d;&#97;&#x69;&#x6c;&#x74;&#111;&#x3a;&#83;&#116;&#101;&#118;&#x65;&#110;&#64;&#84;&#x65;&#x6c;&#x6f;&#103;&#x61;&#46;&#x63;&#x6f;&#x6d;">&#83;&#116;&#101;&#118;&#x65;&#110;&#64;&#x54;&#101;&#108;&#111;&#x67;&#97;&#x2e;&#x63;&#111;&#x6d;</a> but they cannot log in, because you stored their email as <a href="&#109;&#x61;&#x69;&#108;&#116;&#111;&#x3a;&#x73;&#116;&#101;&#118;&#101;&#110;&#x40;&#116;&#101;&#x6c;&#111;&#103;&#x61;&#46;&#x63;&#x6f;&#109;&#x2e;">&#115;&#116;&#101;&#118;&#x65;&#110;&#64;&#116;&#x65;&#108;&#111;&#103;&#97;&#46;&#99;&#111;&#109;&#46;</a>)</p>
 
 <figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>

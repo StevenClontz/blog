@@ -34,7 +34,7 @@ the only dialog box that would allow me to do it). But ultimately, I think
 what it ended up doing was editing a file called `applicationhost.config` 
 under the `IISExpress\config\` folder.  Here's the part that's important:
 
-~~~xml
+``` xml
 <sites>
     <site name="thesite" id="2">
         <application path="/" applicationPool="Clr2IntegratedAppPool">
@@ -51,7 +51,7 @@ under the `IISExpress\config\` folder.  Here's the part that's important:
     <applicationDefaults applicationPool="Clr4IntegratedAppPool" />
     <virtualDirectoryDefaults allowSubDirConfig="true" />
 </sites>
-~~~
+```
 
 When previewing a site in the browser, Visual Studio opens up the file 
 assuming it's hosted from the root. So, the solution is to add a second
@@ -59,13 +59,13 @@ assuming it's hosted from the root. So, the solution is to add a second
 desired subdirectory, such as `\subdirectory`. Editing the contents of 
 `<application>` like so solves the problem:
 
-~~~xml
+``` xml
 <application path="/" applicationPool="Clr2IntegratedAppPool">
     <virtualDirectory path="/" physicalPath="C:\path\on\disk\to\site" />
     <virtualDirectory path="/subdirectory" physicalPath="C:\path\on\disk\to\site" />
     <!-- note that both physicalPaths are the same! -->
 </application>
-~~~
+```
 
 It's a hack, but it works. The more elegant solution would be to allow the 
 original virtualDirectory at `\` be eliminated and only host at `\subdirectory`,
