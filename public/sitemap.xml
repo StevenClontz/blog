@@ -48,7 +48,7 @@
         <loc>
             http://www.stevenclontz.com/blog/2013/01/29/randomly-selecting-an-element-from-a-list-with-uniform-distribution-without-using-the-length-of-the-list/
         </loc>
-        <lastmod>2014-01-18T12:52:54-06:00</lastmod>
+        <lastmod>2014-02-04T15:49:16-06:00</lastmod>
     </url>
     <url>
         <loc>http://www.stevenclontz.com/blog/2013/02/05/e-dot-t-s-march/</loc>
@@ -92,7 +92,13 @@
         <loc>
             http://www.stevenclontz.com/blog/2014/01/23/visual-studio-2012-setting-iis-express-to-host-site-at-subdirectory/
         </loc>
-        <lastmod>2014-01-23T10:07:49-06:00</lastmod>
+        <lastmod>2014-02-04T16:00:00-06:00</lastmod>
+    </url>
+    <url>
+        <loc>
+            http://www.stevenclontz.com/blog/2014/02/04/visual-studio-2012-and-git-slash-bitbucket/
+        </loc>
+        <lastmod>2014-02-04T16:30:45-06:00</lastmod>
     </url>
     <url>
         <loc>http://www.stevenclontz.com/404.html</loc>
@@ -108,11 +114,11 @@
     </url>
     <url>
         <loc>http://www.stevenclontz.com/blog/archives/</loc>
-        <lastmod>2014-01-23T10:07:49-06:00</lastmod>
+        <lastmod>2014-02-04T16:30:45-06:00</lastmod>
     </url>
     <url>
         <loc>http://www.stevenclontz.com/</loc>
-        <lastmod>2014-01-23T10:07:49-06:00</lastmod>
+        <lastmod>2014-02-04T16:30:45-06:00</lastmod>
     </url>
     <url>
         <loc>http://www.stevenclontz.com/teaching/</loc>

@@ -133,30 +133,52 @@ print random.choice(foo)
 
 <p>But since you can&#8217;t go back to previous strings in the input, you gotta get creative. And here&#8217;s where the math comes in. Here&#8217;s my solution:</p>
 
-<div><script src='https://gist.github.com/4667906.js'></script>
-<noscript><pre><code># only variables I&#39;m allowed to store/modify
-i = 0
-stored_string = &quot;No input given!&quot;
-
-# we&#39;ll need to be able to make random choices
-import random
-
-# solution
-while True:
-  try:
-    i += 1 # count the place of this string/person in line
-    if 1 == random.randint(1,i): 
-      # make a decision to keep it with probability 1/i
-      # note for first person, i=1, so this passes
-      stored_string = raw_input()
-    else: 
-      # otherwise ignore it
-      raw_input()
-  except EOFError: # ran out of people in line, we&#39;re done
-    break
-
-# Claim: the line stored had equal probability of being chosen with any other line
-print &quot;Result:\n%s&quot; % stored_string </code></pre></noscript></div>
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+<span class='line-number'>20</span>
+<span class='line-number'>21</span>
+<span class='line-number'>22</span>
+<span class='line-number'>23</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'># only variables I'm allowed to store/modify
+</span><span class='line'>i = 0
+</span><span class='line'>stored_string = "No input given!"
+</span><span class='line'> 
+</span><span class='line'># we'll need to be able to make random choices
+</span><span class='line'>import random
+</span><span class='line'> 
+</span><span class='line'># solution
+</span><span class='line'>while True:
+</span><span class='line'>  try:
+</span><span class='line'>    i += 1 # count the place of this string/person in line
+</span><span class='line'>    if 1 == random.randint(1,i): 
+</span><span class='line'>      # make a decision to keep it with probability 1/i
+</span><span class='line'>      # note for first person, i=1, so this passes
+</span><span class='line'>      stored_string = raw_input()
+</span><span class='line'>    else: 
+</span><span class='line'>      # otherwise ignore it
+</span><span class='line'>      raw_input()
+</span><span class='line'>  except EOFError: # ran out of people in line, we're done
+</span><span class='line'>    break
+</span><span class='line'> 
+</span><span class='line'># Claim: the line stored had equal probability of being chosen with any other line
+</span><span class='line'>print "Result:\n%s" % stored_string </span></code></pre></td></tr></table></div></figure>
 
 
 <p>Try it out - it <em>looks</em> like it works. But why? I should prove it.</p>
@@ -233,6 +255,14 @@ print &quot;Result:\n%s&quot; % stored_string </code></pre></noscript></div>
   <ul id="recent_posts">
     
       <li class="post">
+        <a href="/blog/2014/02/04/visual-studio-2012-and-git-slash-bitbucket/">Visual Studio 2012 and Git / Bitbucket</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2014/01/23/visual-studio-2012-setting-iis-express-to-host-site-at-subdirectory/">Visual Studio 2012 - Setting IIS Express to host site at subdirectory</a>
+      </li>
+    
+      <li class="post">
         <a href="/blog/2013/12/30/nanoc-au/">nanoc-au</a>
       </li>
     
@@ -242,14 +272,6 @@ print &quot;Result:\n%s&quot; % stored_string </code></pre></noscript></div>
     
       <li class="post">
         <a href="/blog/2013/12/26/stats-which-will-surprise-no-one/">Stats which will surprise no one</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2013/12/17/fall-2013-evaluations/">Fall 2013 Teaching Evaluations</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2013/11/04/gradecalc/">GradeCalc</a>
       </li>
     
   </ul>

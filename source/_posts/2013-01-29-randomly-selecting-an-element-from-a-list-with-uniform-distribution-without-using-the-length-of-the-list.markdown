@@ -38,7 +38,31 @@ The hint (or maybe red herring?) above was this sentence: "How could we possibly
 
 But since you can't go back to previous strings in the input, you gotta get creative. And here's where the math comes in. Here's my solution:
 
-{% gist 4667906 %}
+```
+# only variables I'm allowed to store/modify
+i = 0
+stored_string = "No input given!"
+ 
+# we'll need to be able to make random choices
+import random
+ 
+# solution
+while True:
+  try:
+    i += 1 # count the place of this string/person in line
+    if 1 == random.randint(1,i): 
+      # make a decision to keep it with probability 1/i
+      # note for first person, i=1, so this passes
+      stored_string = raw_input()
+    else: 
+      # otherwise ignore it
+      raw_input()
+  except EOFError: # ran out of people in line, we're done
+    break
+ 
+# Claim: the line stored had equal probability of being chosen with any other line
+print "Result:\n%s" % stored_string 
+```
 
 Try it out - it *looks* like it works. But why? I should prove it.
 

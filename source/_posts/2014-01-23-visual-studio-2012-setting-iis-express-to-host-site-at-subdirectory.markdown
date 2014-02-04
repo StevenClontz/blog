@@ -6,6 +6,9 @@ comments: true
 categories: 
 ---
 
+UPDATE: This is a terrible way to get this working, as I thankfully discovered.
+[See my 2014-02-04 post for details.](/blog/2014/02/04/visual-studio-2012-and-git-slash-bitbucket/)
+
 It took me forever and a day to get this functional, so I wanted to share the 
 problem and solution in case it helps someone else out there trying to 
 Google their way to solve a similar puzzle.
