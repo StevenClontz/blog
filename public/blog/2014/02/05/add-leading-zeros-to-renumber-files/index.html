@@ -5,7 +5,7 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>AU Research Week 2013 - Steven Clontz</title>
+  <title>Add leading zeros to renumber files - Steven Clontz</title>
 
   <!-- per http://learnaholic.me/2012/10/15/octopress-seo-and-disabling-the-blog-route/ -->
 <meta name="author" content="Steven Clontz">
@@ -19,7 +19,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://www.stevenclontz.com/aurw-2013/">
+  <link rel="canonical" href="http://www.stevenclontz.com/blog/2014/02/05/add-leading-zeros-to-renumber-files/">
   <link href="/favicon.png" rel="icon">
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
   <script src="/javascripts/modernizr-2.0.js"></script>
@@ -69,36 +69,15 @@
   <div id="main">
     <div id="content">
       <div>
-<article role="article">
+<article class="hentry" role="article">
   
   <header>
-    <h1 class="entry-title">AU Research Week 2013</h1>
-    <p class="meta">
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2013-02-26T19:42:00-06:00" pubdate data-updated="true">Feb 26<span>th</span>, 2013</time></p>
-  </header>
-  
-  <p>In February 2013 I presented my research on &#8220;Limited Information Strategies for Topological Games&#8221; in the Graduate Student Council Scholars&#8217; Forum, a preliminary event for Auburn University Research Week.</p>
-
-<p><img src="http://i.imgur.com/nKfMSUI.png"></p>
-
-<p>The presentation project is hosted on <a href="https://github.com/StevenClontz/2013-au-research-week-presentation">GitHub</a>. You can also <a href="https://github.com/StevenClontz/2013-au-research-week-presentation/blob/master/presentation.pdf?raw=true">download the raw PDF directly</a>.</p>
-
-  
-    <footer>
+    
+      <h1 class="entry-title">Add Leading Zeros to Renumber Files</h1>
+    
+    
       <p class="meta">
         
-        
 
 
 
@@ -110,21 +89,85 @@
   
 
 
-<time datetime="2013-02-26T19:42:00-06:00" pubdate data-updated="true">Feb 26<span>th</span>, 2013</time>
+<time datetime="2014-02-05T10:48:00-06:00" pubdate data-updated="true">Feb 5<span>th</span>, 2014</time>
         
       </p>
+    
+  </header>
+
+
+<div class="entry-content"><p>A quick one&#8230; pretty simple but I wanted to make note of it.</p>
+
+<p>I unwisely numbered the files in a folder like so:</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>1.txt
+</span><span class='line'>2.txt
+</span><span class='line'>...
+</span><span class='line'>9.txt
+</span><span class='line'>10.txt
+</span><span class='line'>11.txt
+</span><span class='line'>12.txt</span></code></pre></td></tr></table></div></figure>
+
+
+<p>So their alphanumeric order is not the same as the numeric order. Is there
+a quick way in the shell to renumber these with leading zeros?
+<a href="http://stackoverflow.com/questions/3672301/linux-shell-script-to-add-leading-zeros-to-file-names">Of course.</a></p>
+
+<pre><code>for a in [0-9]*.txt; do                     # match numbered files
+    mv $a `printf %02d.%s ${a%.*} ${a##*.}` # replace number with 2-digit ver.
+done
+</code></pre>
+</div>
+
+
+  <footer>
+    <p class="meta">
       
-        <div class="sharing">
   
-  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://www.stevenclontz.com/aurw-2013/index.html" data-via="StevenXClontz" data-counturl="http://www.stevenclontz.com/aurw-2013/index.html" >Tweet</a>
+
+<span class="byline author vcard">Posted by <span class="fn">Steven Clontz</span></span>
+
+      
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2014-02-05T10:48:00-06:00" pubdate data-updated="true">Feb 5<span>th</span>, 2014</time>
+      
+
+
+    </p>
+    
+      <div class="sharing">
+  
+  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://www.stevenclontz.com/blog/2014/02/05/add-leading-zeros-to-renumber-files/" data-via="StevenXClontz" data-counturl="http://www.stevenclontz.com/blog/2014/02/05/add-leading-zeros-to-renumber-files/" >Tweet</a>
   
   
   
 </div>
 
+    
+    <p class="meta">
       
-    </footer>
-  
+        <a class="basic-alignment left" href="/blog/2014/02/04/visual-studio-2012-and-git-slash-bitbucket/" title="Previous Post: Visual Studio 2012 and Git / Bitbucket">&laquo; Visual Studio 2012 and Git / Bitbucket</a>
+      
+      
+    </p>
+  </footer>
 </article>
 
 </div>

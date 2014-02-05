@@ -76,6 +76,69 @@
       
   <header>
     
+      <h1 class="entry-title"><a href="/blog/2014/02/05/add-leading-zeros-to-renumber-files/">Add Leading Zeros to Renumber Files</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2014-02-05T10:48:00-06:00" pubdate data-updated="true">Feb 5<span>th</span>, 2014</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>A quick one&#8230; pretty simple but I wanted to make note of it.</p>
+
+<p>I unwisely numbered the files in a folder like so:</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>1.txt
+</span><span class='line'>2.txt
+</span><span class='line'>...
+</span><span class='line'>9.txt
+</span><span class='line'>10.txt
+</span><span class='line'>11.txt
+</span><span class='line'>12.txt</span></code></pre></td></tr></table></div></figure>
+
+
+<p>So their alphanumeric order is not the same as the numeric order. Is there
+a quick way in the shell to renumber these with leading zeros?
+<a href="http://stackoverflow.com/questions/3672301/linux-shell-script-to-add-leading-zeros-to-file-names">Of course.</a></p>
+
+<pre><code>for a in [0-9]*.txt; do                     # match numbered files
+    mv $a `printf %02d.%s ${a%.*} ${a##*.}` # replace number with 2-digit ver.
+done
+</code></pre>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
       <h1 class="entry-title"><a href="/blog/2014/02/04/visual-studio-2012-and-git-slash-bitbucket/">Visual Studio 2012 and Git / Bitbucket</a></h1>
     
     
@@ -477,51 +540,6 @@ makes previewing the site a pain.</p>
 
     </article>
   
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2013/02/26/presentation-for-gsc-scholars-forum-2013/">Presentation for GSC Scholars&#8217; Forum 2013</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2013-02-26T19:54:00-06:00" pubdate data-updated="true">Feb 26<span>th</span>, 2013</time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>I will be presenting my research tomorrow morning (2013-02-27) for the Graduate Student Council Scholars&#8217; Forum, a preliminary event for AU Research Week. It&#8217;s intended to showcase graduate student research for a general audience.</p>
-
-<p>Hopefully I&#8217;ll do an okay job! If you&#8217;re interested in my research, I&#8217;ve made the presentation available on <a href="https://github.com/StevenClontz/2013-au-research-week-presentation/">GitHub</a> (and <a href="/aurw-2013/">added a page to my site</a>).</p>
-
-<p>-SXC</p>
-
-</div>
-  
-  
-    <footer>
-      <a rel="full-article" href="/blog/2013/02/26/presentation-for-gsc-scholars-forum-2013/">Read on &rarr;</a>
-    </footer>
-  
-
-
-    </article>
-  
   <div class="pagination">
     
       <a class="prev" href="/blog/page/2/">&larr; Older</a>
@@ -539,6 +557,10 @@ makes previewing the site a pain.</p>
   <ul id="recent_posts">
     
       <li class="post">
+        <a href="/blog/2014/02/05/add-leading-zeros-to-renumber-files/">Add leading zeros to renumber files</a>
+      </li>
+    
+      <li class="post">
         <a href="/blog/2014/02/04/visual-studio-2012-and-git-slash-bitbucket/">Visual Studio 2012 and Git / Bitbucket</a>
       </li>
     
@@ -552,10 +574,6 @@ makes previewing the site a pain.</p>
     
       <li class="post">
         <a href="/blog/2013/12/28/complex-exponents/">Complex exponents</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2013/12/26/stats-which-will-surprise-no-one/">Stats which will surprise no one</a>
       </li>
     
   </ul>
