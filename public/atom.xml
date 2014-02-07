@@ -4,7 +4,7 @@
   <title><![CDATA[Steven Clontz]]></title>
   <link href="http://www.stevenclontz.com/atom.xml" rel="self"/>
   <link href="http://www.stevenclontz.com/"/>
-  <updated>2014-02-07T11:04:27-06:00</updated>
+  <updated>2014-02-07T14:00:56-06:00</updated>
   <id>http://www.stevenclontz.com/</id>
   <author>
     <name><![CDATA[Steven Clontz]]></name>
@@ -12,6 +12,19 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Lowercase URLs in MVC 4]]></title>
+    <link href="http://www.stevenclontz.com/blog/2014/02/07/lowercase-urls-in-mvc-4/"/>
+    <updated>2014-02-07T13:51:00-06:00</updated>
+    <id>http://www.stevenclontz.com/blog/2014/02/07/lowercase-urls-in-mvc-4</id>
+    <content type="html"><![CDATA[<p>More adventures in .NET. Here&#8217;s a couple of code snippets to enforce
+lower-case URLs in a MVC 4 application (which oddly defaults to
+<a href="http://en.wikipedia.org/wiki/CamelCase">UpperCamelCase</a>).</p>
+
+<p><a href="https://gist.github.com/StevenClontz/8870552">Check out the Gist.</a></p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Add leading zeros to renumber files]]></title>
@@ -389,7 +402,7 @@ want to try and fix. I can preview things now, and that&#8217;s a start!</p>
 
 <p>But there was no way I was abandoning conveniences like <a href="http://slim-lang.com/">Slim</a> or <a href="http://coffeescript.org/">CoffeeScript</a> to write out all the HTML and JS by hand. Enter <a href="http://nanoc.ws/">nanoc</a> - I can develop in Slim/LESS/Coffee, and then Guard automatically generates static HTML/CSS/JS. I set up a separate Git repo in the <code>/output</code> folder to push to <code>gh-pages</code>, took about five minutes to set up the subdomain, and in about ten hours I had set up a site far more polished than my sad PHP-powered 2008 attempt.</p>
 
-<p>I&#8217;m happy to hear any feedback! Shoot me an email at <a href="&#109;&#x61;&#x69;&#108;&#116;&#111;&#58;&#x73;&#x74;&#101;&#118;&#x65;&#x6e;&#x40;&#99;&#x6c;&#111;&#x6e;&#116;&#x7a;&#46;&#x6f;&#114;&#103;">&#115;&#116;&#101;&#x76;&#101;&#110;&#64;&#99;&#x6c;&#x6f;&#110;&#116;&#122;&#46;&#x6f;&#x72;&#103;</a>. (Yup that&#8217;s new.)</p>
+<p>I&#8217;m happy to hear any feedback! Shoot me an email at <a href="&#x6d;&#x61;&#105;&#x6c;&#116;&#x6f;&#x3a;&#x73;&#116;&#101;&#x76;&#101;&#x6e;&#x40;&#x63;&#108;&#111;&#x6e;&#116;&#x7a;&#x2e;&#x6f;&#114;&#103;">&#115;&#x74;&#x65;&#x76;&#x65;&#110;&#64;&#99;&#x6c;&#111;&#x6e;&#x74;&#122;&#x2e;&#111;&#114;&#x67;</a>. (Yup that&#8217;s new.)</p>
 ]]></content>
   </entry>
   
@@ -734,7 +747,7 @@ possibilities per frame.</p>
     <id>http://www.stevenclontz.com/blog/2012/11/15/using-email-addresses-for-django-usernames</id>
     <content type="html"><![CDATA[<p><a href="https://www.djangoproject.com/">Django</a> is a great Python framework for database-driven sites. It&#8217;s what we use for <a href="http://www.teloga.com">Teloga</a> in fact. But there&#8217;s one thing that bugs me: usernames are case-sensitive.</p>
 
-<p>With Teloga busy serving both the <a href="http://www.teloga.com/networks/aubands/">Auburn University Bands</a> and the <a href="http://www.teloga.com/networks/aba/">Alabama Bandmasters Association</a>, it didn&#8217;t take too long for us to realize that this is very unintuitive for users. We received weekly emails complaining that this person couldn&#8217;t log into their account, and invariably it&#8217;d be caused by the usage of <a href="&#109;&#x61;&#x69;&#108;&#x74;&#111;&#58;&#x53;&#116;&#101;&#118;&#101;&#110;&#64;&#84;&#x65;&#x6c;&#x6f;&#103;&#x61;&#x2e;&#x63;&#x6f;&#x6d;">&#83;&#116;&#101;&#118;&#x65;&#110;&#64;&#84;&#x65;&#108;&#111;&#103;&#97;&#x2e;&#99;&#111;&#x6d;</a> instead of <a href="&#109;&#x61;&#x69;&#108;&#x74;&#111;&#x3a;&#115;&#x74;&#101;&#118;&#101;&#110;&#x40;&#116;&#101;&#x6c;&#111;&#x67;&#x61;&#x2e;&#x63;&#111;&#x6d;&#46;">&#x73;&#x74;&#x65;&#x76;&#x65;&#110;&#x40;&#116;&#101;&#x6c;&#111;&#103;&#x61;&#46;&#x63;&#x6f;&#109;&#x2e;</a> That had to go.</p>
+<p>With Teloga busy serving both the <a href="http://www.teloga.com/networks/aubands/">Auburn University Bands</a> and the <a href="http://www.teloga.com/networks/aba/">Alabama Bandmasters Association</a>, it didn&#8217;t take too long for us to realize that this is very unintuitive for users. We received weekly emails complaining that this person couldn&#8217;t log into their account, and invariably it&#8217;d be caused by the usage of <a href="&#x6d;&#x61;&#x69;&#108;&#x74;&#x6f;&#58;&#83;&#x74;&#101;&#118;&#101;&#x6e;&#x40;&#x54;&#101;&#108;&#111;&#103;&#x61;&#x2e;&#99;&#x6f;&#x6d;">&#83;&#x74;&#101;&#118;&#101;&#x6e;&#x40;&#x54;&#101;&#x6c;&#x6f;&#103;&#97;&#x2e;&#99;&#111;&#x6d;</a> instead of <a href="&#109;&#97;&#105;&#x6c;&#x74;&#111;&#x3a;&#x73;&#116;&#101;&#118;&#101;&#x6e;&#x40;&#116;&#x65;&#108;&#111;&#x67;&#x61;&#46;&#99;&#111;&#x6d;&#x2e;">&#115;&#x74;&#101;&#118;&#x65;&#x6e;&#64;&#x74;&#x65;&#x6c;&#111;&#x67;&#97;&#x2e;&#x63;&#111;&#x6d;&#x2e;</a> That had to go.</p>
 
 <!-- more -->
 
@@ -834,7 +847,7 @@ possibilities per frame.</p>
 
 <p>Now, using this form you will have users with all-lowercase email addresses set as the username. So now it&#8217;s time to get them logged in.</p>
 
-<p>We&#8217;re actually just going to do a short adjustment to the stock AuthenticationForm. We need to make sure that the length of the username field is increased to 75, and we better make sure we clean up the username/email so that it&#8217;s all lowercase. (Otherwise you&#8217;re going to get a rightfully perturbed user complaining that they registered with <a href="&#x6d;&#97;&#x69;&#x6c;&#x74;&#111;&#x3a;&#x53;&#x74;&#101;&#x76;&#101;&#110;&#64;&#x54;&#x65;&#x6c;&#111;&#103;&#97;&#x2e;&#99;&#111;&#x6d;">&#83;&#x74;&#x65;&#118;&#101;&#110;&#x40;&#84;&#101;&#x6c;&#x6f;&#x67;&#x61;&#46;&#99;&#111;&#x6d;</a> but they cannot log in, because you stored their email as <a href="&#109;&#97;&#x69;&#108;&#x74;&#x6f;&#58;&#x73;&#x74;&#101;&#118;&#x65;&#110;&#x40;&#x74;&#x65;&#x6c;&#x6f;&#103;&#x61;&#x2e;&#99;&#x6f;&#109;&#x2e;">&#115;&#x74;&#101;&#x76;&#x65;&#x6e;&#x40;&#x74;&#101;&#x6c;&#111;&#x67;&#x61;&#x2e;&#99;&#111;&#109;&#x2e;</a>)</p>
+<p>We&#8217;re actually just going to do a short adjustment to the stock AuthenticationForm. We need to make sure that the length of the username field is increased to 75, and we better make sure we clean up the username/email so that it&#8217;s all lowercase. (Otherwise you&#8217;re going to get a rightfully perturbed user complaining that they registered with <a href="&#x6d;&#x61;&#x69;&#108;&#x74;&#111;&#x3a;&#83;&#116;&#x65;&#118;&#x65;&#110;&#64;&#84;&#101;&#108;&#111;&#x67;&#97;&#x2e;&#99;&#x6f;&#109;">&#x53;&#x74;&#x65;&#118;&#x65;&#x6e;&#x40;&#x54;&#101;&#x6c;&#x6f;&#x67;&#x61;&#x2e;&#x63;&#x6f;&#109;</a> but they cannot log in, because you stored their email as <a href="&#109;&#97;&#x69;&#108;&#116;&#x6f;&#x3a;&#115;&#x74;&#x65;&#118;&#x65;&#x6e;&#64;&#x74;&#101;&#x6c;&#x6f;&#103;&#97;&#x2e;&#x63;&#111;&#109;&#46;">&#x73;&#x74;&#x65;&#x76;&#101;&#110;&#x40;&#116;&#x65;&#x6c;&#111;&#103;&#97;&#x2e;&#x63;&#111;&#x6d;&#x2e;</a>)</p>
 
 <figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
@@ -956,116 +969,6 @@ possibilities per frame.</p>
 <p>I ran across this image on Reddit, which maps out all the possible paths and endings. Pretty cool to look over once you&#8217;ve seen them all yourself: <a href="http://i.imgur.com/amjI5.gif">http://i.imgur.com/amjI5.gif</a></p>
 
 <p>That&#8217;s all I&#8217;ve got. If you&#8217;ve gotten this far then I assume you&#8217;ve played the game or plan to. But if not, and you think you&#8217;d enjoy this psychological thriller, then I encourage you to give it a try! (Also, the sequel came out&#8230; maybe I&#8217;ll have time to play it one day, heh.)</p>
-
-<p>-SXC</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Marked-down resume]]></title>
-    <link href="http://www.stevenclontz.com/blog/2012/10/28/resume-now-online/"/>
-    <updated>2012-10-28T23:30:00-05:00</updated>
-    <id>http://www.stevenclontz.com/blog/2012/10/28/resume-now-online</id>
-    <content type="html"><![CDATA[<p>A project that had been almost as long overdue as reviving <a href="http://www.stevenclontz.com">http://www.stevenclontz.com</a> was updating my neglected resume.</p>
-
-<p>The tl;dr version: check it out at <a href="http://resume.stevenclontz.com">http://resume.stevenclontz.com</a>! But if you think that looks nice and would like to check out the web app that powers it, please read on. :-)</p>
-
-<!-- more -->
-
-
-<p>I knew I wanted my resume to be web-first. The last time I wrote a resume (back in early 2011) I had TeX&#8217;d it up locally. And hey, at least that&#8217;s better than a Word document, right? However, and maybe I&#8217;ve gotten lazier in the past two years&#8230; but trudging through this didn&#8217;t seem appealing:</p>
-
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-<span class='line-number'>6</span>
-<span class='line-number'>7</span>
-<span class='line-number'>8</span>
-<span class='line-number'>9</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>\begin{ressection}{Education}
-</span><span class='line'>    \begin{ressubsec}{Auburn University}{Auburn, AL}{Bachelor's of Science and Master of Science in Mathematics}
-</span><span class='line'>        \ressubitem{Undergraduate GPA: 3.88 (overall), 4.00 (Major)}
-</span><span class='line'>        \ressubitem{Undergraduate Graduation Date: May, 2008 (Summa Cum Laude, University Honors Scholar)}
-</span><span class='line'>        \ressubitem{Masters GPA: 4.00}
-</span><span class='line'>        \ressubitem{Masters Graduation Date: December, 2010}
-</span><span class='line'>        \ressubitem{Currently pursuing Doctor of Philosophy in Mathematics at Auburn}
-</span><span class='line'>    \end{ressubsec}
-</span><span class='line'>\end{ressection}</span></code></pre></td></tr></table></div></figure>
-
-
-<p>So began my search for a simpler way. My first instinct was <a href="http://daringfireball.net/projects/markdown/">Markdown</a> - it&#8217;s what <a href="http://www.teloga.com">Teloga</a> uses, it&#8217;s what <a href="http://www.reddit.com">Reddit</a> uses, heck, it&#8217;s what this blog uses. And certainly this markup is a lot friendlier to read and edit:</p>
-
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-<span class='line-number'>6</span>
-<span class='line-number'>7</span>
-<span class='line-number'>8</span>
-<span class='line-number'>9</span>
-<span class='line-number'>10</span>
-<span class='line-number'>11</span>
-<span class='line-number'>12</span>
-<span class='line-number'>13</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>##Education
-</span><span class='line'>
-</span><span class='line'>####Auburn University - Auburn, AL
-</span><span class='line'>
-</span><span class='line'>* Bachelor's of Science in Mathematics (2008)
-</span><span class='line'>    * 3.9 overall GPA | 4.0 major GPA
-</span><span class='line'>    * Summa Cum Laude | University Honors Scholar | Phi Kappa Phi | Phi Beta Kappa 
-</span><span class='line'>    * Honors thesis in unfoldings of convex polyhedra | Undergraduate Research Fellow
-</span><span class='line'>* Master of Science in Mathematics (2010)
-</span><span class='line'>    * 4.0 GPA
-</span><span class='line'>    * Master thesis in linearly ordered topological spaces
-</span><span class='line'>* Doctoral Candidate in Mathematics
-</span><span class='line'>    * Currently writing dissertation on limited information strategies in topological games</span></code></pre></td></tr></table></div></figure>
-
-
-<p>So I thought the simple thing to do would be to just make a page on this blog for the resume. And when I did, it didn&#8217;t look half bad either.</p>
-
-<p><img src="http://i.imgur.com/U6xQ4.png"></p>
-
-<p>The only problem&#8230; I&#8217;d probably need a PDF version as well, and maybe even have to print it at some point. Silly old media.</p>
-
-<p>Now, keeping multiple copies of the same resume definitely violates <a href="http://en.wikipedia.org/wiki/Don't_repeat_yourself">DRY</a>; I wanted a slicker solution. So my first idea was to just print the webpage from Chrome and save it as a PDF.</p>
-
-<p><img src="http://i.imgur.com/kdRdF.png"></p>
-
-<p>Yikes.</p>
-
-<p>So, the issue that Octopress&#8217;s default theme doesn&#8217;t have a nice print stylesheet is a topic for another day, but I figured there was someone else out there of a similar mind that would have already paved the way for a nice way to share a resume written in Markdown.</p>
-
-<p>As it often does, the Google helped me find an answer earlier today: <a href="http://pseudoweb.net/2010/10/25/developing-your-resume/">http://pseudoweb.net/2010/10/25/developing-your-resume/</a></p>
-
-<p><img src="http://i.imgur.com/nAmTh.png"></p>
-
-<p>Looks nice, and it prints well too. Incidentally, Mr. Welch&#8217;s resume app makes use of this very cool Ruby gem called <a href="http://www.sinatrarb.com/">Sinatra</a> which I may need to look more into for simple apps. I&#8217;m new to Ruby (hey maybe I can add it to my resume now though) but hacking his app to do what I wanted was pretty straight forward.</p>
-
-<p>I added a few extra variables to the configuration YAML to store the URL of the page itself and the URL of a QR Code image leading to that URL, which I use in a couple of nice extra features:</p>
-
-<ol>
-<li>If the page is printed, it adds a line to the top: &#8220;Optimized for web | <a href="http://resume_url">http://resume_url</a>&#8221;</li>
-<li>A QR code floats in the upper right of the page, also linking to the digital version of the resume.</li>
-</ol>
-
-
-<p><img src="http://i.imgur.com/2WrpD.png"></p>
-
-<p>You can see it in action at <a href="http://resume.stevenclontz.com">my resume page</a>, and my forked version of the app can be found <a href="https://github.com/StevenClontz/Resume">on my Github</a>.</p>
-
-<p>There are still a couple of tweaks that might be nice to have if I decide to work on this more later.</p>
-
-<ul>
-<li>It&#8217;d be preferable to have a script to burn a PDF from the resume.md Markdown file rather than using a browser printout, possibly leveraging LaTeX.</li>
-<li>A simple change would be to move some of the basic data (name, address, etc.) into the configuration file to standardize the header.</li>
-</ul>
-
-
-<p>In the meantime, I hope you found all this interesting, and maybe I&#8217;ve inspired you to use revision control and Markdown to maintain your own resume!</p>
 
 <p>-SXC</p>
 ]]></content>
