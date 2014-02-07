@@ -128,7 +128,7 @@ with all the files in the same folder. Here&#8217;s how I did it.</p>
 <li><p>I used <code>File &gt; New Project</code> and
 <code>Templates &gt; Other Project Types &gt; Visual Studio Solutions</code> to create a
 <code>Blank Solution</code>. Let&#8217;s say I named it <code>MySolution</code> and stored it at
-<code>C:\MySolution\</code>.</p></li>
+<code>C:\MySolution\</code>. Do not check &#8220;Add to Source Control&#8221; yet.</p></li>
 <li><p>I used Windows Explorer to create a subfolder of <code>MySolution</code> called
 <code>mysite</code>. This was important, because many of the site&#8217;s links were set up to
 point to <code>/mysite/foo.jpg</code>, and by setting up the project in this way the
@@ -202,7 +202,8 @@ altogether for now.)</p>
 <p>I&#8217;ll add a post later on the easiest way to do the initial setup of this
 project by pulling initially from the now-set-up Bitbucket repo once I&#8217;ve
 done it. But let&#8217;s say that now both my coworker and I have gotten the
-Solution set up under Git revision control with the same Bitbucket remote.</p>
+Solution set up under Git revision control with the same Bitbucket remote.
+(UPDATE: See below.)</p>
 
 <p>Visual Studio has admittedly made it pretty simple to have us stay synced&#8230;
 by providing a handy &#8220;Sync&#8221; button! <code>VIEW &gt; Team Explorer</code> followed by
@@ -223,6 +224,20 @@ my changes to the remote server.</p>
 
 <p>Hopefully this will work well for us! I&#8217;ll update this post with any changes
 or tweaks we made.</p>
+
+<h3>UPDATE: Setting up new solution for existing repo</h3>
+
+<p>Last bit: setting up a new solution based on the existing repo was no problem.
+Pull up the Command Prompt or Git Bash per your preference and <code>cd</code> to the
+folder you want to store the solution in. Then run</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>git clone https://bitbucket.org/[username]/[reponame].git</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Supplying your Bitbucket username/password will create a folder with your
+solution file and project files. Open it up in Visual Studio and you&#8217;re
+ready to rock.</p>
 </div>
 
 

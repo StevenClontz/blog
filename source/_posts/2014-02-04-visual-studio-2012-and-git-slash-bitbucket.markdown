@@ -36,7 +36,7 @@ with all the files in the same folder. Here's how I did it.
 - I used `File > New Project` and 
 `Templates > Other Project Types > Visual Studio Solutions` to create a
 `Blank Solution`. Let's say I named it `MySolution` and stored it at 
-`C:\MySolution\`.
+`C:\MySolution\`. Do not check "Add to Source Control" yet.
 
 - I used Windows Explorer to create a subfolder of `MySolution` called 
 `mysite`. This was important, because many of the site's links were set up to 
@@ -110,6 +110,7 @@ I'll add a post later on the easiest way to do the initial setup of this
 project by pulling initially from the now-set-up Bitbucket repo once I've 
 done it. But let's say that now both my coworker and I have gotten the 
 Solution set up under Git revision control with the same Bitbucket remote.
+(UPDATE: See below.)
 
 Visual Studio has admittedly made it pretty simple to have us stay synced...
 by providing a handy "Sync" button! `VIEW > Team Explorer` followed by 
@@ -132,6 +133,22 @@ my changes to the remote server.
 
 Hopefully this will work well for us! I'll update this post with any changes
 or tweaks we made.
+
+
+
+### UPDATE: Setting up new solution for existing repo
+
+Last bit: setting up a new solution based on the existing repo was no problem.
+Pull up the Command Prompt or Git Bash per your preference and `cd` to the 
+folder you want to store the solution in. Then run
+
+```
+git clone https://bitbucket.org/[username]/[reponame].git
+```
+
+Supplying your Bitbucket username/password will create a folder with your 
+solution file and project files. Open it up in Visual Studio and you're 
+ready to rock.
 
 
 
