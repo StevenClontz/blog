@@ -4,7 +4,7 @@
   <title><![CDATA[Steven Clontz]]></title>
   <link href="http://www.stevenclontz.com/atom.xml" rel="self"/>
   <link href="http://www.stevenclontz.com/"/>
-  <updated>2014-02-07T14:00:56-06:00</updated>
+  <updated>2014-02-09T18:48:26-06:00</updated>
   <id>http://www.stevenclontz.com/</id>
   <author>
     <name><![CDATA[Steven Clontz]]></name>
@@ -12,6 +12,79 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Compact spaces with $G_\delta$ diagonals are metrizable]]></title>
+    <link href="http://www.stevenclontz.com/blog/2014/02/09/compact-spaces-with-g-delta-diagonals-are-metrizable/"/>
+    <updated>2014-02-09T17:13:00-06:00</updated>
+    <id>http://www.stevenclontz.com/blog/2014/02/09/compact-spaces-with-g-delta-diagonals-are-metrizable</id>
+    <content type="html"><![CDATA[<p>Too many web development posts! Time for some topology!</p>
+
+<p>As an exercise I&#8217;ve worked through the classical result that if a space $X$
+is compact Hausdorff and has a $G_\delta$-diagonal $\Delta$, then $X$ is
+metrizable.
+It relies on Urysohn&#8217;s theorem that regular second-countable spaces are
+metrizable, and since compact Hausdorff spaces are normal*, I&#8217;ll just show
+that the space is second countable.</p>
+
+<p>When I went to compare, most of proofs I found online and in texts like
+Engleking were a lot less direct (involving characterizations
+of $G_\delta$ diagonals using covers), so I hope someone gets
+some use out of this fairly straight-forward attack (due to a hint from
+my advisor Gary Gruenhage).</p>
+
+<!-- more -->
+
+
+<h3>Definitions</h3>
+
+<p>We&#8217;ll assume you&#8217;re good on most of the terms, but $G_\delta$ sets are
+countable intersections (from the $\delta$) of open sets (from the $G$). The
+diagonal of a space is what you expect:</p>
+
+<p>$$\Delta = \{\langle x,x \rangle : x \in X \} \subseteq X^2$$</p>
+
+<h3>Proof</h3>
+
+<p>Start by assuming that $\Delta = \bigcap_{n&lt;\omega} G_n$ where
+$G_{n+1} \subseteq G_n$. Since $X^2$ is normal (not because $X$ is, but
+because $X^2$ is also compact Hausdorff) and $\Delta$ is closed, we can set
+$U_0=G_0$, and
+$\Delta \subseteq U_{n+1} \subseteq \overline{U_{n+1}}\subseteq U_n \cap G_{n+1}$.</p>
+
+<p>It follows that
+$$\Delta \subseteq \bigcap_{n&lt;\omega} U_n \subseteq \bigcap_{n&lt;\omega} \overline{U_n} \subseteq \bigcap_{n&lt;\omega} G_n = \Delta$$</p>
+
+<p>These $U_n$ have a special property: for every $x\in X$ and every open
+neighborhood $A$ of $x$, there is some $n&lt;\omega$ such that</p>
+
+<p>$$U_n[x]=\{y:\langle x,y\rangle \in U_n\}\subseteq A$$</p>
+
+<p>To see this, suppose not: then we may choose $x_n \in U_n[x]\setminus A$.
+Since $x_n \in \overline{U_m[x]}$ for $n\geq m$, it follows that $x_n$ must
+converge in $\bigcap_{m&lt;\omega} \overline{U_m[x]} = \{x\}$. But since $x_n$
+converges to $x$, its neighborhood $A$ must contain all but finitely many
+$x_n$, a contradiction.</p>
+
+<p>Now, since $U_n$ is open, we can choose open $B_{x,n}$ for each $x\in X$ such
+that  $(B_{x,n})^2\subseteq U_n$. Since $X$ is compact, let $\mathcal{B}_n$
+be a finite subcover for $\{B_{x,n}: x\in X\}$ for each $n&lt;\omega$.</p>
+
+<p>We note that $\mathcal{B} = \bigcup_{n&lt;\omega} \mathcal{B}_n$ is countable,
+and we claim it is a base for $X$. Let $A$ be a neighborhood of $x$; then
+choose $U_n$ such that $U_n[x]\subseteq A$. We need only take $B_{z,n}$ from
+the cover $\mathcal{B}_n$ of $X$ such that $x\in B_{z,n}$, and note that
+$(B_{z,n})^2\subseteq U_n$ implies $x\in B_{z,n}\subseteq U_n[x] \subseteq A$.
+$\Box$</p>
+
+<p><small>
+  *Not too bad: you can easily show that in Hausdorff spaces, not just
+  points can be separated by open sets, but all compact sets can be
+  separated by open sets. All closed subsets of compact spaces are compact,
+  so that&#8217;s that.
+</small></p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Lowercase URLs in MVC 4]]></title>
@@ -402,7 +475,7 @@ want to try and fix. I can preview things now, and that&#8217;s a start!</p>
 
 <p>But there was no way I was abandoning conveniences like <a href="http://slim-lang.com/">Slim</a> or <a href="http://coffeescript.org/">CoffeeScript</a> to write out all the HTML and JS by hand. Enter <a href="http://nanoc.ws/">nanoc</a> - I can develop in Slim/LESS/Coffee, and then Guard automatically generates static HTML/CSS/JS. I set up a separate Git repo in the <code>/output</code> folder to push to <code>gh-pages</code>, took about five minutes to set up the subdomain, and in about ten hours I had set up a site far more polished than my sad PHP-powered 2008 attempt.</p>
 
-<p>I&#8217;m happy to hear any feedback! Shoot me an email at <a href="&#x6d;&#x61;&#105;&#x6c;&#116;&#x6f;&#x3a;&#x73;&#116;&#101;&#x76;&#101;&#x6e;&#x40;&#x63;&#108;&#111;&#x6e;&#116;&#x7a;&#x2e;&#x6f;&#114;&#103;">&#115;&#x74;&#x65;&#x76;&#x65;&#110;&#64;&#99;&#x6c;&#111;&#x6e;&#x74;&#122;&#x2e;&#111;&#114;&#x67;</a>. (Yup that&#8217;s new.)</p>
+<p>I&#8217;m happy to hear any feedback! Shoot me an email at <a href="&#109;&#97;&#105;&#x6c;&#116;&#x6f;&#58;&#x73;&#116;&#x65;&#118;&#x65;&#110;&#64;&#x63;&#x6c;&#111;&#110;&#116;&#x7a;&#x2e;&#x6f;&#x72;&#103;">&#x73;&#x74;&#101;&#118;&#101;&#x6e;&#x40;&#x63;&#x6c;&#x6f;&#110;&#116;&#x7a;&#46;&#x6f;&#x72;&#x67;</a>. (Yup that&#8217;s new.)</p>
 ]]></content>
   </entry>
   
@@ -747,7 +820,7 @@ possibilities per frame.</p>
     <id>http://www.stevenclontz.com/blog/2012/11/15/using-email-addresses-for-django-usernames</id>
     <content type="html"><![CDATA[<p><a href="https://www.djangoproject.com/">Django</a> is a great Python framework for database-driven sites. It&#8217;s what we use for <a href="http://www.teloga.com">Teloga</a> in fact. But there&#8217;s one thing that bugs me: usernames are case-sensitive.</p>
 
-<p>With Teloga busy serving both the <a href="http://www.teloga.com/networks/aubands/">Auburn University Bands</a> and the <a href="http://www.teloga.com/networks/aba/">Alabama Bandmasters Association</a>, it didn&#8217;t take too long for us to realize that this is very unintuitive for users. We received weekly emails complaining that this person couldn&#8217;t log into their account, and invariably it&#8217;d be caused by the usage of <a href="&#x6d;&#x61;&#x69;&#108;&#x74;&#x6f;&#58;&#83;&#x74;&#101;&#118;&#101;&#x6e;&#x40;&#x54;&#101;&#108;&#111;&#103;&#x61;&#x2e;&#99;&#x6f;&#x6d;">&#83;&#x74;&#101;&#118;&#101;&#x6e;&#x40;&#x54;&#101;&#x6c;&#x6f;&#103;&#97;&#x2e;&#99;&#111;&#x6d;</a> instead of <a href="&#109;&#97;&#105;&#x6c;&#x74;&#111;&#x3a;&#x73;&#116;&#101;&#118;&#101;&#x6e;&#x40;&#116;&#x65;&#108;&#111;&#x67;&#x61;&#46;&#99;&#111;&#x6d;&#x2e;">&#115;&#x74;&#101;&#118;&#x65;&#x6e;&#64;&#x74;&#x65;&#x6c;&#111;&#x67;&#97;&#x2e;&#x63;&#111;&#x6d;&#x2e;</a> That had to go.</p>
+<p>With Teloga busy serving both the <a href="http://www.teloga.com/networks/aubands/">Auburn University Bands</a> and the <a href="http://www.teloga.com/networks/aba/">Alabama Bandmasters Association</a>, it didn&#8217;t take too long for us to realize that this is very unintuitive for users. We received weekly emails complaining that this person couldn&#8217;t log into their account, and invariably it&#8217;d be caused by the usage of <a href="&#109;&#97;&#105;&#108;&#x74;&#111;&#58;&#x53;&#x74;&#101;&#x76;&#101;&#x6e;&#64;&#x54;&#101;&#108;&#x6f;&#x67;&#x61;&#x2e;&#99;&#111;&#x6d;">&#83;&#116;&#x65;&#x76;&#101;&#110;&#64;&#84;&#101;&#x6c;&#111;&#103;&#x61;&#46;&#x63;&#x6f;&#x6d;</a> instead of <a href="&#x6d;&#x61;&#105;&#x6c;&#116;&#x6f;&#x3a;&#115;&#116;&#x65;&#x76;&#101;&#x6e;&#64;&#116;&#x65;&#108;&#x6f;&#x67;&#97;&#46;&#x63;&#111;&#x6d;&#x2e;">&#115;&#116;&#x65;&#118;&#x65;&#110;&#x40;&#x74;&#x65;&#108;&#x6f;&#103;&#97;&#x2e;&#99;&#x6f;&#109;&#46;</a> That had to go.</p>
 
 <!-- more -->
 
@@ -847,7 +920,7 @@ possibilities per frame.</p>
 
 <p>Now, using this form you will have users with all-lowercase email addresses set as the username. So now it&#8217;s time to get them logged in.</p>
 
-<p>We&#8217;re actually just going to do a short adjustment to the stock AuthenticationForm. We need to make sure that the length of the username field is increased to 75, and we better make sure we clean up the username/email so that it&#8217;s all lowercase. (Otherwise you&#8217;re going to get a rightfully perturbed user complaining that they registered with <a href="&#x6d;&#x61;&#x69;&#108;&#x74;&#111;&#x3a;&#83;&#116;&#x65;&#118;&#x65;&#110;&#64;&#84;&#101;&#108;&#111;&#x67;&#97;&#x2e;&#99;&#x6f;&#109;">&#x53;&#x74;&#x65;&#118;&#x65;&#x6e;&#x40;&#x54;&#101;&#x6c;&#x6f;&#x67;&#x61;&#x2e;&#x63;&#x6f;&#109;</a> but they cannot log in, because you stored their email as <a href="&#109;&#97;&#x69;&#108;&#116;&#x6f;&#x3a;&#115;&#x74;&#x65;&#118;&#x65;&#x6e;&#64;&#x74;&#101;&#x6c;&#x6f;&#103;&#97;&#x2e;&#x63;&#111;&#109;&#46;">&#x73;&#x74;&#x65;&#x76;&#101;&#110;&#x40;&#116;&#x65;&#x6c;&#111;&#103;&#97;&#x2e;&#x63;&#111;&#x6d;&#x2e;</a>)</p>
+<p>We&#8217;re actually just going to do a short adjustment to the stock AuthenticationForm. We need to make sure that the length of the username field is increased to 75, and we better make sure we clean up the username/email so that it&#8217;s all lowercase. (Otherwise you&#8217;re going to get a rightfully perturbed user complaining that they registered with <a href="&#109;&#x61;&#x69;&#x6c;&#x74;&#111;&#58;&#x53;&#116;&#x65;&#x76;&#x65;&#110;&#64;&#84;&#x65;&#108;&#x6f;&#103;&#x61;&#46;&#x63;&#x6f;&#109;">&#x53;&#x74;&#x65;&#x76;&#101;&#110;&#x40;&#84;&#x65;&#108;&#x6f;&#103;&#x61;&#x2e;&#x63;&#x6f;&#109;</a> but they cannot log in, because you stored their email as <a href="&#109;&#x61;&#105;&#108;&#x74;&#111;&#58;&#115;&#116;&#x65;&#x76;&#x65;&#x6e;&#x40;&#116;&#101;&#108;&#x6f;&#x67;&#97;&#46;&#x63;&#x6f;&#x6d;&#x2e;">&#x73;&#116;&#101;&#118;&#x65;&#x6e;&#x40;&#116;&#x65;&#x6c;&#x6f;&#x67;&#97;&#46;&#x63;&#x6f;&#x6d;&#46;</a>)</p>
 
 <figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
@@ -868,107 +941,6 @@ possibilities per frame.</p>
 
 
 <p>So, all in all there isn&#8217;t anything too fancy here, but I was surprised I couldn&#8217;t find a walkthrough online so I thought I could whip one up. Let me know if you have any comments!</p>
-
-<p>-SXC</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[9 Hours, 9 Persons, 9 Doors]]></title>
-    <link href="http://www.stevenclontz.com/blog/2012/11/05/9-hours-9-persons-9-doors/"/>
-    <updated>2012-11-05T13:33:00-06:00</updated>
-    <id>http://www.stevenclontz.com/blog/2012/11/05/9-hours-9-persons-9-doors</id>
-    <content type="html"><![CDATA[<p>Having spent a lot of my weekend playing it (after representing Teloga at the <a href="http://teloga.com/networks/aubands/alumni-band/fall-2012/">26th Annual Auburn Alumni Band Reunion</a>), I wanted to make a quick, mostly spoiler-free post about <a href="http://en.wikipedia.org/wiki/999:_Nine_Hours,_Nine_Persons,_Nine_Doors"><em>999: 9 Hours, 9 Persons, 9 Doors</em></a> (2010). It&#8217;s a visual novel / room escape / puzzle / adventure game for the Nintendo DS.</p>
-
-<!-- more -->
-
-
-<p><img src="http://i.imgur.com/8xVM5.jpg"></p>
-
-<p>While I was mostly a Nintendo kid, I have fond memories of playing Sierra&#8217;s <a href="http://en.wikipedia.org/wiki/Torin's_Passage">Torin&#8217;s Passage</a> on the PC, which jump-started my interest in story-driven and combatless games. These games are also probably a big influence in my taste in <a href="http://auburnpuzzleparty.wikia.com/wiki/APP5">story-driven puzzle parties</a> as well.</p>
-
-<p>The concept of <em>999</em> is simple: big scary guy (&#8220;Zero&#8221;) in a gas mask kidnaps you and eight other people, forces you to play a <a href="http://en.wikipedia.org/wiki/Saw_(film)">game</a>, and slaps a wristwatch on you that will kill if you break the rules rather than solve his puzzles. But the best part of the game is tough to explain without spoilers. I&#8217;ll just say: it has the best setup for alternate endings of any game I&#8217;ve played.</p>
-
-<p>By the way, I was very impressed that the game doesn&#8217;t shy away (too) much from using math. There&#8217;s a bit of modular arithmetic involved in the game: each player has a number on their bracelet, and several doors are also marked with numbers. In order for a group to pass through a numbered door, the &#8220;digital root&#8221; of the bracelets (more commonly known as the sum of the numbers modulo nine) must match that number. This makes a major part of the story a mathematical whodunit once the group splits up early on and it&#8217;s discovered that some subset of them opened a door secretly (to a particular end which I&#8217;ll keep secret for this post).</p>
-
-<p>I do wish the characters would have caught onto some of the slicker tricks to computing digital roots. For example, the players 1 through 9 have a digital root of 9. But if players 1 and 2 are sitting out for some reason, the group&#8217;s digital root is now 6. That means for all players to progress simultaneously, they must split up and pass through doors whose digital root is also 6. The characters make most of their conclusions through exhaustive search, but when I was faced with doors 3, 7, and 8, I quickly realized that 7 &amp; 8 (=15=6) were the only real choices. (Well, unless you wanted to leave some players behind, but who would do that?&#8230;) And the only trick then was finding a group to sum to 7 (or 16 or 25), since the other group necessarily had to sum to 8 (or 17 or 26 or etc etc).</p>
-
-<p>Incidentally, while I keep talking about modular arithmetic, the game didn&#8217;t present it that way. Instead, they used the divisibility trick for nine to describe how to calculate a digital root: add the digits of the sum, repeat until only one digit remains. All in all, it&#8217;s a fun metapuzzle for the game. (And not bad fodder for the <a href="http://auburnpuzzleparty.wikia.com/wiki/A.M.P.%27d_Challenge">AMP&#8217;d Challenge</a> either&#8230; maybe I should flesh out an idea based on this.)</p>
-
-<p>But about those endings. There&#8217;s a lot of discussion out there about the optimal way to play through the game. There are six (well, five and a half) endings that the game gives you credit for, and it&#8217;s tough to find them all without a little direction (which I attempted when I first played through the game two years ago). So if I may do so, and I promise not to reveal any spoilers, here are my two suggested ways to play through <em>999</em> if you have the chance to pick it up.</p>
-
-<h3>What you should know</h3>
-
-<p>In this game you will make three choices between which door you&#8217;d like to enter. If you get a &#8220;bad end&#8221;, which one you get is pretty much just determined on your third choice. The game intends for you to play through it multiple times and stumble upon one of the three ends which, well, aren&#8217;t so bad.</p>
-
-<p>However, by paying attention to what interests the other characters, and figuring out which doors you need to go through to progress certain story arcs, you can arrive at one of the three more interesting ends. Realizing this might be enough for you to deduce how to proceed.</p>
-
-<h3>The quickest way</h3>
-
-<p>You should approach <em>999</em> more like you&#8217;re going to read a book than play a game, which means you&#8217;ll be spending a lot of time reading. And on the replays, you&#8217;ll be spending a lot of time holding Right on the D-pad to fast-forward through text you&#8217;ve already seen.</p>
-
-<p>So that&#8217;s why I don&#8217;t blame you if you want to get through things as quickly as possible. Here are directions for seeing every puzzle and ending using minimal playthroughs:</p>
-
-<p class="spoiler">1st. Choose the following doors: 4, 8, 1</p>
-
-
-
-
-<p class="spoiler">2nd. Choose the following doors: 4, 7, 6</p>
-
-
-
-
-<p class="spoiler">3rd. Choose the following doors: 5, 3, 2</p>
-
-
-
-
-<p class="spoiler">4th. Choose the following doors: 5, 8, 6</p>
-
-
-<p>At this point, you may want to try and solve the puzzle of which path to take for your final ending. Pay close attention to a hint given at the end of the last ending.</p>
-
-<p class="spoiler">Last. Choose the following doors: 4, 7, 1. This unlocks the final two endings (one of which is where the game cuts off this ending early if you haven&#8217;t done the 5, 8, 6 ending). Also, you need to be sure to learn everything you can from the other characters, and help them out where you can, or certain story checks will fail and you&#8217;ll get the same ending as choosing 4, 8, 1.</p>
-
-
-<h3>A little bit longer</h3>
-
-<p>This is a streamlined version how I ended up playing my first time with the game. There&#8217;s more backtracking, but you get to actually experience that &#8220;half&#8221; ending I keep talking about.</p>
-
-<p class="spoiler">1st. Choose the following doors: 4, 8, 6</p>
-
-
-
-
-<p class="spoiler">2nd. Choose the following doors: 5, 3, 2</p>
-
-
-
-
-<p class="spoiler">3rd. Choose the following doors: 4, 7, 1. However, refuse to listen to optional plot points and don&#8217;t help the other characters when possible.</p>
-
-
-
-
-<p class="spoiler">4th. Choose the following doors again: 4, 7, 1. This time, listen to everything and help a certain person out.</p>
-
-
-<p>At this point, you may want to try and solve the puzzle of which path to take for your next ending. Pay close attention to a hint given at the end of the last ending.</p>
-
-<p class="spoiler">5th. Choose the following doors: 5, 8, 6</p>
-
-
-
-
-<p class="spoiler">Last. Choose the following doors a final time: 4, 7, 1. Again, listen to everything and help a certain person out. Enjoy the epiphany.</p>
-
-
-<h3>And every other combination</h3>
-
-<p>I ran across this image on Reddit, which maps out all the possible paths and endings. Pretty cool to look over once you&#8217;ve seen them all yourself: <a href="http://i.imgur.com/amjI5.gif">http://i.imgur.com/amjI5.gif</a></p>
-
-<p>That&#8217;s all I&#8217;ve got. If you&#8217;ve gotten this far then I assume you&#8217;ve played the game or plan to. But if not, and you think you&#8217;d enjoy this psychological thriller, then I encourage you to give it a try! (Also, the sequel came out&#8230; maybe I&#8217;ll have time to play it one day, heh.)</p>
 
 <p>-SXC</p>
 ]]></content>

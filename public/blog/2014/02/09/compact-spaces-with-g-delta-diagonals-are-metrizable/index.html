@@ -5,7 +5,7 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>6÷2(1+2)=? - Steven Clontz</title>
+  <title>Compact spaces with $G_\delta$ diagonals are metrizable - Steven Clontz</title>
 
   <!-- per http://learnaholic.me/2012/10/15/octopress-seo-and-disabling-the-blog-route/ -->
 <meta name="author" content="Steven Clontz">
@@ -19,7 +19,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://www.stevenclontz.com/blog/2013/03/17/order-of-operations/">
+  <link rel="canonical" href="http://www.stevenclontz.com/blog/2014/02/09/compact-spaces-with-g-delta-diagonals-are-metrizable/">
   <link href="/favicon.png" rel="icon">
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
   <script src="/javascripts/modernizr-2.0.js"></script>
@@ -73,7 +73,7 @@
   
   <header>
     
-      <h1 class="entry-title">6÷2(1+2)=?</h1>
+      <h1 class="entry-title">Compact Spaces With $G_\delta$ Diagonals Are Metrizable</h1>
     
     
       <p class="meta">
@@ -89,41 +89,78 @@
   
 
 
-<time datetime="2013-03-17T17:05:00-05:00" pubdate data-updated="true">Mar 17<span>th</span>, 2013</time>
+<time datetime="2014-02-09T17:13:00-06:00" pubdate data-updated="true">Feb 9<span>th</span>, 2014</time>
         
       </p>
     
   </header>
 
 
-<div class="entry-content"><p>This is a problem that&#8217;s been thrown around the Facebook recently it seems. Man, it seems so simple:</p>
+<div class="entry-content"><p>Too many web development posts! Time for some topology!</p>
 
-<p>$$6÷2(1+2)=?$$</p>
+<p>As an exercise I&#8217;ve worked through the classical result that if a space $X$
+is compact Hausdorff and has a $G_\delta$-diagonal $\Delta$, then $X$ is
+metrizable.
+It relies on Urysohn&#8217;s theorem that regular second-countable spaces are
+metrizable, and since compact Hausdorff spaces are normal*, I&#8217;ll just show
+that the space is second countable.</p>
 
-<p>Simple until you ask a group of people what the answer is, and find out half of us think it&#8217;s nine, and the other half think it&#8217;s one.</p>
-
-<p>So what IS the answer?</p>
+<p>When I went to compare, most of proofs I found online and in texts like
+Engleking were a lot less direct (involving characterizations
+of $G_\delta$ diagonals using covers), so I hope someone gets
+some use out of this fairly straight-forward attack (due to a hint from
+my advisor Gary Gruenhage).</p>
 
 <!-- more -->
 
 
-<p>Short answer: it&#8217;s a terribly written problem, or more accurately, it&#8217;s a problem written solely to make people argue over its order of operations. It touches on the ambiguity of parentheses, multiplication, and division in the &#8220;Please Excuse My Dear Aunt Sally / Parentheses Exponents Multiplication Division Addition Subtraction&#8221; mnemonic.</p>
+<h3>Definitions</h3>
 
-<p>The issue stems from the incorrect (but often subconscious) belief that there exists a Bible of Mathematics somewhere, which decrees every detail of how arithmetic should be expressed and simplified. As simple as the problem seems, there&#8217;s no prevailing convention on whether $6÷2$ or $2(1+2)$ gets precedence here. Particularly when half of school teachers say multiplication has precedence over division, and half say multiplication and division have equal precedence and are evaluated left-to-right. (And hey does implied multiplication by parentheses fall into the P or M of PEMDAS?)</p>
+<p>We&#8217;ll assume you&#8217;re good on most of the terms, but $G_\delta$ sets are
+countable intersections (from the $\delta$) of open sets (from the $G$). The
+diagonal of a space is what you expect:</p>
 
-<p>In the real world of mathematics, this is as unanswerable a question as me asking &#8220;Is there a mathematical size bigger than the amount of integers but less than the amount of real numbers?&#8221; <a href="#footnote-1">[1]</a> because you can&#8217;t address it without first specifying the rules you are allowed to use on the problem.</p>
+<p>$$\Delta = \{\langle x,x \rangle : x \in X \} \subseteq X^2$$</p>
 
-<p>Thus I&#8217;m forced to settle for what we call a &#8220;consistency result&#8221;:</p>
+<h3>Proof</h3>
 
-<blockquote><p>If ÷ division takes precedence over implied multiplication located further to the right, then $6÷2(1+2)=9$. If not, then $6÷2(1+2)=1$.</p></blockquote>
+<p>Start by assuming that $\Delta = \bigcap_{n&lt;\omega} G_n$ where
+$G_{n+1} \subseteq G_n$. Since $X^2$ is normal (not because $X$ is, but
+because $X^2$ is also compact Hausdorff) and $\Delta$ is closed, we can set
+$U_0=G_0$, and
+$\Delta \subseteq U_{n+1} \subseteq \overline{U_{n+1}}\subseteq U_n \cap G_{n+1}$.</p>
 
-<p>That&#8217;s the best that can be done, mathematically. If you wanted a definitive answer, you should have asked me to evaluate $(6÷2)(1+2)$ or $6÷(2(1+2))$. That&#8217;s what parentheses are for, anyway.</p>
+<p>It follows that
+$$\Delta \subseteq \bigcap_{n&lt;\omega} U_n \subseteq \bigcap_{n&lt;\omega} \overline{U_n} \subseteq \bigcap_{n&lt;\omega} G_n = \Delta$$</p>
 
-<p><small id="footnote-1">[1] This is something called <a href="http://en.wikipedia.org/wiki/Continuum_hypothesis">The Continuum Hypothesis</a>. We use the word &#8220;hypothesis&#8221; here because once mathematicians formalized the rules of set theory (well, <a href="http://en.wikipedia.org/wiki/Zermelo%E2%80%93Fraenkel_set_theory">one set of rules for set theory</a>), it couldn&#8217;t be proven true or false. We later proved that it <em>couldn&#8217;t</em> be proven true or false, basically because we didn&#8217;t provide enough rules to handle the question. So just like $6÷2(1+2)=9$ or $6÷2(1+2)=1$ depending on what rules we use, we can assume the answer to the Continuum Hypothesis is either yes <em>or</em> no.</p>
+<p>These $U_n$ have a special property: for every $x\in X$ and every open
+neighborhood $A$ of $x$, there is some $n&lt;\omega$ such that</p>
 
-<p>Or we can completely ignore it and go on with our lives, just like we do with other silly questions like $6÷2(1+2)=?$.</small></p>
+<p>$$U_n[x]=\{y:\langle x,y\rangle \in U_n\}\subseteq A$$</p>
 
-<p>Addendum: Someone rightfully pointed out on <a href="https://news.ycombinator.com/item?id=5391415">Hacker News</a> that calling the Continuum Hypothesis a &#8220;silly&#8221; question doesn&#8217;t do it justice. Rather, I mean that posing the Continuum Hypothesis as a &#8220;yes or no&#8221; question is silly.</p>
+<p>To see this, suppose not: then we may choose $x_n \in U_n[x]\setminus A$.
+Since $x_n \in \overline{U_m[x]}$ for $n\geq m$, it follows that $x_n$ must
+converge in $\bigcap_{m&lt;\omega} \overline{U_m[x]} = \{x\}$. But since $x_n$
+converges to $x$, its neighborhood $A$ must contain all but finitely many
+$x_n$, a contradiction.</p>
+
+<p>Now, since $U_n$ is open, we can choose open $B_{x,n}$ for each $x\in X$ such
+that  $(B_{x,n})^2\subseteq U_n$. Since $X$ is compact, let $\mathcal{B}_n$
+be a finite subcover for $\{B_{x,n}: x\in X\}$ for each $n&lt;\omega$.</p>
+
+<p>We note that $\mathcal{B} = \bigcup_{n&lt;\omega} \mathcal{B}_n$ is countable,
+and we claim it is a base for $X$. Let $A$ be a neighborhood of $x$; then
+choose $U_n$ such that $U_n[x]\subseteq A$. We need only take $B_{z,n}$ from
+the cover $\mathcal{B}_n$ of $X$ such that $x\in B_{z,n}$, and note that
+$(B_{z,n})^2\subseteq U_n$ implies $x\in B_{z,n}\subseteq U_n[x] \subseteq A$.
+$\Box$</p>
+
+<p><small>
+  *Not too bad: you can easily show that in Hausdorff spaces, not just
+  points can be separated by open sets, but all compact sets can be
+  separated by open sets. All closed subsets of compact spaces are compact,
+  so that&#8217;s that.
+</small></p>
 </div>
 
 
@@ -146,7 +183,7 @@
   
 
 
-<time datetime="2013-03-17T17:05:00-05:00" pubdate data-updated="true">Mar 17<span>th</span>, 2013</time>
+<time datetime="2014-02-09T17:13:00-06:00" pubdate data-updated="true">Feb 9<span>th</span>, 2014</time>
       
 
 
@@ -154,7 +191,7 @@
     
       <div class="sharing">
   
-  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://www.stevenclontz.com/blog/2013/03/17/order-of-operations/" data-via="StevenXClontz" data-counturl="http://www.stevenclontz.com/blog/2013/03/17/order-of-operations/" >Tweet</a>
+  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://www.stevenclontz.com/blog/2014/02/09/compact-spaces-with-g-delta-diagonals-are-metrizable/" data-via="StevenXClontz" data-counturl="http://www.stevenclontz.com/blog/2014/02/09/compact-spaces-with-g-delta-diagonals-are-metrizable/" >Tweet</a>
   
   
   
@@ -163,10 +200,8 @@
     
     <p class="meta">
       
-        <a class="basic-alignment left" href="/blog/2013/02/26/presentation-for-gsc-scholars-forum-2013/" title="Previous Post: Presentation for GSC Scholars' Forum 2013">&laquo; Presentation for GSC Scholars' Forum 2013</a>
+        <a class="basic-alignment left" href="/blog/2014/02/07/lowercase-urls-in-mvc-4/" title="Previous Post: Lowercase URLs in MVC 4">&laquo; Lowercase URLs in MVC 4</a>
       
-      
-        <a class="basic-alignment right" href="/blog/2013/05/07/teacher-evaluations-2013/" title="Next Post: Teacher Evaluations Spring 2013">Teacher Evaluations Spring 2013 &raquo;</a>
       
     </p>
   </footer>
